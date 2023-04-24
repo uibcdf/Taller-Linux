@@ -10,7 +10,7 @@ Este taller bla bla bla..
    :maxdepth: 2
    :hidden:
 
-   semana_1/README.md
+   semana_1/contenido.md
    semana_2/README.md
    semana_3/README.md
    semana_4/README.md
