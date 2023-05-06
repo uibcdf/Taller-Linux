@@ -29,16 +29,7 @@ Las sesiones de videoconferencia se llevarán a cabo los lunes de las 3:00 pm a 
 
 ## Resumen de Contenidos
 
-- Contenido 1
-- Contenido 2
-- Contenido 3
-- Contenido 4
-- Contenido 5
-- Contenido 6
-- Contenido 7
-- Contenido 8
-- Contenido 9
-- Contenido 10
+En construcción...
 
 ## Registro
 
@@ -48,6 +39,9 @@ Para registrate rellena [este formulario](https://forms.gle/QEnmn3eJu6JK6Rrv7).
 La realización de estos talleres no implica la obtención de una constancia de participación.
 ```
 
+## Otros talleres
+
+Para conocer otros talleres impartidos por la UIBCDF visita [este enlace](https://www.uibcdf.org/Talleres).
 
 ```{eval-rst}
 
