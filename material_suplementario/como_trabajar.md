@@ -326,5 +326,7 @@ Dicho esto, Jupyter Lab y sus Jupyter notebooks son un entorno de trabajo y un
 formato de ficheros ideal para el trabajo computacional de investigación. Y por
 lo mismos motivos, muy adecuados para ser el segundo soporte de contenidos que manejarás en este taller.
 
-En está página encontrarás indicaciones y más información sobre como usar Jupyter Lab para interaccionar con los notebooks. Y en esta otra página 
+En está página encontrarás indicaciones y más información sobre como usar
+Jupyter Lab para interaccionar con los notebooks. Y con esta otra página podrás
+introducirte en el uso de los notebooks.
 
