@@ -29,16 +29,19 @@ Responde aquí con no más de 6 lineas de texto.
 > ¿Existe alguna otro servicio en la nube para desarrollar en colaboración projectos de código
 > libre?
 
-## Pregunta 4
-
-> ¿Existe alguna otro servicio en la nube para desarrollar en colaboración projectos de código
-> libre?
-
 ### Respuesta
+
+Responde aquí con no más de 6 lineas de texto.
+
+## Pregunta 4
 
 > ¿Hace uso Netflix de GitHub? ¿Cúal es su repositorio?
 
-## Pregunta 4
+### Respuesta
+
+Responde aquí con no más de 6 lineas de texto.
+
+## Pregunta 5
 
 > ¿Existe alguna otro servicio en la nube para desarrollar en colaboración projectos de código
 > libre?
@@ -47,10 +50,10 @@ Responde aquí con no más de 6 lineas de texto.
 
 Responde aquí con no más de 6 lineas de texto.
 
-## Pregunta 4
+## Pregunta 6
 
-> ¿Qué es Alfaphold? ¿Si quisieras modificar su código, o aprender cómo está construido... o si
-> tuvieras una idea para modificar Alfaphold... podrías hacerlo? ¿Cómo?
+> ¿Qué es Alfaphold? ¿Si quisieras ver las tripas de su código y aprender cómo está construido... o si
+> tuvieras una idea para modificar y mejorar Alfaphold... podrías hacerlo? ¿Cómo?
 
 ### Respuesta
 
