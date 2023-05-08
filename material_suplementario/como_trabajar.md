@@ -289,7 +289,7 @@ distribución de contenidos. Es más barato compartir por la red un texto plano
 con instrucciones que un documento cuyo estilo y formato ya se encuentra
 codificado en código máquina en el mismo fichero.
 
-[En esta página](otras_herramientas/conda.md) encontrarás más indicaciones para aprender a usar el lenguaje Markdown.
+[En esta página](otras_herramientas/markdown.md) encontrarás más indicaciones para aprender a usar el lenguaje Markdown.
 
 ### Jupyter notebooks
 
