@@ -57,7 +57,7 @@ En primer lugar debes de crear tu propio usuario en GitHub. GitHub es un
 servicio gratuito... y si no lo conoces y quieres hacer trabajo científico
 computacional, te va a resultar de muchísima ayuda.
 
-[Encontrarás en esta página](material_suplementario/otras_herramientas/github.md) las instrucciones necesarias que debes seguir para crear tu usuario.
+[Encontrarás en esta página](otras_herramientas/github.md) las instrucciones necesarias que debes seguir para crear tu usuario.
 
 ### Haz un fork de este repositorio
 
@@ -73,7 +73,7 @@ los cambios que pueda haber en el proyecto original, o que de una manera muy
 "limpia" puedas proponer la incorporación de tus cambios al proyecto original
 (convirtíendote a efectos de la licencia en coautor del mismo).
 
-[Encontrarás en esta página](material_suplementario/otras_herramientas/github.md) las instrucciones para hacer tu propio fork de este taller.
+[Encontrarás en esta página](otras_herramientas/github.md) las instrucciones para hacer tu propio fork de este taller.
 
 ### Haz tu primer clon de tu repositorio fork
 
@@ -85,7 +85,7 @@ manera puedes editar un fichero en tu computadora y, cuando tu decidas, subir
 los cambios a la copia de tu fork (la de la nube). A esto último se le conoce
 como "empujar" los cambios, o hacer un "*push*".
 
-[Encontrarás en esta página](material_suplementario/otras_herramientas/github.md) las instrucciones para hacer tu primer clon local de tu repositorio.
+[Encontrarás en esta página](otras_herramientas/github.md) las instrucciones para hacer tu primer clon local de tu repositorio.
 
 Pero, aunque ya con tu fork local puedas cómodamente seguir el desarrollo de
 este taller, no nos quedemos aquí. Imagina que terminaste de trabajar en tu
@@ -142,7 +142,7 @@ alejado de aquel para el que fue construida: interaccionar entre nosotros.
 
 Haremos uso del tablero de problemas para compartir discusiones y dudas de
 manera pública, así como para recibir comentarios y retroalimentación sobre
-ellos. [En esta página](material_suplementario/otras_herramientas/github.md) encontrarás información sobre cómo hacerlo.
+ellos. [En esta página](otras_herramientas/github.md) encontrarás información sobre cómo hacerlo.
 
 Como participante del taller, el tablero de problemas debe ser tu primera
 opción de contacto con el resto de participantes y con los responsables y/o
@@ -159,7 +159,7 @@ Usaremos el área, o foro, de discusiones para trasladar conversaciones de
 interés general para los participantes, los desarrolladores de contenido y los
 tutores del taller.
 
-[En esta página](material_suplementario/otras_herramientas/github.md) puedes encontrar indicaciones sobre cómo usar la web de discusiones.
+[En esta página](otras_herramientas/github.md) puedes encontrar indicaciones sobre cómo usar la web de discusiones.
 
 Las discusiones que encontrarás en el taller son propuestas y moderadas por los
 responsables y/o tutores. Participa en ellas libremente respetando a los demás.
@@ -191,7 +191,7 @@ con la parte "teórica" y/o "computacional" del proyecto científico sí podemos
 acercarnos a segurar la reproducibilidad de lo comunicado haciendo uso de las
 mismas herramientas y el mismo laboratorio. ¿Cómo? Proporcionando instrucciones
 precisas de cómo armar el entorno de ejecución, detallando las herramientas y la
-versión usada. Para eso, podemos usar gestores de ambientes de trabajo como [Conda](material_suplementario/otras_herramientas/conda.md).
+versión usada. Para eso, podemos usar gestores de ambientes de trabajo como [Conda](otras_herramientas/conda.md).
 
 El repositorio contiene un fichero llamado "conda_env.yaml" con el que puedes
 configurar un entorno virtual de conda para usar las mismas herramientas que
@@ -200,7 +200,7 @@ a la configuración de tu sistema operativo y el conjunto de programas que usa.
 
 ### Conda
 
-Antes de instalar [Conda](material_suplementario/otras_herramientas/conda.md), si es la primera vez que oyes de este gestor de
+Antes de instalar [Conda](otras_herramientas/conda.md), si es la primera vez que oyes de este gestor de
 ambientes de trabajo e instalación de paquetes, imagina la siguiente situación.
 Quieres reproducir un experimento computacional en tu computadora y ese
 experimento fue realizado haciendo uso de las siguientes herramientas:
@@ -219,7 +219,7 @@ te permite crear entornos de trabajo como si fueran burbujas en tu máquina en
 las que entrar, instalar herramientas, trabajar y salir de ellas sin afectar la
 configuración de tu sistema operativo y el resto de programas.
 
-[Encontrarás en esta página](material_suplementario/otras_herramientas/conda.md) las instrucciones para instalar y trabajar con Conda en tu equipo.
+[Encontrarás en esta página](otras_herramientas/conda.md) las instrucciones para instalar y trabajar con Conda en tu equipo.
 
 ### Crea un ambiente para trabajar en el taller
 
@@ -277,7 +277,7 @@ Markdown. Markdown nos permite de una manera muy económica y sencilla,
 especificar cómo será visualizado nuestro texto plano: en cursiva, con un
 encabezado de sección, con una tabla, un hiper-enlace, una imagen... Esta misma
 página web, tiene su contenido en un fichero de
-texto en "lenguaje" Markdown. Échale un vistazo en esta [liga](material_suplementario/otras_herramientas/markdown.md). Para modificar
+texto en "lenguaje" Markdown. Échale un vistazo en esta [liga](otras_herramientas/markdown.md). Para modificar
 los contenidos de esta página sólo tenemos que abrir con cualquier editor de
 texto ese documento, que llamamos fuente (como si fuera la fuente de un
 lenguaje de programación) y editarlo.
@@ -289,7 +289,7 @@ distribución de contenidos. Es más barato compartir por la red un texto plano
 con instrucciones que un documento cuyo estilo y formato ya se encuentra
 codificado en código máquina en el mismo fichero.
 
-[En esta página](material_suplementario/otras_herramientas/conda.md) encontrarás más indicaciones para aprender a usar el lenguaje Markdown.
+[En esta página](otras_herramientas/conda.md) encontrarás más indicaciones para aprender a usar el lenguaje Markdown.
 
 ### Jupyter notebooks
 
@@ -326,7 +326,7 @@ Dicho esto, Jupyter Lab y sus Jupyter notebooks son un entorno de trabajo y un
 formato de ficheros ideal para el trabajo computacional de investigación. Y por
 lo mismos motivos, muy adecuados para ser el segundo soporte de contenidos que manejarás en este taller.
 
-[En está página](material_suplementario/otras_herramientas/jupyter.md) encontrarás indicaciones y más información sobre cómo usar
-Jupyter Lab para interaccionar con los notebooks. Y con esta [otra página](material_suplementario/otras_herramientas/notebook.md) podrás
+[En está página](otras_herramientas/jupyter.md) encontrarás indicaciones y más información sobre cómo usar
+Jupyter Lab para interaccionar con los notebooks. Y con esta [otra página](otras_herramientas/notebook.md) podrás
 introducirte en el uso de los notebooks.
 
