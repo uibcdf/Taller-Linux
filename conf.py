@@ -105,6 +105,10 @@ html_theme = 'sphinx_book_theme'
 #html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
             "logo": {"alt_text": "UIBCDF-Talleres"},
+            "use_source_button": True,
+            "use_repository_button": True,
+            "repository_provider": "github",
+            "repository_url": "https://github.com/uibcdf/Taller-Linux"
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
