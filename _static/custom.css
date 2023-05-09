@@ -75,10 +75,11 @@ div.cell.tag_scroll-input div.cell_input::-webkit-scrollbar-thumb:hover {
 }
 
 
-img.align-center {
+.video-container {
+   width: 60%;
+   aspect-ratio: 16 / 9;
+   text-align:center;
    margin-left: auto;
    margin-right: auto;
-   text-align:center;
-   display:block;
 }
 

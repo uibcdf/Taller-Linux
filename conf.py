@@ -37,7 +37,6 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.napoleon',
     'sphinx.ext.githubpages',
-    'sphinxcontrib.youtube',
 #    'sphinxcontrib.bibtex',
     'sphinx.ext.extlinks',
     'sphinx_copybutton',

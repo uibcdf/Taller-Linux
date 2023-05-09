@@ -5,18 +5,11 @@ YouTube de la UIBCDF](https://www.youtube.com/@uibcdf):
 
 <br>
 
-```{eval-rst}
-
-.. youtube:: jKe-mHY-3A4
-  :align: center
-  :width: 60%
-
-```
-<br>
-
 <div align="center">
-<iframe id="player" type="text/html" width="640" height="390"
+<iframe class="video-container" id="player" type="text/html"
 src="https://www.youtube.com/embed/jKe-mHY-3A4?enablejsapi=1&origin=https://www.uibcdf.org"
 frameborder="0">
 </iframe>
 </div>
+
+<br>
