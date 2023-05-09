@@ -11,4 +11,5 @@ dependencies:
 - sphinx-copybutton
 - sphinx-design
 - sphinx-favicon
+- sphinxcontrib-youtube
 - myst-nb
