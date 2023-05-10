@@ -330,3 +330,99 @@ lo mismos motivos, muy adecuados para ser el segundo soporte de contenidos que m
 Jupyter Lab para interaccionar con los notebooks. Y con esta [otra página](otras_herramientas/notebook.md) podrás
 introducirte en el uso de los notebooks.
 
+## Resolviendo el reto semanal
+
+
+
+## Resolviendo las preguntas semanales
+
+Cada semana encontrarás una página llamada "Preguntas de la semana" (ver por
+ejemplo [las preguntas correspondientes a la semana
+1](../semana_1/preguntas.md)). La fuente de esa web es un documento Markdown
+que puedes encontrar en el repositorio de este taller, o en tu fork (ver por
+ejemplo [el fichero 'preguntas.md' de la primera semana en el repositorio del
+taller](https://github.com/uibcdf/Taller-Linux/blob/main/semana_1/preguntas.md)).
+
+Para contestarlas puedes proceder de dos maneras distintas.
+
+### En la web de tu fork de este repositorio
+
+1. Si no lo has hecho ya, crea tu cuenta en GitHub y haz tu propio fork del repositorio del taller.
+Encontrarás instrucciones para ello en [esta página](otras_herramientas/github.md).
+
+2. Accede con tu navegador a la web de tu fork del repositorio del taller.
+
+3. Navega en los ficheros de tu fork hasta la semana cuyas respuestas quieres contestar.
+
+4. Añade un nuevo fichero con el nombre 'mis_respuestas.md' haciendo click en el botón 'Add file'.
+
+```{figure} add_file_in_fork.png
+:align: center
+```
+
+5. En otra pestaña del navegador, abre el fichero llamado 'preguntas.md' de la
+   semana cuyas respuestas quieres contestar. Y activando la vista 'Code' del
+   fichero, selecciona y copia todo el texto.
+
+```{figure} code_en_preguntas.png
+:align: center
+```
+
+6. Copia el texto copiado en tu nuevo fichero 'mis_respuestas.md'.
+
+```{figure} copia_texto_mis_respuestas.png
+:align: center
+```
+
+7. Edita el texto de tu fichero 'mis_respuestas.md' para incluir tu respuesta a cada pregunta.
+
+8. Registra los cambios haciendo con el botón verde 'Commit changes...'.
+   Introduce el título de tu 'commit' (registro de cambios) y una descripción
+   de los cambios. A continuación haz click en el botón verde 'Commit changes' para registrar los cambios.
+
+```{figure} commit.png
+:align: center
+:width: 60%
+```
+
+9. Listo! Ya tienes tu nuevo documento 'mis_respuestas.md' guardado en tu fork
+   del repositorio. Podrás editarlo las veces que quieras haciendo click en el
+   botón del lápiz de la web del fichero. No olvides registrar los cambios con
+   el botón 'Commit changes...' (paso 8).
+
+```{figure} edit.png
+:align: center
+```
+
+### En tu clon local de tu fork de este repositorio
+
+1. Si no lo has hecho ya, crea tu cuenta en GitHub, haz tu propio fork del
+   repositorio del taller y clónalo localmente en tu computadora. Encontrarás
+   instrucciones para ello en [esta página](otras_herramientas/github.md).
+
+2. Navega en el sistema de ficheros de tu sistema operativo hasta el directorio
+   del clon local de tu fork del repositorio de este taller.
+
+3. Entra en el directorio de la semana cuyas preguntas quieres responder.
+
+4. Copia el fichero 'preguntas.md' y renombra la copia como 'mis_respuestas.md'
+
+5. Edita el nuevo fichero 'mis_respuestas.md' y contesta las preguntas de la semana.
+
+6. Pídele a Git que añada el fichero a su lista de rastreo ([aquí](otras_herramientas/git.md) puedes encontrar ayuda):
+```bash
+git add --all
+```
+
+7. Compromete los cambios ([aquí](otras_herramientas/git.md) puedes encontrar ayuda):
+```bash
+git commit -m "He contestado a las respuestas semanales"
+```
+
+8. Y finalmente empuja los cambios a tu fork en la web de GitHub del repositorio de este taller ([aquí](otras_herramientas/git.md) puedes encontrar ayuda):
+```bash
+git push
+```
+
+9. Comprueba en la web de GitHub de tu fork que efectivamente aparece tu nuevo fichero 'mis_respuestas.md'.
+
