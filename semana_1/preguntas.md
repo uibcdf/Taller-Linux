@@ -59,4 +59,13 @@ Responde aquí con no más de 6 lineas de texto.
 
 Responde aquí con no más de 6 lineas de texto.
 
+## Pregunta 7
+
+> ¿Se puede patentar un software?
+
+### Respuesta
+
+Responde aquí con no más de 6 lineas de texto.
+
+
 
