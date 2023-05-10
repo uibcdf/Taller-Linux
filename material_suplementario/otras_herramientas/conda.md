@@ -11,14 +11,14 @@ conocimiento previo. Esperamos pueda serte útil.
 
 ## ¿Qué es Conda?
 
-Conda es un gestor de entornos, paquetes y canales, operativo para varios
+Conda es un gestor de entornos o ambientes de trabajo, paquetes y canales, operativo para varios
 lenguages -Python entre ellos-. Antes de nada, aclaremos qué es un paquete, qué
-es un canal y qué es un entorno de desarrollo. 
+es un canal y qué es un entorno. 
 
 
 ### ¿Qué es un paquete?
 
-Un paquete, o librería en este caso, es un conjunto de ficheros de código
+Un paquete (o librería) es un conjunto de ficheros de código
 'empaquetado' con las instrucciones de instalación pertinentes y programado
 para realizar unas tareas específicas. Si estuvíeramos hablando de un lenguage
 compilado, el paquete sería el 'programa' junto con su instalador que compilas
@@ -26,27 +26,50 @@ compilado, el paquete sería el 'programa' junto con su instalador que compilas
 funcionamiento que en tu computadora tengas otros programas instalados
 -dependencias-. Así, es habitual que antes de instalar un programa tengas que
 preocuparte de que las dependencias estén presentes. Por ejemplo, el sistema
-operativo Linux cuenta con gestores de paquetes que probablemente usas
-('apt-get', 'yum', 'synaptic', 'aptitude', etc.) que se preocupan de que el
-software que quieres instalar encuentre las dependencias en tu máquina o las
-descargue del repositorio para su instalación.
+operativo Linux cuenta con gestores de paquetes con los que instalas software nuevo en tu
+computadora: 'apt-get', 'yum', 'synaptic', 'aptitude', etc -según la distribución que estás
+usando-. Estos gestores se preocupan por ti de que el software que quieres instalar encuentre las
+dependencias en tu máquina o las descargue del repositorio para su instalación.
 
-En el caso de un lenguage interpretado, el paquete o librería se almacena en
-una carpeta que el interpretador, Python en este caso, conoce. Es allí donde
-deben estar también las librerías de las que depende. Entenderás entonces que
-con el uso, la instalación de nuevas librerías o la actualización de las
-exisistentes, es conveniente que un gestor mantenga el equilibrio en tu
-ecosistema de paquetes de python.
+Si tuvieras que instalar a mano el software que necesitas y sus dependencias -colocando cada cosa
+donde debe ir en tu sistema operativo-... con el paso del tiempo el número de problemas a resolver
+para instalar programas nuevos o para que éstos funcionen correctamente haría el mantenimiento de
+tu máquina muy laborioso. Es muy conveniente que un gestor mantenga el equilibrio en el ecosistema
+de paquetes instalados en tu computadora.
 
 ### ¿Qué es un canal?
 
 Un grupo de desarrolladores o usuarios pueden configurar una lista de paquetes
-accesibles, de manera pública o privada, a través del gestor de paquetes. Como
-ejemplo de canal público de conda puedes echarle un ojo a, probablemente, el
+para ser descargados por cualquiera, de manera pública o privada, a través del gestor de paquetes. A este repositorio de
+software se le conoce como 'canal'.
+
+Como ejemplo de canal público de conda puedes echarle un ojo a, probablemente, el
 canal más popular mantenido por usuarios: [conda-forge][conda_forge] y [su
-lista de más de 5600 paquetes][anaconda_conda_forge].
+lista de más de 21,700 paquetes][anaconda_conda_forge].
 
 ### ¿Qué es un entorno?
+
+Imagina la siguiente situación:
+
+- Debes instalar la librería 'A' en su última versión 1.2.4 que depende de versiones mayores a la
+  2.0.0 de la librería 'B'.
+- En tu máquina tienes instalada la versión 1.6.5 de la librería 'B'.
+- Las versiones de 'B' mayores que 2.0.0 trabajan con Python 3.9, 3.10 y 3.11. Pero la versión de
+  Python que encuentras en tu máquina es la 3.8.
+
+¿Qué puedes hacer? Puedes actualizar la versión de Python de tu sistema operativo a por lo menos la
+versión 3.9. Pero tendrás que asegurar que todo el software que ya tienes instalado sea compatible
+con la nueva versión de Python, o tendrás que actualizarlo -esperando que para cada programa encuentres un
+reemplazo adecuado-. Así, por ejemplo, la librería 'B' se actualizará a una versión mayor que la
+2.0.0 para que puedas instalar 'A'. Pero espera un momento... ¿serán el resto de programas que había
+en tu máquina haciendo uso de 'B' compatibles con la nueva versión? La situación se complica...
+
+¿Qué te parecería tener una herramienta para crear un entorno, o un ambiente (*environment*), aislado en tu
+computadora para instalar la versión 1.2.4 'A' y todas sus dependencias sin afectar al resto de
+programas y a tu sistema operativo? Un gestor de entornos o ambientes de trabajo como Conda puede
+hacer eso por ti.
+
+Un entorno de 
 
 Tu sistema operativo cuenta probablemente con un interpretador de python
 (versión 2.x o 3.x) además de una extensa colección de librerías requeridas por
@@ -223,4 +246,16 @@ https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientist
 https://kaust-vislab.github.io/python-novice-gapminder/00-getting-started-with-conda/index.html
 https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
 
+<!---
+Alias de enlaces
+---!>
+
+[conda_forge]: https://conda-forge.org/
+[anaconda_conda_forge]: https://anaconda.org/conda-forge
+[anaconda]: https://www.anaconda.com/
+[conda_docs]: https://conda.io/docs/
+[guia_conda]: https://conda.io/docs/user-guide/index.html
+[conda_getting_started]: https://conda.io/docs/user-guide/getting-started.html
+[conda_tutorials]: https://conda.io/docs/user-guide/tutorials/index.html
+[foro]: https://github.com/uibcdf/Academia/issues/6
 
