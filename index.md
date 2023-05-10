@@ -22,9 +22,13 @@ Unidad de Investigación en Biología Computacional y Diseño de Fármacos (UIBC
 Salud - Hospital Infantil de México Federico Gómez](quienes\_somos.md).
 
 
-```{important} 
-La siguiente edición 2023.2 comenzará el próximo 8 de mayo!    
-Las sesiones de videoconferencia se llevarán a cabo los lunes de las 3:00 pm a las 4:30 pm (hora de Ciudad de México).
+```{important}
+La edición 2023.2 comenzó el 8 de mayo. Aun estás a tiempo de
+participar. Ponte al día revisando los contenidos y las sesiones de
+videoconferencia de las semanas anteriores, y regístrate!
+
+La siguiente edición 2023.3 comenzará el próximo 4 de septiembre!    
+Las sesiones de videoconferencia se llevarán a cabo los lunes de las 4:30 pm a las 6:00 pm (hora de Ciudad de México).
 ```
 
 ## Resumen de Contenidos
