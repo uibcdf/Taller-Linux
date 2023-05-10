@@ -104,7 +104,7 @@ pygments_style = 'default'
 html_theme = 'sphinx_book_theme'
 #html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
-            "logo": {"alt_text": "UIBCDF-Talleres"},
+            "logo": {"alt_text": "UIBCDF Taller Linux"},
             "use_source_button": True,
             "use_repository_button": True,
             "repository_provider": "github",
