@@ -38,7 +38,7 @@ https://lab.github.com
 
 Para usar GitHub, debes seguir algunos sencillos pasos:
 
-### ¿Cómo crea una cuenta en GitHub?
+### ¿Cómo crear una cuenta en GitHub?
 
 Para crear un usuario en GitHub, sigue los siguientes pasos:
 
@@ -60,7 +60,7 @@ completar el proceso de verificación.
 7. Una vez que hayas verificado tu dirección de correo electrónico, podrás
    iniciar sesión en tu cuenta de GitHub y comenzar a utilizar la plataforma.
 
-### ¿Cómo crea un nuevo repositorio?
+### ¿Cómo crear un nuevo repositorio?
 
 Después de haber iniciado sesión en tu cuenta de GitHub, 
 
@@ -190,7 +190,9 @@ estos pasos:
 reemplazando /ruta/de/gh con la ubicación real de la instalación de gh en tu
 sistema:
 
-	>  export PATH="/ruta/de/gh:$PATH"
+```bash
+export PATH="/ruta/de/gh:$PATH"
+```
 
 4. Presiona Enter. Este comando agrega la ruta de gh al inicio de tu variable
 PATH.
