@@ -356,23 +356,23 @@ Encontrarás instrucciones para ello en [esta página](otras_herramientas/github
 
 4. Añade un nuevo fichero con el nombre 'mis_respuestas.md' haciendo click en el botón 'Add file'.
 
-```{figure} add_file_in_fork.png
+:::{figure} add_file_in_fork.png
 :align: center
-```
+:::
 
 5. En otra pestaña del navegador, abre el fichero llamado 'preguntas.md' de la
    semana cuyas respuestas quieres contestar. Y activando la vista 'Code' del
    fichero, selecciona y copia todo el texto.
 
-```{figure} code_en_preguntas.png
+:::{figure} code_en_preguntas.png
 :align: center
-```
+:::
 
 6. Copia el texto copiado en tu nuevo fichero 'mis_respuestas.md'.
 
-```{figure} copia_texto_mis_respuestas.png
+:::{figure} copia_texto_mis_respuestas.png
 :align: center
-```
+:::
 
 7. Edita el texto de tu fichero 'mis_respuestas.md' para incluir tu respuesta a cada pregunta.
 
@@ -380,19 +380,19 @@ Encontrarás instrucciones para ello en [esta página](otras_herramientas/github
    Introduce el título de tu 'commit' (registro de cambios) y una descripción
    de los cambios. A continuación haz click en el botón verde 'Commit changes' para registrar los cambios.
 
-```{figure} commit.png
+:::{figure} commit.png
 :align: center
 :width: 60%
-```
+:::
 
 9. Listo! Ya tienes tu nuevo documento 'mis_respuestas.md' guardado en tu fork
    del repositorio. Podrás editarlo las veces que quieras haciendo click en el
    botón del lápiz de la web del fichero. No olvides registrar los cambios con
    el botón 'Commit changes...' (paso 8).
 
-```{figure} edit.png
+:::{figure} edit.png
 :align: center
-```
+:::
 
 ### En tu clon local de tu fork de este repositorio
 
