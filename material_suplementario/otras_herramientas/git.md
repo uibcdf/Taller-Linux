@@ -6,41 +6,121 @@
 
 ## ¿Qué es Git?
 
-[Git][git] es una herramienta de [control de versiones][acerca_control_versiones]. Estas herramientas fueron concebidas para el desarrollo de software, ya que permiten un flujo de trabajo eficiente al mantener un historial de cambios y versiones anteriores. Más especificamente Git, fue creada por Linus Torvalds para gestionar el desarrollo de los kernels (nucleos del sistema) de Linux. Existen otras herramientas similares, como SVN de la cual quizás hayas escuchado o usado, no obstante hoy en dia Git se ha convertido en un protocolo muy popular para el desarrollo de cualquier proyecto que involucre la participación de varias personas.
+[Git][git] es una herramienta de [control de
+versiones][acerca_control_versiones]. Estas herramientas fueron concebidas para
+el desarrollo de software, ya que permiten un flujo de trabajo eficiente al
+mantener un historial de cambios y versiones anteriores. Más especificamente
+Git fue creada por Linus Torvalds para gestionar el desarrollo de los kernels
+(nucleos del sistema) de Linux. Existen otras herramientas similares, como SVN
+de la cual quizás hayas escuchado o usado, no obstante hoy en dia Git se ha
+convertido en un protocolo muy popular para el desarrollo de cualquier proyecto
+que involucre la participación de varias personas.
 
-¿Cómo funciona exactamente? El historial que comentamos anteriormente es el "corazón" de Git, pues incluye: qué cambios hizo quién o cúando, así como el propósito de los mismos. Tener dicho registro ofrece varias ventajas, pues facilita cosas como: ir hacia atrás en la historia del desarrollo del proyecto, implementar nuevos cambios de manera tentativa, trazabilidad de errores, crear copias del proyecto en las que hacer pruebas para posteriormente fusionar la copia con el proyecto original, etc.
+¿Cómo funciona exactamente? El historial que comentamos anteriormente es el
+"corazón" de Git, pues incluye: qué cambios hizo quién o cúando, así como el
+propósito de los mismos. Tener dicho registro ofrece varias ventajas, pues
+facilita cosas como: ir hacia atrás en la historia del desarrollo del proyecto,
+implementar nuevos cambios de manera tentativa, trazabilidad de errores, crear
+copias del proyecto en las que hacer pruebas para posteriormente fusionar la
+copia con el proyecto original, etc.
 
-Por esta razón, para la comunidad científica (especialmente la que desarrolla trabajo computacional), Git se ha convertido en una manera cómoda y relativamente flexible de gestionar tareas en grupo. Justo por eso, Git ya no se limita únicamente al desarrollo de software. Puedes desde escribir un documento en colaboración hasta desarrollar unos scripts de análisis o crear una figura. En resumen, Git es un controlador de cambios que se encuentra detrás de muchas de las tareas que realizamos individualmente y en grupo en la UIBCDF. Así que vale la pena presentar algunos aspectos generales sobre su uso.
+Por esta razón, para la comunidad científica (especialmente la que desarrolla
+trabajo computacional), Git se ha convertido en una manera cómoda y
+relativamente flexible de gestionar tareas en grupo. Justo por eso, Git ya no
+se limita únicamente al desarrollo de software. Puedes desde escribir un
+documento en colaboración hasta desarrollar unos scripts de análisis o crear
+una figura. En resumen, Git es un controlador de cambios que se encuentra
+detrás de muchas de las tareas que realizamos individualmente y en grupo los investigadores. Así que vale la pena presentar algunos aspectos generales sobre su uso.
 
 
 ## ¿Cómo se instala?
 
-### Linux
+### Para instalar Git en Linux, sigue los pasos que se te sugieren desde su [sitio web oficial](https://git-scm.com/download/linux) 
 
-Git suele estar por defecto instalado en cualquier distribución de Linux. En caso de que no sea así puedes recurrir a [su repositorio oficial][repositorio_git].
+Por ejemplo, si tu distribución es **Ubuntu**, sigue estos pasos:
 
-#### Ubuntu
+1. Abre la terminal de Ubuntu presionando Ctrl + Alt + T en tu teclado.
 
-Si tu distribución de Linux es Ubuntu, Git se encuentra en el repositorio principal y puede ser instalado con el comando:
+2. Actualiza la lista de paquetes de Ubuntu con el siguiente comando:
 
 ```bash
-sudo apt install git
+sudo apt-get update
 ```
 
-### MacOS
+3. Instala Git con el siguiente comando:
 
-Para instalar Git en Mac recomendamos acudir a [su repositorio oficial][repositorio_git].
+```bash
+sudo apt-get install git
+```
 
-### Windows
+4. Después de ingresar el comando, se te pedirá que confirmes la instalación. Ingresa "Y" (o "yes") y presiona Enter para continuar.
+5. Espera a que se complete la instalación. Una vez finalizada, puedes verificar si Git está instalado correctamente ingresando el siguiente comando:
 
-Para instalar Git en Windows recomendamos acudir a [su repositorio oficial][repositorio_git].
+```bash
+git --version
+```
+
+Ten en cuenta que Git suele estar por defecto instalado en cualquier distribución de Linux, así que tal vez deberías empezar por el final.
+
+### Para instalar Git en MacOS, sigue los pasos que se te sugieren desde su [sitio web oficial](https://git-scm.com/download/mac):
+
+Por ejemplo, para una distribución Homebrew:
+
+1. Abre la aplicación "Terminal" en tu Mac. Puedes encontrarla en la carpeta "Utilidades" dentro de "Aplicaciones".
+2. Instala Homebrew si aún no lo has hecho. Homebrew es un gestor de paquetes muy popular para macOS. Puedes instalar Homebrew con el siguiente comando en la terminal:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+3. Una vez que se complete la instalación, actualiza la lista de paquetes de Homebrew con el siguiente comando:
+
+```bash
+brew update
+```
+	
+4. Ahora puedes instalar Git con el siguiente comando:
+
+```bash
+brew install git
+```
+
+5. Después de ingresar el comando, se te pedirá que confirmes la instalación. Ingresa "Y" (o yes) y presiona Enter para continuar.
+6. Espera a que se complete la instalación. Una vez finalizada, puedes verificar si Git está instalado correctamente ingresando el siguiente comando:
+
+	> git --version
+	
+Si Git se instaló correctamente, la terminal debería mostrarte la versión de Git.
+
+### Para instalar Git en Windows, sigue los siguientes pasos :
+
+1. Visita la página oficial de descargas de Git en el [sitio web de Git](https://git-scm.com/download/win):
+2. Descarga el instalador de Git para Windows haciendo clic en el botón "Download for Windows" (Click here to download para descargar la versión  más reciente (2.40.1) de 64 bits de Git para Windows).
+3. Ejecuta el archivo de instalación descargado. Si se te solicita permiso para permitir que el archivo realice cambios en tu dispositivo, haz clic en "Sí" para continuar.
+4. En la ventana de inicio de Git, haz clic en "Next" (Siguiente).
+5. Lee y acepta los términos de la licencia de Git. Luego, haz clic en "Next" (Siguiente).
+6. Elige la ubicación donde deseas instalar Git. Puedes dejar la ubicación predeterminada o seleccionar otra carpeta. Luego, haz clic en "Next" (Siguiente).
+7. Selecciona los componentes que deseas instalar. La mayoría de los usuarios pueden dejar los componentes predeterminados seleccionados. Luego, haz clic en "Next" (Siguiente).
+8. Elige el editor de texto que deseas utilizar con Git. Puedes elegir entre el editor predeterminado, Nano, o elegir otro editor. Luego, haz clic en "Next" (Siguiente).
+9. Selecciona el "PATH environment" que deseas utilizar con Git. La opción predeterminada es la recomendada para la mayoría de los usuarios. Luego, haz clic en "Next" (Siguiente).
+10. Selecciona cómo deseas que se manejen los finales de línea. La opción predeterminada es la recomendada para la mayoría de los usuarios. Luego, haz clic en "Next" (Siguiente).
+11. Selecciona si deseas crear accesos directos para Git en el escritorio y en el menú de inicio. Luego, haz clic en "Next" (Siguiente).
+12. Haz clic en "Install" (Instalar) para comenzar la instalación de Git.
+13. Espera a que se complete la instalación. Una vez finalizada, haz clic en "Finish" (Finalizar).
+14. Verifica que Git se instaló correctamente abriendo el símbolo del sistema (o PowerShell) y escribiendo el siguiente comando:
+
+```bash
+git --version
+```
+
+La terminal debería mostrarte la versión de Git que se instaló.
 
 ## ¿Cómo se usa?
 <center>
 <img src="https://imgs.xkcd.com/comics/git.png" width="250">
 </center>
     
-### Como controlador de versiones local y personal
+### - Como controlador de versiones local y personal -
 
 #### ¿Quieres generar un proyecto y llevar tu propio control de versiones?
 
@@ -129,7 +209,7 @@ Encuentra un breve listado de otros comandos útiles [aquí][git_commands]
 
 #### En un servidor nuestro
 
-La UIBCDF no tiene todavía su servidor de Git central configurado y la información e instrucciones para configurar uno escapan al propósito de este documento.
+La UIBCDF tiene su servidor de Git central configurado, pero la información e instrucciones para configurarlo escapan al propósito de este documento.
 
 #### En la nube
 
