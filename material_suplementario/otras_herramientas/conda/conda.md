@@ -103,7 +103,7 @@ miniconda y empezar a usarlo.
 
 ### ¿Qué es Miniconda?
 
-Miniconda es la versión 'mínima' de Conda con la que se aconseja empezar. Conda
+[Miniconda][miniconda] es la versión 'mínima' de Conda con la que se aconseja empezar. Conda
 ofrece descargar un gestor junto con una gran colección de librerías, pero esto
 además de pesado es innecesario. Instala miniconda en tu máquina para comenzar
 con el uso de conda y descarga poco a poco los paquetes que vayas requiriendo.
@@ -113,106 +113,142 @@ con el uso de conda y descarga poco a poco los paquetes que vayas requiriendo.
 Puedes encontrar las instrucciones de instalación y manejo de conda en [su
 página oficial][conda_docs]. Antes de ver las instrucciones según el sistema
 operativo que uses, échale un ojo al menos a la estructura de la [guía de
-usuario][guia_conda].
+usuario][conda_user_guide].
 
-[conda_docs]: https://conda.io/docs/
+:::{hint}
+Te sugerimos instalar Miniconda, no Anaconda.
+:::
 
 ### Linux.
 
-https://conda.io/docs/user-guide/install/linux.html
+Sigue el siguiente enlace para encontrar las instrucciones de instalación para Linux dadas en la web
+de documentación oficial de conda:
 
-### MacOS.
+- [Cómo instalar conda en Linux.][install_conda_linux]
 
-https://conda.io/docs/user-guide/install/macos.html
+### macOS.
+
+Sigue el siguiente enlace para encontrar las instrucciones de instalación para macOS dadas en la web
+de documentación oficial de conda:
+
+- [Cómo instalar conda en macOS.][install_conda_macOS]
 
 ### Windows.
 
-https://conda.io/docs/user-guide/install/windows.html
+Sigue el siguiente enlace para encontrar las instrucciones de instalación para Windows dadas en la web
+de documentación oficial de conda:
+
+- [Cómo instalar conda en Windows.][install_conda_windows]
 
 ## ¿Cómo se usa?
 
-Existe una excelente [documentación oficial][conda_docs] con [breves guías para
-comenzar][conda_getting_started] y [tutoriales más avanzados][conda_tutorials].
+Existe una excelente [documentación oficial][conda_user_guide] con [breves guías para
+comenzar][conda_getting_started] y [*cheat sheets*][conda_cheat_sheets].
 
-Vamos a exponer aquí la pequeña lista de comandos que más vas a usar.
+Vamos a exponer aquí la pequeña lista de comandos que probablemente más vas a usar.
 
-Cómo actualizar conda:
+### Cómo actualizar conda
+
+Puedes actualizar el mismo conda con el siguiente comando:
 
 ```python
 conda update conda
 ```
 
-Cómo crear un entorno de python 3 llamado en este caso `academia`:
+### Cómo crear un entorno
 
-    
+Cómo crear un entorno de python 3 llamado en este caso `taller`:
+
 ```python
-conda create -n academia python=3
+conda create -n taller python=3
 ```
 
-Cómo cargar o activar un entorno:
+### Cómo activar un entorno:
+
+Puedes cargar o activar un entorno así:
 
 ```bash
-source activate academia
+conda activate taller
 ```
 
-Cómo instalar el paquete `numpy`:
+### Cómo instalar un paquete en un entorno:
+
+Para instalar un paquete, por ejemplo `numpy`,  en un entorno debes de ejecutar el siguiente comando (con el entorno
+activo):
 
 ```bash
 conda install numpy
 ```
 
-Cómo instalar el paquete `jupyter` del canal `conda-forge`:
+Si necesitas instalar un paquete de un canal específico, por ejemplo `jupyterlab` del canal
+`conda-forge`, puedes ejecutar el comando:
 
 ```bash
-conda install -c conda-forge jupyter
+conda install -c conda-forge jupyterlab
 ```
 
-Cómo actualizar todos los paquetes de un entorno:
+### Cómo actualizar los paquetes de un entorno
+
+Debes activar el entorno que quieres actualizar y hacer uso del comando:
 
 ```bash
 conda update --all
 ```
 
-Cómo consultar la lista de paquetes instalados en un entorno:
+### Cómo consultar los paquetes de un entorno
+
+Para consultar la lista de paquetes instalados en un entorno, con el entorno activo:
 
 ```bash
 conda list
 ```
 
-Cómo desactivar el entorno cargado:
+### Cómo desactivar un entorno
+
+Para desactivar el entorno activo:
 
 ```bash
-source deactivate
+conda deactivate
 ```
 
-Cómo consultar la lista de entornos:
+### Cómo consultar la lista de entornos
+
+Puedes consultar la lista de entornos disponibles con:
 
 ```bash
 conda info --envs
 ```
 
+### Cómo eliminar un entorno
+
 Cómo eliminar un entorno:
 
 ```bash
-conda remove -n academia
+conda env remove --name taller
 ```
 
-Cómo añadir un canal, en este caso `conda-forge`, a la lista de canales
-consultados para la instalación y actualización de paquetes:
+### Cómo añadir un canal
+
+Puedes configurar tu conda para que siempre busque y comprueba paquetes en un canal que no viene
+incluido por defecto en tu instalación. Para eso, suponiendo que quisieras añadir el canal
+`conda-forge`, ejecuta el siguiente comando:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Cómo consultar la lista de canales incluidos en tu archivo de configuración
-para instalar y actualizar paquetes, y su prioridad:
+### Cómo consultar la lista de canales
+
+Para consultar la lista de canales incluidos en tu archivo de configuración y su prioridad:
 
 ```bash
 conda config --get
 ```
 
-Como eliminar un canal, en este caso `conda-forge`, de la lista de canales
-incluidos en el archivo de configuración.
+### Cómo eliminar un canal
+
+Puedes eliminar un canal, en este caso `conda-forge`, de la lista de canales
+incluidos en tu archivo de configuración.
 
 ```bash
 conda config --remove channels conda-forge
@@ -220,44 +256,51 @@ conda config --remove channels conda-forge
 
 ---
 
-## Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a>
+## Dudas, problemas técnicos y soluciones
 
-Para centralizar esas dudas técnicas sobre el tema de esta unidad o proponer
-soluciones o sugerencias más técnicas que queremos encontrar en el futuro
-comentadas y visibles para todos, haz uso del siguiente canal:
+Para centralizar las dudas o problemas sobre esta herramienta, así como para compartir
+soluciones o sugerencias con todos los participantes del taller, haz uso de la siguiente discusión
+en el repositorio de este taller:
 
-[Foro Técnico: Conda][foro]
+[Foro técnico sobre Conda][foro]
 
 ## Más recursos útiles <a class="anchor" id="recursos"></a>
 
-Esto era sólo una guia introductoria. No es funcional documentarse o estudiar
-mucho sin antes comenzar a usar el sistema operativo Linux. Aprenderás de
+Esta web era sólo una guia introductoria. No es funcional documentarse o estudiar
+mucho sin antes probar a instalar y usar la herramienta. Aprenderás de
 manera más solida si con el uso te van surgiendo necesidades a las que vas
-dando solución poco a poco. Si la computadora es tu herramienta de trabajo, es
-tu deber conocerla. Puedes encontrar -o contribuir añadiendo- más información
+dando solución poco a poco. Puedes encontrar -o contribuir añadiendo- más información
 útil en el siguiente listado.
 
 ### Documentación <a class="anchor" id="documentacion"></a>
 
-https://conda.io/    
+Documentación oficial de la herramienta:
+
+- [Conda][conda_docs]
 
 ### Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a>
 
-https://geohackweek.github.io/Introductory/01-conda-tutorial/   \[EN\]    
-http://gatomontez.com/articulo/2014/02/16/computo-cientifico-con-python-y-anaconda/#.W-ySQstKiV4   \[ES\]    
-https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/04-sharing-environments/index.html
-https://kaust-vislab.github.io/python-novice-gapminder/00-getting-started-with-conda/index.html
-https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file
+Otros tutoriales, webinars, videos de youtube y cursos gratuitos que puedes consultar:
 
-<!---
-Alias de enlaces
----!>
+- [Tutorial GeoHacweek](https://geohackweek.github.io/Introductory/01-conda-tutorial/)    
+- [Tutorial MOLSSI](https://education.molssi.org/getting-started-computational-chemistry/05-anaconda/index.html)   
+- [Capentries-incubator Conda for Data Scientists](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/)    
+- [Kaust-VisLab Conda for Data Science](https://kaust-vislab.github.io/python-novice-gapminder/00-getting-started-with-conda/index.html)    
 
-[conda_forge]: https://conda-forge.org/
-[anaconda_conda_forge]: https://anaconda.org/conda-forge
+
+
+
+
 [anaconda]: https://www.anaconda.com/
-[guia_conda]: https://conda.io/docs/user-guide/index.html
-[conda_getting_started]: https://conda.io/docs/user-guide/getting-started.html
-[conda_tutorials]: https://conda.io/docs/user-guide/tutorials/index.html
-[foro]: https://github.com/uibcdf/Academia/issues/6
+[conda_docs]: https://docs.conda.io
+[conda_user_guide]: https://docs.conda.io/projects/conda/en/stable/user-guide/index.html
+[conda_forge]: https://conda-forge.org/
+[miniconda]: https://docs.conda.io/en/latest/miniconda.html
+[anaconda_conda_forge]: https://anaconda.org/conda-forge
+[install_conda_linux]: https://docs.conda.io/projects/conda/en/stable/user-guide/install/linux.html
+[install_conda_macOS]: https://docs.conda.io/projects/conda/en/stable/user-guide/install/macos.html
+[install_conda_windows]: https://docs.conda.io/projects/conda/en/stable/user-guide/install/windows.html
+[conda_getting_started]: https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html
+[conda_cheat_sheets]: https://docs.conda.io/projects/conda/en/stable/user-guide/cheatsheet.html 
+[foro]: https://github.com/uibcdf/Taller-Linux/discussions/9
 
