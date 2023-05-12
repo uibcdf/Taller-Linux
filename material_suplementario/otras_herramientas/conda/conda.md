@@ -163,6 +163,13 @@ Cómo crear un entorno de python 3 llamado en este caso `taller`:
 conda create -n taller python=3
 ```
 
+Para crear un entorno a partir de un fichero '\*.yaml', supongamos que se llama
+'conda_env.yaml', con la lista de canales y paquetes necesarios:
+
+```python
+conda env create -n taller -f conda_env.yaml
+```
+
 ### Cómo activar un entorno:
 
 Puedes cargar o activar un entorno así:
