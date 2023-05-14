@@ -6,6 +6,7 @@
 <br>
 
 # Notebook
+
 Un Notebook de Jupyter es un documento interactivo que te permite escribir y
 ejecutar código en diferentes lenguajes de programación como Python, R u otros.
 Notebook se presenta en una interfaz web, por lo que puedes acceder a él desde
@@ -39,6 +40,7 @@ dinámico.
 
 
 ## Cómo trabajar con un Notebook
+
 Sigue estos sencillos pasos para trabajar en un Notebook:
 
 1. Si aún no tienes Jupyter instalado en tu computadora, debes descargarlo e
@@ -76,12 +78,44 @@ Existen varias plataformas de Notebooks, algunas de las más populares son
 Google Colab, Jupyter Notebook, y Azure Notebooks. Puedes elegir la que mejor
 se adapte a tus necesidades.
 
+## Dudas, problemas técnicos y soluciones.
+
+Para compartir con nosotros y con el resto de participantes las dudas,
+problemas, sugerencias o soluciones, que pudieras tener sobre el uso de un Jupyter Notebook y
+esta sección, te proponemos usar la misma discusión sobre Jupyter que encontrarás en este repositorio:
+
+[Foro técnico sobre Jupyter][foro]
+
+## Más recursos útiles
+
+Esta web era sólo una guia introductoria. No es funcional documentarse o
+estudiar mucho sin antes probar a instalar y usar la herramienta. Aprenderás de
+manera más solida si con el uso te van surgiendo necesidades a las que vas
+dando solución poco a poco. Puedes encontrar -o contribuir añadiendo- más
+información útil en los siguientes listados.
+
+### Documentación
+
+Compartimos en esta sección la documentación oficial de la herramienta:
+
+- [Jupyter Notebooks' documentation][notebook_docs]
+
+### Tutoriales, Webinars y cursos gratuitos
+
+Aquí encontrarás una lista de tutoriales, videos o cursos gratuitos que puedes visitar para aprender más sobre GitHub.
+
+- [MolSSI tutorial][molssi]
+- [Codecademy How to][codecademy]
+- [The beginner guide][beginner]
+- [DataQuest tutorial][dataquest]
+- [DataCamp tutorial][datacamp]
+
 [jupyter]: ../jupyter/jupyter.md
+[foro]: https://github.com/uibcdf/Taller-Linux/discussions/11
+[notebook_docs]: https://jupyter-notebook.readthedocs.io/en/latest/
+[molssi]: https://education.molssi.org/getting-started-computational-chemistry/06-jupyter/index.html
+[codecademy]:https://www.codecademy.com/article/how-to-use-jupyter-notebooks
+[beginner]: https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/
+[dataquest]: https://www.dataquest.io/blog/jupyter-notebook-tutorial/
+[datacamp]: https://www.datacamp.com/tutorial/tutorial-jupyter-notebook
 
-
-
-https://jupyter-notebook.readthedocs.io/en/latest/
-https://education.molssi.org/getting-started-computational-chemistry/06-jupyter/index.html
-https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/
-https://www.dataquest.io/blog/jupyter-notebook-tutorial/
-https://www.datacamp.com/tutorial/tutorial-jupyter-notebook
