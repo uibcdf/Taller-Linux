@@ -16,7 +16,6 @@ pueden contener código, texto, gráficos, imágenes, y elementos interactivos
 
 ## Ventajas de trabajar con un Notebook
 
-
 En un Notebook es posible escribir código en una celda, ejecutarlo y ver los
 resultados debajo de dicha celda; de tal manera que puedes escribir algunas
 líneas de código, ejecutarlas y ver los resultados en tiempo real. Esta es una
