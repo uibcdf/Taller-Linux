@@ -277,7 +277,7 @@ Esta web era sólo una guia introductoria. No es funcional documentarse o estudi
 mucho sin antes probar a instalar y usar la herramienta. Aprenderás de
 manera más solida si con el uso te van surgiendo necesidades a las que vas
 dando solución poco a poco. Puedes encontrar -o contribuir añadiendo- más información
-útil en el siguiente listado.
+útil en los siguientes listados.
 
 ### Documentación <a class="anchor" id="documentacion"></a>
 
@@ -293,7 +293,6 @@ Otros tutoriales, webinars, videos de youtube y cursos gratuitos que puedes cons
 - [Tutorial MOLSSI](https://education.molssi.org/getting-started-computational-chemistry/05-anaconda/index.html)   
 - [Capentries-incubator Conda for Data Scientists](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/)    
 - [Kaust-VisLab Conda for Data Science](https://kaust-vislab.github.io/python-novice-gapminder/00-getting-started-with-conda/index.html)    
-
 
 
 

@@ -80,5 +80,8 @@ se adapte a tus necesidades.
 
 
 
-
-
+https://jupyter-notebook.readthedocs.io/en/latest/
+https://education.molssi.org/getting-started-computational-chemistry/06-jupyter/index.html
+https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/
+https://www.dataquest.io/blog/jupyter-notebook-tutorial/
+https://www.datacamp.com/tutorial/tutorial-jupyter-notebook
