@@ -18,11 +18,11 @@ para llevar acabo el taller:
    :hidden:
 
    conda/conda.md
-   git.md
-   github.md
-   jupyter.md
+   git/git.md
+   github/github.md
+   jupyter/jupyter.md
    notebook.md
-   markdown.md
+   markdown/markdown.md
 
 ```
 
