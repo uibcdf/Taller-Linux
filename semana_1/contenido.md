@@ -8,7 +8,7 @@ Puedes encontrar en [este enlace](slides/Intro_Taller.pdf) las slides usadas com
 El objetivo principal de esta primera semana es que el participante conozca las herramientas y la
 dinámica de trabajo propuesta en el taller. Para ello, además de la videoconferencia, puedes
 revisar la página del material suplementario ["Cómo trabajar con este
-taller"](../material_suplementario/como_trabajar.md). Se revisarán conceptos con los que debes
+taller"](../material_suplementario/como_trabajar/como_trabajar.md). Se revisarán conceptos con los que debes
 familiarizarte esta primera semana como:
 
 - [La web del taller](https://www.uibcdf.org/Taller-Linux).

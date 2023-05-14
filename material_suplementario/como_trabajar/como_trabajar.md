@@ -437,7 +437,7 @@ git push
 [otras_herramientas_conda]: ../otras_herramientas/conda/conda.md
 [otras_herramientas_jupyter]: ../otras_herramientas/jupyter/jupyter.md
 [otras_herramientas_markdown]: ../otras_herramientas/markdown/markdown.md
-[otras_herramientas_notebook]: ../otras_herramientas/notebook.md
+[otras_herramientas_notebook]: ../otras_herramientas/notebook/notebook.md
 [issues_board]: https://github.com/uibcdf/Taller-Linux/issues
 [discussions]: https://github.com/uibcdf/Taller-Linux/discussions
 [semana_1_preguntas]: ../../semana_1/preguntas.md

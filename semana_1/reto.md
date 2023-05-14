@@ -3,7 +3,7 @@
 Esta primera semana tienes que resolver las siguientes cuestiones y tareas, todas ellas
 relacionadas con la presentación del taller y su dinámica de trabajo. Encontrarás mas ayuda en [la
 sección "Resolviendo el reto semanal" de la página "Cómo trabajar con este
-taller"](../material_suplementario/como_trabajar.md#resolviendo-el-reto-semanal) para resolver el
+taller"](../material_suplementario/como_trabajar/como_trabajar.md#resolviendo-el-reto-semanal) para resolver el
 reto.
 
 ## El repositorio en GitHub del taller
@@ -17,8 +17,8 @@ Crea tu propio usuario de GitHub y abre un *Issue* en el *Issues board* del repo
 que conozcamos el nombre de tu usuario.
 
 ```{hint}
-Visita las páginas ["Cómo trabajar con este taller"](../material_suplementario/como_trabajar.md) y
-["GitHub"](../material_suplementario/otras_herramientas/github.md) para encontrar algo de ayuda.
+Visita las páginas ["Cómo trabajar con este taller"](../material_suplementario/como_trabajar/como_trabajar.md) y
+["GitHub"](../material_suplementario/otras_herramientas/github/github.md) para encontrar algo de ayuda.
 ```
 
 ### Haz tu propio *fork* del repositorio
@@ -27,8 +27,8 @@ Haz tu propio *fork* del repositorio del taller. Una vez que lo tengas, crea un 
 de tu fork en tu computadora.
 
 ```{hint}
-Visita las páginas ["Cómo trabajar con este taller"](../material_suplementario/como_trabajar.md) y
-["GitHub"](../material_suplementario/otras_herramientas/github.md) para encontrar algo de ayuda.
+Visita las páginas ["Cómo trabajar con este taller"](../material_suplementario/como_trabajar/como_trabajar.md) y
+["GitHub"](../material_suplementario/otras_herramientas/github/github.md) para encontrar algo de ayuda.
 ```
 
 ### Crea tu propio ambiente de trabajo con Conda
@@ -37,8 +37,8 @@ Crea tu propio ambiente de trabajo con Conda con las mismas herramientas que los
 desarrolladores del taller usan (éstas están enlistadas en el fichero ['conda_env.yaml'](https://github.com/uibcdf/Taller-Linux/blob/main/conda_env.yaml)).
 
 ```{hint}
-Visita las páginas ["Cómo trabajar con este taller"](../material_suplementario/como_trabajar.md) y
-["GitHub"](../material_suplementario/otras_herramientas/conda.md) para encontrar algo de ayuda.
+Visita las páginas ["Cómo trabajar con este taller"](../material_suplementario/como_trabajar/como_trabajar.md) y
+["GitHub"](../material_suplementario/otras_herramientas/conda/conda.md) para encontrar algo de ayuda.
 ```
 
 ### Activa tu ambiente de trabajo y comprueba que puedes generar tu propia copia de esta web
@@ -51,5 +51,5 @@ manera sabremos que tu entorno de trabajo contiene las mismas herramientas que e
 Alias de enlaces:
 --->
 
-[como_trabajar]: ../material_suplementario/como_trabajar.md
+[como_trabajar]: ../material_suplementario/como_trabajar/como_trabajar.md
 
