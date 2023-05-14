@@ -4,11 +4,11 @@ En esta sección encontrarás documentación sobre herramientas que debes usar
 para llevar acabo el taller:
 
 - [Conda](conda/conda.md)
-- [Git](https://git-scm.com/)
-- [GitHub](https://github.com/)
-- [Jupyter Lab](https://jupyter.org/)
-- [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/)
-- [Markdown](https://www.markdownguide.org/)
+- [Git](git/git.md)
+- [GitHub](github/github.md)
+- [Jupyter Lab](jupyter/jupyter.md)
+- [Jupyter Notebook](notebook/notebook.md)
+- [Markdown](markdown/markdown.md)
 
 
 ```{eval-rst}
@@ -21,7 +21,7 @@ para llevar acabo el taller:
    git/git.md
    github/github.md
    jupyter/jupyter.md
-   notebook.md
+   notebook/notebook.md
    markdown/markdown.md
 
 ```
