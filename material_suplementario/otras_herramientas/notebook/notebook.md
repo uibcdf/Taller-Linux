@@ -78,6 +78,38 @@ Existen varias plataformas de Notebooks, algunas de las más populares son
 Google Colab, Jupyter Notebook, y Azure Notebooks. Puedes elegir la que mejor
 se adapte a tus necesidades.
 
+### ¿Cómo trabajar con Google Colab en Linux?
+
+
+Google Colab es una plataforma basada en la nube que se ejecuta directamente en
+el navegador web y no requiere ningún tipo de instalación. 
+
+Para trabajar con Google Colab sigue estos pasos:
+
+1. Abre tu navegador web y accede a Google Colab en la siguiente dirección:
+   https://colab.research.google.com/
+
+2. Inicia sesión con tu cuenta de Google si aún no lo has hecho.
+
+3. Una vez dentro de Google Colab, puedes comenzar a crear un nuevo notebook o
+   cargar un notebook existente haciendo clic en "Archivo" en la barra de menú
+   superior y luego seleccionando "Nuevo cuaderno" o "Cargar cuaderno"
+   respectivamente.
+
+4. Antes de iniciar tu proyecto de programación tal vez necesites instalar
+   librerias adicionales, puedes hacerlo utilizando los comandos de instalación
+   en una celda de código especialmente reservada para ello. Por ejemplo, para
+   instalar el paquete pandas, escribe "pip install pandas" y presiona Shift +
+   Enter para ejecutarla.
+
+5. Para ejecutar código en Google Colab, simplemente escribe tu código en una
+   celda de código, para ejecutarla presiona la combinación de letras Shift +
+   Enter.
+
+6. Para guardar tus cambios en Google Colab, selecciona "Archivo" en la barra
+   de menú superior y luego haz clic en "Guardar una copia en Drive" o
+   "Guardar" según tus necesidades.
+
 ## Dudas, problemas técnicos y soluciones.
 
 Para compartir con nosotros y con el resto de participantes las dudas,
