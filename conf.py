@@ -73,7 +73,7 @@ napoleon_use_ivar = True
 # Add any paths that contain templates here, relative to this directory.
 
 templates_path = ['_templates']
-exclude_patterns = ['**README.md', '.github/*']
+exclude_patterns = ['**README.md', '.github/*', 'semana_3/linux.md']
 
 source_parsers={
 }

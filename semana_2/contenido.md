@@ -1,8 +1,9 @@
 # Contenido
 
-<br>
-<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" width="20%"></center>
-<br>
+:::{figure} tux.png
+:align: center
+:width: 40%
+:::
 
 ## ¿Qué es Linux?
 
@@ -90,8 +91,12 @@ motivos ideológicos, en Linux. A esto podemos añadir que:
   usuarios.
 
 <br>
-<center><img src="https://imgs.xkcd.com/comics/command_line_fu.png" width="450"></center>
-<br>
+
+:::{figure} command_line_fu.png
+:align: center
+:width: 80%
+:::
+
 
 ## Distribuciones de Linux.
 
@@ -111,16 +116,13 @@ unos pocos comandos como por ejemplo la manera en la que instalamos paquetes.
 Vamos a hablar de algunas distribuciones para que entiendas a qué nos referimos
 con 'distribución' y [cúal se recomienda para cada caso][distrowatch_major].
 
-<div class="alert alert-warning" role="alert">
-<strong>Atención:</strong>
+:::{important}
+Los contenidos de este taller no dependen en absoluto de la distribución de
+Linux que estés usando o quieras usar. Los comandos y conceptos que aprenderás
+en esta unidad, comunes a todas las distribuciones por estar en la esencia del
+funcionamiento de Linux.
+:::
 
-Las herramientas que se presentan posteriormente a esta unidad en el
-repositorio UIBCDF-Academia y su uso (Git, Conda, Python, Jupyter, ...) no
-dependen en absoluto de la distribución de Linux que estés usando. Tampoco los
-comandos y conceptos que aprenderás en esta unidad, comunes a todas las
-distribuciones por estar en la esencia del funcionamiento de Linux.
-
-</div>
 
 ### Ubuntu
 
@@ -151,6 +153,16 @@ lo necesario para trabajar.
 Además, Ubuntu, por ser una de las distribuciones más usadas, cuenta en
 internet con un elevado número de blogs y foros donde encontrarás información
 sobre todo lo que quieres hacer tanto en español como en inglés.
+
+:::{hint}
+Si es la primera vez que vas a usar Linux, y si además te vas atrever a
+instalarlo en tu computadora, te recomendamos que uses Ubuntu. Ubuntu es una de
+las distribuciones más estables y sencillas en su uso e instalación. Además es
+una de las distribuciones más documentadas y cuenta con una gran comunidad de
+usuarios que publican en internet dudas, soluciones, tutoriales y demás
+información que seguro que encontrarás de utilidad.
+:::
+
 
 ### ElementaryOS
 
@@ -204,16 +216,129 @@ o [Mandriva][mandriva], son las mejores distribuciones de Linux.
 
 ## ¿Cómo se instala? <a class="anchor" id="Como"></a>
 
-Ver página de material suplementario.
+Puede que quieras instalar Linux en una computadora nueva como único sistema
+operativo. O puede que quieres en tu computadora disponer de dos sistemas
+operativos, Windows y Linux. O quizá no quieres instalar Linux y prefieras
+probarlo antes desde una USB booteable sin alterar lo que tienes en tu máquina.
+O si tienes Windows 10 u 11, seguramente te va a parecer más sencillo probar
+Linux instalando Ubuntu como si fuera un programa más de tu máquina
 
-<div class="alert alert-success" role="alert">
-<strong>Ayuda:</strong> Si quieres instalar Ubuntu, nada mejor que acudir a la documentación oficial para encontrar una buena <a href='https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview'>guía de cómo se instala la versión para computadoras personales</a> o <a href='https://ubuntu.com/tutorials/install-ubuntu-server#1-overview'>la versión para servidores</a> (en esta última puedes encontrar orientación sobre la configuración de particiones).
-</div>
+Sea cual sea tu caso, encontrarás información sobre cómo puedes instalar Linux
+(específicamente Ubuntu), probarlo y/o trabajar con él, en la página ["Como
+instalar y/o trabajar con Linux" del Material Suplementario del Taller](../material_suplementario/linux/linux.md).
 
-<div class="alert alert-info" role="alert">
-<strong>Sugerencia:</strong> Si quieres, puedes probar Ubuntu antes de instalarlo en tu máquina. Sólo necesitas una memoria USB o un DVD para crear un sistema operativo 'externo' con el que puedes arrancar cualquier máquina -y probar la distribución-. Encuentra las instrucciones en <a href='https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started'>este enlace</a>.
-</div>
+:::{importante}
+Si quieres instalar una distribución de Linux, nada mejor que acudir a su
+documentación oficial para encontrar una buena guía sobre el proceso de instalación.
+:::
 
+:::{hint}
+Puedes probar Ubuntu antes de instalarlo en tu máquina. Sólo necesitas una
+memoria USB o un DVD para crear un sistema operativo 'externo' con el que
+puedes arrancar cualquier máquina -y probar la distribución-.
+O puedes, si tienes Windows 10 u 11, instalar Ubuntu en tu sesión de Windows
+como si fuera un programa más.
+:::
+
+## ¿Qué es el kernel?
+
+El kernel de Linux es el elemento principal del sistema operativo Linux. Es el nucleo del sistema operativo encargado de:
+
+- La gestión de los procesos.
+- La gestión de la memoria.
+- Comunicación con los componentes internos de la computadora y sus periféricos.
+- La comunicación entre el software instalado en la máquina.
+- La seguridad de tu sistema operativo.
+
+Las primeras versiones del kernel de Linux se remontan a 1991, pero la que
+usarás en tu distribución tiene ya poco que ver con esas.
+
+Con respecto al kernel, como usuario, no interaccionarás. Y como administrador,
+debes saber que cada poco tiempo (a veces cada pocas semanas) se publican
+versiones nuevas que debes de considerar por motivos de seguridad. No tengas
+reparo en actualizar con frecuencia el kernel de tu máquina: estos harán que tu
+máquina sea más estable y segura.
+
+
+## Entornos de escritorio.
+
+Si estás aproximándote a Linux desde hace poco es posible que confundas los
+entornos de escritorio con las distribuciones. El entorno de escritorio es la
+parte más visible de la distribución y lo primero con lo que probablemente vas
+a interaccionar: el escritorio, la barra superior, el menú desplegable, el
+docker, las ventanas, etc. Hay entornos de escritorio tradicionales, tan
+populares como sólidos, como son [Gnome](https://www.gnome.org/) ([proyecto
+fundado por los
+mexicanos](https://www.xataka.com.mx/aplicaciones/miguel-de-icaza-y-federico-mena-los-padres-mexicanos-del-proyecto-gnome-uno-de-los-entornos-de-escritorio-mas-famosos-de-linux)
+[Miguel de Icaza](https://en.wikipedia.org/wiki/Miguel_de_Icaza) y [Federico
+Mena](https://es.wikipedia.org/wiki/Federico_Mena)) o
+[KDE](https://www.kde.org/), y otros más novedosos y vistosos como
+[Pantheon](https://www.fosslinux.com/4652/pantheon-everything-you-need-to-know-about-the-elementary-os-desktop.htm/),
+o ligeros y sencillos como [XFCE](https://www.xfce.org/). Aunque las
+distribuciones apuestan por que uno u otro venga instalado por defecto, y a
+veces desarrollan su propio entorno de escritorio (como hizo Ubuntu con
+[Unity](https://unity8.io/) o Elementary con Pantheon), casi todos los entornos
+de escritorio pueden ser instalados en cualquier distribución. Es por esto que
+no debería de condicionar tu elección de distribución, puedes [instalar
+Pantheon en
+Ubuntu](https://www.maketecheasier.com/install-run-pantheon-desktop-ubuntu/) o
+descargar [KUbuntu -Ubuntu con KDE-](https://kubuntu.org/), aunque por defecto
+ahora venga con GNOME.
+
+## ¿Qué es la terminal?
+
+Probablemente estés habituado/a a interaccionar con tu computadora a través del
+entorno gráfico de escritorio. Resulta muy intuitivo y casi no requiere proceso
+de aprendizaje, pero consume muchos recursos y es altamente ineficiente cuando
+la computadora es tu herramienta para algo más que el uso de una o dos
+herramientas de ofimática.
+
+La terminal es esa ventanita monocolor que sólo contiene texto y cuya última
+linea siempre acaba con un cursor parpadeante que puede resultar al principio
+intimidante... ya que aparece y desaparece intermitentemente como diciendote:
+¿y ahora qué? Pues bien, efectivamente es la puerta de entrada a la interacción
+con tu máquina. El cursor espera comandos, y esa lista de comandos que entiende
+son un lenguage, con sus reglas sintácticas, que debes aprender para
+comunicarte con tu máquina. El lenguage que puebla por defecto la mayoría de
+los sistemas Linux se llama Bash. ¿Es el único? No, hay otros lenguajes para la
+terminal más sofisticados como Zsh o Fish, pero Bash es el interpretador más
+común y el que únicamente usarás a lo largo de tu vida si no es que eres una
+persona muy curiosa o alcanzas un nivel de experiencia como para encontrar los
+límites e incomodidades del uso de Bash.
+
+## ¿Qué es el prompt?
+
+Antes de hablar de qué vamos a escribir en la terminal, hagamos un breve
+comentario sobre lo que precede al cursor en la terminal. Ese fragmento de
+texto que no desaparece por mucho que le demos a la tecla 'entrar' se llama
+'prompt'. Es perfectamente configurable y personalizable y habitualmente suele
+contener el nombre del usuario que está operando la terminal, el nombre de la
+máquina precedido del símbolo '@' (muy util cuando en la misma terminal hacemos
+conexiones remotas con otras máquinas) y por último la dirección o 'path' del
+archivo en el que nos encontramos en la terminal. Esto nos lleva otro concepto
+que usaremos como punto de inicio en nuestro aprendizaje de Bash: la navegación
+de ficheros.
+
+## ¿Qué es Bash?
+
+Bash es el interpretador más usado en los sistemas operativos Linux. ¿Qué
+significa que sea el interpretador? Sencillo, en la terminal escribirás
+comandos e instrucciones que un programa que forma parte de tu sistema
+operativo leerá, interpretará y ejecutará: ese es Bash. Y por extensión, el
+lenguaje que entiende lo llamamos 'bash'. Este lenguaje te servirá para
+interaccionar con tu computadora mediante la terminal, así como para escribir
+scripts.
+
+La mayor parte del contenido de este taller pretende enseñarte la sintaxis de
+bash para que puedas hacer uso eficientemente de la terminal como usuario y/o
+como administrador.
+
+:::{note}
+Si eres usuario de macOS y la versión que usas es posterior a la versión 10.15,
+seguramente el interpretador de tu máquina no es Bash, es Zsh. No te preocupes,
+la sintaxis más básica está heredada de Bash. Puedes seguir el taller
+perfectamente. Cuando haya alguna diferencia no nos olvidaremos de ti, haremos las precisiones necesarias.
+:::
 
 ## Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a>
 
@@ -275,3 +400,4 @@ http://swcarpentry.github.io/shell-novice/
 [hipertextual_swap]: https://hipertextual.com/2015/09/swap-en-linux
 [maslinux_swap]: https://maslinux.es/cuanto-swap-deberia-usarse-en-gnu-linux/
 [geekytheory_swap]: https://geekytheory.com/es-necesaria-una-particion-swap-en-linux
+
