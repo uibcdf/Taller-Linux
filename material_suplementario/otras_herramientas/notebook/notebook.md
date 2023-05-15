@@ -80,7 +80,6 @@ se adapte a tus necesidades.
 
 ### ¿Cómo trabajar con Google Colab en Linux?
 
-
 Google Colab es una plataforma basada en la nube que se ejecuta directamente en
 el navegador web y no requiere ningún tipo de instalación. 
 
