@@ -78,6 +78,7 @@ Existen varias plataformas de Notebooks, algunas de las más populares son
 Google Colab, Jupyter Notebook, y Azure Notebooks. Puedes elegir la que mejor
 se adapte a tus necesidades.
 
+
 ### ¿Cómo trabajar con Google Colab en Linux?
 
 Google Colab es una plataforma basada en la nube que se ejecuta directamente en
