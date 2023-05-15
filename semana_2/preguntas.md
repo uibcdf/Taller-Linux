@@ -33,6 +33,15 @@ Responde aquí con no más de 6 lineas de texto.
 
 ## Pregunta 4
 
+> ¿En qué consistía el juego 'Space Travel' desarrollado por Ken Thompson en 1969 y cúal es su
+> relación con el sistema opertivo Unix?
+
+### Respuesta
+
+Responde aquí con no más de 6 lineas de texto.
+
+## Pregunta 5
+
 > Seguramente conoces quién es Bill Gates. Pero, ¿conoces quién es Linus
 > Torvalds?. ¿Y Richard Stallman? Acompaña aquí tu respuesta con una imagen de cada
 > uno de ellos (haz uso de la sintaxis de Markdown para ello).
@@ -41,7 +50,18 @@ Responde aquí con no más de 6 lineas de texto.
 
 Responde aquí con no más de 6 lineas de texto.
 
-## Pregunta 5
+## Pregunta 6
+
+> Seguramente conoces quién es Pati Chapoy o Javier 'Chicharito' Hernandez. Pero, ¿conoces quién
+> es y qué hizo Miguel de Icaza? ¿Y Federico Mena? Acompaña aquí tu respuesta con una imagen de cada
+> uno de ellos (haz uso de la sintaxis de Markdown para ello).
+
+### Respuesta
+
+Responde aquí con no más de 6 lineas de texto.
+
+
+## Pregunta 7
 
 > ¿Es lo mismo 'software libre' que 'código abierto'?
 
@@ -49,7 +69,7 @@ Responde aquí con no más de 6 lineas de texto.
 
 Responde aquí con no más de 6 lineas de texto.
 
-## Pregunta 6
+## Pregunta 8
 
 > ¿Cuantas distribuciones de Linux existen? ¿Conoces a alguna que no sea gratuita o tenga versiones comerciales?
 
