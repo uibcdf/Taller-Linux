@@ -34,7 +34,7 @@ Responde aquí con no más de 6 lineas de texto.
 ## Pregunta 4
 
 > Seguramente conoces quién es Bill Gates. Pero, ¿conoces quién es Linus
-> Torvals?. ¿Y Richard Stallman? Acompaña aquí tu respuesta con una imagen de cada
+> Torvalds?. ¿Y Richard Stallman? Acompaña aquí tu respuesta con una imagen de cada
 > uno de ellos (haz uso de la sintaxis de Markdown para ello).
 
 ### Respuesta
