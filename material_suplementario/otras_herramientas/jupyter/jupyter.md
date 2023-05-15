@@ -119,7 +119,9 @@ Y además se ha convertido en uno de los proyectos de desarrollo libre más
 exitoso y bonito, demostrando que el trabajo transparente y cooperativo permite
 aunar el esfuerzo de muchos empujando iniciativas eficiente y rápidamente.
 
-## ¿Cómo se instala en Linux?
+## ¿Cómo se instala?
+
+### En Linux
 
 Como buen proyecto cooperativo, Jupyter está bien documentado. Si tienes
 nociones de python y conda te resultará facil instalar Jupyter Lab y Jupyter
@@ -136,7 +138,7 @@ instalación en la documentación oficial disponible:
 - [JupyterLab Installation][jupyterlab_install]
 - [Jupyter Documentation][jupyter_docs]
 
-## ¿Cómo se instala en Windows?
+### En Windows
 
 Para instalar JupyterLab en Windows puedes seguir estos pasos:
 
@@ -167,7 +169,9 @@ tener suficiente espacio en el disco duro y suficiente RAM disponible para
 ejecutarlo sin contratiempos.
 
 
-## ¿Cómo se usa en Linux?
+## ¿Cómo se usa?
+
+### En Linux
 
 Tanto Jupyter Notebook como Jupyter Lab se operan a través de tu navegador habitual de páginas web.
 
@@ -193,7 +197,7 @@ poco más de sus funcionalidades te invitamos a visitar las webs de
 documentación listadas al final de este documento o al mismo [notebook
 interactivo introductorio de ipython y jupyter][binder_jupyter].
 
-## ¿Cómo se usa en Windows?
+### En Windows
 
 Para crear y ejecutar notebooks de Jupyter, sigue estos pasos:
 
