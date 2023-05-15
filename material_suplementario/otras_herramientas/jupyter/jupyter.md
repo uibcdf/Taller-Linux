@@ -119,7 +119,7 @@ Y además se ha convertido en uno de los proyectos de desarrollo libre más
 exitoso y bonito, demostrando que el trabajo transparente y cooperativo permite
 aunar el esfuerzo de muchos empujando iniciativas eficiente y rápidamente.
 
-## ¿Cómo se instala?
+## ¿Cómo se instala en Linux?
 
 Como buen proyecto cooperativo, Jupyter está bien documentado. Si tienes
 nociones de python y conda te resultará facil instalar Jupyter Lab y Jupyter
@@ -136,7 +136,38 @@ instalación en la documentación oficial disponible:
 - [JupyterLab Installation][jupyterlab_install]
 - [Jupyter Documentation][jupyter_docs]
 
-## ¿Cómo se usa?
+## ¿Cómo se instala en Windows?
+
+Para instalar JupyterLab en Windows puedes seguir estos pasos:
+
+1. Abre la línea de comandos de Windows presionando las teclas Windows + R.
+
+2. Escribe "cmd" y presiona Enter. Asegúrate de tener instalado Python en tu
+sistema y usa el administrador de paquetes de Python llamado "pip" para
+instalar JupyterLab. Escribe el siguiente comando en la línea de comandos y
+presiona Enter:
+
+```bash
+pip install jupyterlab
+```
+
+3. Espera a que la instalación termine. Una vez que haya terminado, escribe el
+siguiente comando para iniciar JupyterLab: ￼
+
+```bash
+jupyter lab
+```
+
+4. Tu navegador predeterminado se abrirá en la dirección
+"http://localhost:8888/lab". Si no se abre automáticamente, puedes escribir
+esta dirección en el navegador de tu elección.
+
+Recuerda que JupyterLab se ejecuta en un servidor local en tu computadora, por lo que debes
+tener suficiente espacio en el disco duro y suficiente RAM disponible para
+ejecutarlo sin contratiempos.
+
+
+## ¿Cómo se usa en Linux?
 
 Tanto Jupyter Notebook como Jupyter Lab se operan a través de tu navegador habitual de páginas web.
 
@@ -162,6 +193,38 @@ poco más de sus funcionalidades te invitamos a visitar las webs de
 documentación listadas al final de este documento o al mismo [notebook
 interactivo introductorio de ipython y jupyter][binder_jupyter].
 
+## ¿Cómo se usa en Windows?
+
+Para crear y ejecutar notebooks de Jupyter, sigue estos pasos:
+
+1. Abre la línea de comandos de Windows presionando las teclas Windows + R.
+2. Ahora escribe "cmd" y presiona Enter.
+3. Navega hasta el directorio donde quieres guardar el notebook. Puedes hacer
+   esto usando el comando "cd" en la línea de comandos. Por ejemplo, si quieres
+   guardar el notebook en la carpeta Documentos, escribe:
+
+```bash
+cd Documents
+```
+
+4. Una vez que te encuentres ubicado en la carpeta de interés, escribe el
+siguiente comando para crear un nuevo notebook de Jupyter:
+
+```bash
+jupyter lab
+```
+
+5. Se abrirá una ventana en tu navegador web predeterminado con la interfaz de
+Jupyter. En la esquina superior derecha, haz clic en "New" y selecciona "Python
+3" (o cualquier otro kernel que desees usar) para crear un nuevo notebook de
+Python.
+
+6. En el nuevo notebook, puedes escribir y ejecutar código Python. Puedes crear
+nuevas celdas para escribir más código, puedes ejecutarlas utilizando la combinación
+de letras Shift + Enter.
+
+7. Una vez que hayas terminado de trabajar en el notebook guarda tu trabajo
+haciendo clic en "File" y luego en "Save" (o presionando Ctrl + S).
 
 ## Dudas, problemas técnicos y soluciones.
 
