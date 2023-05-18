@@ -171,9 +171,9 @@ de problemas para comunicar la propuesta.
 
 Este taller es un proyecto en colaboración, entre los desarrolladores y
 responsables del contenido, y lo más importante, entre sus participantes. Para que
-dicha colaboración suceda de manera exitosa, debemos asegurar nó sólamente que
-el material es público y puede ser editado por cualquier, sino que cualquiera
-puede configurar el mismo entorno de trabajo para reproducirlo y modificarlo.
+dicha colaboración suceda de manera exitosa, debemos asegurar no sólamente que
+el material es público y puede ser editado por cualquier, sino que **cualquiera
+puede configurar el mismo entorno de trabajo para reproducirlo y modificarlo**.
 
 Para que esto se entienda mejor haremos la siguiente analogía. Imagina que
 varios laboratorios científicos en el mundo que trabajan en un proyecto común,
