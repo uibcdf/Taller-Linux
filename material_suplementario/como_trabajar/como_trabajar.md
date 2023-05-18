@@ -27,8 +27,8 @@ términos. Y todo esto porque el vertiginoso desarrollo de las herramientas
 computacionales abiertas primero (*Open Source*), y de los desarrollos
 científicos que han adoptado mecanismos para asegurar que la ciencia sea
 abierta (*Open Science*) después, reafirman a los responsables y autores de
-estos contenidos en que cooperar es más eficiente que competir a la hora de
-resolver problemas que nos atañen a todos.
+estos contenidos en que **cooperar es más eficiente que competir a la hora de
+resolver problemas que nos atañen a todos**.
 
 Vamos a ver en primer lugar cómo debes usarlo para resolver los retos semanales
 y para publicar tus respuestas a las preguntas semanales.
@@ -45,9 +45,9 @@ clon de este repositorio? Al fin y al cabo, si este taller forma parte de una
 serie de talleres dedicada a la introducción de herramientas computacionales
 para el trabajo de investigación científica, resulta muy pertinente que pongas
 en práctica los principios de la ciencia abierta (*open science*) que
-aprendimos del trabajo en código abierto (*open source*): para demostrar
+aprendimos del trabajo en código abierto (*open source*): **para demostrar
 que lo comunicado y aprendido es reproducible, todo lo necesario para
-reproducirlo debe ser comunicado.
+reproducirlo debe ser comunicado**.
 
 Comencemos por crear tu propio usuario en GitHub si es que todavía no tienes uno.
 
