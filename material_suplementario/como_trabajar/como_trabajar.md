@@ -26,7 +26,7 @@ fines comerciales y todo producto derivado debe compartirse en los mismos
 términos. Y todo esto porque el vertiginoso desarrollo de las herramientas
 computacionales abiertas primero (*Open Source*), y de los desarrollos
 científicos que han adoptado mecanismos para asegurar que la ciencia sea
-abierta (*Open Science*) despues, reafirman a los responsables y autores de
+abierta (*Open Science*) después, reafirman a los responsables y autores de
 estos contenidos en que cooperar es más eficiente que competir a la hora de
 resolver problemas que nos atañen a todos.
 
