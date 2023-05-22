@@ -10,6 +10,7 @@
    reto.ipynb
    preguntas.md
    recursos_adicionales.md
+   sesión.md
 
 ```
 

@@ -1,20 +1,28 @@
 # Contenido
 
-:::{figure} tux.png
-:align: center
-:width: 40%
-:::
-
 Los siguientes contenidos serán presentados en [una sesión de videoconferencia](sesion.md).
 Puedes encontrar en [este enlace](slides/slides.pdf) las slides usadas como soporte.
 
 ## El superusuario
 
-En construcción...
+El usuario más poderoso de un sistema Linux se llama "superusuario" o "root".
+Este usuario tiene permisos para modificar y administrar cualquier cosa en el
+sistema operativo. Es el usuario que tiene todos los permisos y privilegios
+para todo... así que usarás "root" para tareas como interaccionar con los
+ficheros del sistema, crear y borrar usuarios, instalar software... Y para
+prevenir, declararemos los usuarios comunes sin permiso para realizar estas
+tareas.
 
 ### sudo
 
-En construcción...
+Para acceder a administrar la máquina debemos de hacer uso del "superusuario".
+Pero... puede haber usuarios con el poder de ejecutar comandos como si fueran
+superusuarios. Son los usuarios con capacidad administrativa. Seguramente si tu
+usuario fue el primero en crearse al instalar el sistema, tiene ese superpoder.
+
+Para hacer uso de esa capacidad, hay que ejecutar el comando 'sudo' precediendo
+a las órdenes que serán ejecutadas con permisos de superusuario. Veamos un
+ejemplo en la siguiente sección sobre cómo instalar software.
 
 ## Instalando software
 
