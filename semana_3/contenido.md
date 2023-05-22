@@ -717,7 +717,7 @@ Ahora prueba a decirle a tu computadora que procese ese fichero con
 el interpretador `bash`:
 
 ```bash
-bash autoestima
+bash hola_mundo.sh
 ```
 
 Veremos en las semanas posteriores como hacer scripts mucho más complejos que
