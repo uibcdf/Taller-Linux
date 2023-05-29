@@ -1,0 +1,9 @@
+Ana	Madrid
+Lisa	Nueva York
+Ana	Budapest
+Lisa	Bucarest
+Lisa	Paris
+Ana	Estocolmo
+Lisa	Roma
+Ana	Ciudad de México
+

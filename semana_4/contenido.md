@@ -656,6 +656,22 @@ path absoluto o el path relativo precedido de un '.':
 
 Volveremos al script 'autoestima' más adelante, no lo borres todavía.
 
+Para que el script reconozca argumentos de entrada debemos usar las variables '1', '2', '3'... que
+por defecto recogen el valor de dichos argumentos de entrada según su posición en un script de
+bash.
+
+Añade al script autoestima como primera linea:
+
+```bash
+echo $1
+```
+
+Y ejecútalo de la siguiente manera sustituyendo 'tu_nombre' por tu nombre:
+
+```bash
+./autoestima tu_nombre
+```
+
 ## El reconocimiento y filtrado de texto: grep, awk y sed. <a class="anchor" id="grep"></a>
 
 El segundo comando que vemos aquí, `awk`, es un poco más sofisticado a la hora
