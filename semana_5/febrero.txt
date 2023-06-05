@@ -1,0 +1,9 @@
+# Person Item Price Units
+
+Ana Apple 10.0 3
+Lisa Apple 10.0 4
+Ana Orange 15.0 2
+Lisa Banana 20.0 8
+Ana Watermelon 40.0 2
+Lisa Peach 12.0 4
+
