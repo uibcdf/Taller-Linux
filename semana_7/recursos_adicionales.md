@@ -1,4 +1,0 @@
-# Recursos adicionales
-
-En construcción...
-
