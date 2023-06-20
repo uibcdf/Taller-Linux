@@ -1,0 +1,1222 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="../../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../../_static/icon.svg" rel="icon" type="image/svg+xml">
+    <title>Contenido &#8212; documentación de UIBCDF - Taller de Linux - 2023.2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'antes_semanas/semana_3/contenido';</script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-light" alt="UIBCDF Taller Linux"/>
+    <script>document.write(`<img src="../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-dark" alt="UIBCDF Taller Linux"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introducción</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../introduccion/quienes_somos.html">Quiénes somos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduccion/como_trabajar/como_trabajar.html">Cómo trabajar con este taller</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../introduccion/otras_herramientas/index.html">Herramientas necesarias</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/conda/conda.html">Conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/git/git.html">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/github/github.html">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/jupyter/jupyter.html">Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/notebook/notebook.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/markdown/markdown.html">Markdown</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contenidos/introduccion_linux/index.html">Introducción a Linux</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/introduccion_linux/que_es/que_es.html">¿Qué es Linux?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/introduccion_linux/por_que/por_que.html">¿Por qué Linux?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contenidos/instalacion_linux/instalacion_linux.html">Cómo instalar Linux</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contenidos/ayuda_comandos/index.html">Ayuda de comandos</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/ayuda_comandos/man/man.html"><code class="docutils literal notranslate"><span class="pre">man</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/ayuda_comandos/help/help.html"><code class="docutils literal notranslate"><span class="pre">help</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/ayuda_comandos/apropos/apropos.html"><code class="docutils literal notranslate"><span class="pre">apropos</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contenidos/filtrado_texto/index.html">Reconocimiento y filtrado de texto</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/fichero_trabajo/fichero_trabajo.html">Un fichero de texto para trabajar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/regex/regex.html">Expresiones regulares</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/grep/grep.html"><code class="docutils literal notranslate"><span class="pre">grep</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/awk/awk.html"><code class="docutils literal notranslate"><span class="pre">awk</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/sed/sed.html"><code class="docutils literal notranslate"><span class="pre">sed</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Linux" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Linux/blob/main/antes_semanas/semana_3/contenido.md?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/antes_semanas/semana_3/contenido.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Contenido</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-superusuario">El superusuario</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sudo">sudo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalando-software">Instalando software</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apt-get">apt-get</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#yum">yum</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-sistema-de-ficheros">El sistema de ficheros</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bin">/bin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boot">/boot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dev">/dev</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etc">/etc</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#home">/home</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib">/lib</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#media">/media</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mnt">/mnt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opt">/opt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proc">/proc</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#root">/root</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sbin">/sbin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sys">/sys</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tmp">/tmp</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usr">/usr</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#var">/var</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-navegacion-por-el-sistema-de-ficheros">La navegación por el sistema de ficheros</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pwd-ls-y-cd">pwd, ls y cd</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creando-moviendo-y-borrando">Creando, moviendo y borrando</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mkdir-touch-mv-rm-y-rmdir">mkdir, touch, mv, rm y rmdir</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimiendo-texto">Imprimiendo texto</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#echo">echo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viendo-el-contenido-de-los-ficheros">Viendo el contenido de los ficheros</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#more-y-less">more y less</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concatenando-y-uniendo-ficheros">Concatenando y uniendo ficheros</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cat-y-paste">cat y paste</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mi-primer-filtrado-de-texto">Mi primer filtrado de texto</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grep">grep</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mi-primer-script">Mi primer script</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hola-mundo">Hola mundo!</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="contenido">
+<h1>Contenido<a class="headerlink" href="#contenido" title="Enlace permanente a este encabezado">#</a></h1>
+<p>Los siguientes contenidos serán presentados en <a class="reference internal" href="sesion.html"><span class="doc std std-doc">una sesión de videoconferencia</span></a>.
+Puedes encontrar en <a class="reference download internal" download="" href="../../_downloads/6a761d939900376829752b88363bc4c0/slides.pdf"><span class="xref download myst">este enlace</span></a> las slides usadas como soporte.</p>
+<section id="el-superusuario">
+<h2>El superusuario<a class="headerlink" href="#el-superusuario" title="Enlace permanente a este encabezado">#</a></h2>
+<p>El usuario más poderoso de un sistema Linux se llama «superusuario» o «root».
+Este usuario tiene permisos para modificar y administrar cualquier cosa en el
+sistema operativo. Es el usuario que tiene todos los permisos y privilegios
+para todo… así que usarás «root» para tareas como interaccionar con los
+ficheros del sistema, crear y borrar usuarios, instalar software… Y para
+prevenir, declararemos los usuarios comunes sin permiso para realizar estas
+tareas.</p>
+<section id="sudo">
+<h3>sudo<a class="headerlink" href="#sudo" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para acceder a administrar la máquina debemos de hacer uso del «superusuario».
+Pero… puede haber usuarios con el poder de ejecutar comandos como si fueran
+superusuarios. Son los usuarios con capacidad administrativa. Seguramente si tu
+usuario fue el primero en crearse al instalar el sistema, tiene ese superpoder.</p>
+<p>Para hacer uso de esa capacidad, hay que ejecutar el comando “sudo” precediendo
+a las órdenes que serán ejecutadas con permisos de superusuario. Veamos un
+ejemplo en la siguiente sección sobre cómo instalar software.</p>
+</section>
+</section>
+<section id="instalando-software">
+<h2>Instalando software<a class="headerlink" href="#instalando-software" title="Enlace permanente a este encabezado">#</a></h2>
+<p>A través de la terminal puedes instalar software. Seguramente ya aprendiste a
+hacerlo mediante tu entorno de escritorio, pero puede ser muy útil conocer que
+también puedes llevar la gestión de los paquetes de software instalados en tu
+computadora a través del terminal.</p>
+<p>En este punto, dado que esto sí depende de la distribución de Linux que estés
+usando, pondremos aquí los comandos útiles para el caso de Ubuntu y CentOS.</p>
+<section id="apt-get">
+<h3>apt-get<a class="headerlink" href="#apt-get" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para actualizar la lista de paquetes disponibles en los repositorios:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+</pre></div>
+</div>
+<p>Seguramente has tenido que introducir tu contraseña en la terminal. Más
+adelante veremos qué significa el comando <code class="docutils literal notranslate"><span class="pre">sudo</span></code>. Ahora, para actualizar los
+paquetes que encuentran una versión superior en los repositorios:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>upgrade
+</pre></div>
+</div>
+<p>Para instalar un paquete:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>nombre_paquete
+</pre></div>
+</div>
+<p>La lista de repositorios que tienes configurada en el sistema la puedes
+encontrar en el siguiente fichero:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>less<span class="w"> </span>/etc/apt/sources.list
+</pre></div>
+</div>
+</section>
+<section id="yum">
+<h3>yum<a class="headerlink" href="#yum" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Para actualizar la lista de paquetes disponibles en los repositorios:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>yum<span class="w"> </span>check-update
+</pre></div>
+</div>
+<p>Para actualizar los paquetes que encuentran una versión superior en los
+repositorios:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>yum<span class="w"> </span>update
+</pre></div>
+</div>
+<p>Para instalar un paquete:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>yum<span class="w"> </span>install<span class="w"> </span>nombre_paquete
+</pre></div>
+</div>
+<p>La lista de repositorios que tienes configurado en el sistema la puedes
+encontrar en el siguiente directorio:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/yum/yum.repos.d
+</pre></div>
+</div>
+</section>
+</section>
+<section id="el-sistema-de-ficheros">
+<h2>El sistema de ficheros<a class="headerlink" href="#el-sistema-de-ficheros" title="Enlace permanente a este encabezado">#</a></h2>
+<p>En el sistema operativo Linux la organización de archivos tiene forma de arbol.
+E independientemente de dónde está físicamente alojado un directorio (puedes
+jugar con distintos discos duros) su localización debe estar incluida en esta
+estructura anidada que parte de un punto, o directorio supremo, llamado “/” o
+directorio raiz. En “/” encontramos el primer nivel de directorios en esta
+estructura jerárquica. En este nivel todas las distribuciones suelen tener los
+mismos directorios. Vamos a comentar alguno de ellos por orden alfabético:</p>
+<section id="bin">
+<h3>/bin<a class="headerlink" href="#bin" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Es la carpeta que almacena los comandos y ejectables, scripts o binarios, del
+sistema que usarán todos los usuarios de la máquina. De muchos de ellos
+hablaremos en una sección posterior.</p>
+</section>
+<section id="boot">
+<h3>/boot<a class="headerlink" href="#boot" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Es la carpeta que resguarda el gestor de arranque del sistema y sus
+instrucciones. El núcleo del sistema (“kernel”) va a tener actualizaciones
+independientemente de la versión de la distribución de Linux. Cuando enciendes
+la computadora, si tienes varios kernels y además algún otro sistema operativo,
+aparecerá un menú en el que puedes elegir con qué iniciar la computadora. Eso
+es el gestor de arranques, y la información que gestiona está en “/boot”.</p>
+</section>
+<section id="dev">
+<h3>/dev<a class="headerlink" href="#dev" title="Enlace permanente a este encabezado">#</a></h3>
+<p>En Linux cada dispositivo, físico o virtual, o pieza de hardware tiene un
+archivo de llamada. Esos archivos están todos en la carpeta “/dev”. Podemos
+encontrar allí archivos que hacen referencia a las CPUs, GPUs, USBs, la red,
+etc. Usualmente un usuario no administrador no tiene motivo ninguno para operar
+con estos ficheros.</p>
+</section>
+<section id="etc">
+<h3>/etc<a class="headerlink" href="#etc" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Puedes encontrar documentación en internet que argumenta que en su origen el
+directorio “/etc” almacenaba todos aquellos ficheros que no encontraban su
+lugar en cualquier otro directorio contenido en “/”. Puede que de ahí venga su
+nombre. Pero hoy en día “/etc” resguarda de manera ordenada la mayoría de
+archivos de configuración de software y servicios del sistema.</p>
+</section>
+<section id="home">
+<h3>/home<a class="headerlink" href="#home" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Si eres un usuario con poca motivación por convertirte en administrador experto
+de tu sistema operativo, esta es tu carpeta. “/home” contiene en su interior un
+directorio por usuario. Lo que coloquialmente se conoce como el directorio
+hogar o “home” de cada usuario. Vamos a suponer que tu nombre de usuario es
+“chewbacca”, encontrarás una carpeta llamada “/home/chewbacca” que será tu
+espacio de almacenamiento y trabajo.</p>
+</section>
+<section id="lib">
+<h3>/lib<a class="headerlink" href="#lib" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Aquí encontramos módulos del o los kernels y librerías que en muchas ocasiones
+van a ser usadas de manera compartida entre varios procesos, servicios o
+programas.</p>
+</section>
+<section id="media">
+<h3>/media<a class="headerlink" href="#media" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Como hemos descrito en el párrafo dedicado a “/dev”, cada dispositivo viene
+anclado a la estructura de ficheros como un archivo o directorio. “/media” es
+el directorio que centraliza los puntos de anclaje de los dispositivos
+“removibles” como el cdrom, unidades de memoria externas, etc.</p>
+</section>
+<section id="mnt">
+<h3>/mnt<a class="headerlink" href="#mnt" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Puede haber, comprensiblemente, un poco de confusión entre “/mnt” y “/media”.
+Ya que ambos directorios alojan archivos de anclaje de periféricos, pero “/mnt”
+suele ser para dispositivos temporales y de usuarios específicos. Aunque esta
+regla no siempre se cumple.</p>
+</section>
+<section id="opt">
+<h3>/opt<a class="headerlink" href="#opt" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Es el lugar de almacenamiento del software instalado ajeno al sistema y de uso
+para todos los usuarios.</p>
+</section>
+<section id="proc">
+<h3>/proc<a class="headerlink" href="#proc" title="Enlace permanente a este encabezado">#</a></h3>
+<p>No sólo los dispositivos físicos tienen un punto de anclaje, también los
+virtuales y los procesos mismos. “/proc” almacena archivos de información del
+sistema y una larga lista de directorios etiquetadas por números: PIDs. El PID
+es el número de identificación de proceso. Cualquier cosa que se ejecuta en la
+computadora se registra como un proceso con un PID. Esas carpetas por lo tanto
+tienen en su interior todo la información relacionada con la ejecución de cada
+proceso.</p>
+</section>
+<section id="root">
+<h3>/root<a class="headerlink" href="#root" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Directorio «home» para el superusuario “root”. Más adelante se dedica una
+sección al superusuario “root”.</p>
+</section>
+<section id="sbin">
+<h3>/sbin<a class="headerlink" href="#sbin" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Este directorio es similar a “/bin”. Es último almacena comandos útiles para
+todo usuario, mientras que en “sbin” podemos encontrar los ejecutables
+(comandos) de administración y gestión del sistema.</p>
+</section>
+<section id="sys">
+<h3>/sys<a class="headerlink" href="#sys" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Aquí podemos encontrar toda la información relacionada con el hardware y los
+módulos de los kernel instalados.</p>
+</section>
+<section id="tmp">
+<h3>/tmp<a class="headerlink" href="#tmp" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Este directorio sirve de archivo temporal para ficheros. Su contenido es
+borrado cada vez que se reinicia el sistema.</p>
+</section>
+<section id="usr">
+<h3>/usr<a class="headerlink" href="#usr" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Este directorio es seguramente el más poblado en número de ficheros. “/usr”
+contiene una estructura similar a la que tiene “/”, y sirve para almacenar de
+manera organizada las partes de los paquetes y software instalados por los
+usuarios, no por el administrador ni por el mismo sistema.</p>
+</section>
+<section id="var">
+<h3>/var<a class="headerlink" href="#var" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Contiene ficheros auxiliares del sistema, usualmente “logfiles” que reportan la
+salida en tiempo real de muchos de los servicios del sistema como impresión,
+mail interno, procesos internos, etc.</p>
+<p>Como ves no es que Linux tenga “una” carpeta que se llame “sistema”. Más bien
+hay una carpeta que alberga todo el espacio de almacenamiento privado de cada
+usuario (“/home”) y el resto es una estructura de archivos optimizada para
+asegurar el funcionamiento del sistema operativo a varios usuarios ejecutando
+varios procesos simultaneamente.</p>
+</section>
+</section>
+<section id="la-navegacion-por-el-sistema-de-ficheros">
+<h2>La navegación por el sistema de ficheros<a class="headerlink" href="#la-navegacion-por-el-sistema-de-ficheros" title="Enlace permanente a este encabezado">#</a></h2>
+<p>La terminal es una herramienta poderosísima. Todo lo que necesitas hacer con la
+computadora se puede hacer a través de la terminal, no requieres el entorno
+gráfico para nada. Y la navegación de ficheros es probablemente lo menos
+relevante pero lo más sencillo de entender para comenzar a sentirte cómodo o
+cómoda con la terminal.</p>
+<p>Como decíamos en la sección anterior, el sistema de archivos tiene estructura
+de árbol y podemos escribir la secuencia de directorios que contienen, como
+muñecas rusas, el fichero con el que queremos trabajar. A esta dirección, o
+secuencia de directorios, se le llama camino o “path”. Si el “path” comienza en
+el directorio raiz, se dice que el <em>path</em> absoluto. Si sin embargo se trata del
+recorrido que tenemos que hacer desde el directorio en el que se encuentra la
+terminal u otro directorio, se dice <em>path</em> relativo -efectivamente path es una
+palabra tan comunmente usada en este contexto hemos dejado de
+entre-comillarla-.</p>
+<p>Vamos a hacer una serie de ejercicios que nos ayuden a introducir la navegación
+de ficheros, su sintaxis y los comandos más útiles. Comencemos abriendo una
+terminal. Para esto suele funcionar las primeras veces acudir al menú de
+aplicaciones de tu entorno de escritorio, aunque poco a poco sentirás la
+necesidad de usar una combinación de teclas que rápidamente, sin mover la mano
+al ratón, te dispare terminales nuevas. En el caso de Gnome y Ubuntu, esta es
+“ctrl”+”alt”+”t”.</p>
+<section id="pwd-ls-y-cd">
+<h3>pwd, ls y cd<a class="headerlink" href="#pwd-ls-y-cd" title="Enlace permanente a este encabezado">#</a></h3>
+<p>En este momento tienes una terminal expectante a tus ordenes. Ves tu nombre de
+usuario, el nombre de tu máquina, y no me equivocaré mucho si predigo que estás
+viendo el símbolo “~” entre “:” y “\<span class="math notranslate nohighlight">\('. Ese simbolo, llamado virgulilla, se
+usa como álias de tu 'home'. Es decir, si tu usuario, cómo decíamos
+anteriormente, se llama 'chewbacca', '\~' es lo mismo que '/home/chewbacca'. Y
+el espacio en el 'prompt' entre ':' y '\\\)</span>” está dedicado a contener el path
+del directorio en el que se encuentra la terminal. Si de todas formas te
+desorientas, o tu prompt no es lo suficientemente explícito, existe un comando
+que imprime en la terminal el path en el que te encuentras: <code class="docutils literal notranslate"><span class="pre">pwd</span></code> (del inglés
+<em>print working directory</em>). Ejecútalo y comprueba la relación entre “~” y tu
+“home”:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>Para listar el contenido de un directorio disponemos del comando <code class="docutils literal notranslate"><span class="pre">ls</span></code>.
+Ejecútalo para ver los ficheros y directorios que se encuentran en tu home.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls
+</pre></div>
+</div>
+<p>Ya conoces tus dos primeros comandos. Si has leido la sección previa llamada
+<span class="xref myst"><em>La organización de ficheros del sistema Linux</em></span>, puede que
+estés pensando: ¿Estos son comandos que se encuentran en algún sitio? Si, en
+“/bin”. A ver si los encuentras allí:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/bin
+</pre></div>
+</div>
+<p>Puedes ahora ver el contenido de tu directorio raíz:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/
+</pre></div>
+</div>
+<p>O de nuevo, pero de otra forma, el contenido de tu directorio hogar:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>~
+</pre></div>
+</div>
+<p>Ahora veamos como cambiar de directorio. El comando <code class="docutils literal notranslate"><span class="pre">cd</span></code> (del inglés <em>change
+directory</em>) ubica la terminal en el directorio que le digamos. Por ejemplo,
+podemos movernos al directorio raíz “/” y descubrir los directorios que hay en
+él y que se han relatado en la sección <span class="xref myst"><em>La organización de ficheros del
+sistema Linux</em></span>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/
+ls
+</pre></div>
+</div>
+<p>También <code class="docutils literal notranslate"><span class="pre">cd</span></code> tiene ciertos atajos. Por ejemplo, <code class="docutils literal notranslate"><span class="pre">cd</span></code> solito te lleva a tu
+directorio hogar:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/bin
+<span class="nb">pwd</span>
+<span class="nb">cd</span>
+<span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>Ahora imaginemos que existe un directorio llamado “dir4” ubicado en el
+directorio “dir3”, que a su vez está ubicado en “dir2”, ubicado en “dir1”,
+contenido en el directorio raíz “/”. Se dice que su path absoluto es
+“/dir1/dir2/dir3/dir4”, ya que desde cualquier ubicación <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/dir1/dir2/dir3/dir4</span></code> nos lleva a “dir4”. Vamos a hacer un ensayo, y para ello
+vamos a crear en tu directorio hogar la carpeta “dir3” y dentro de ella “dir4”.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="c1"># puedes hacer después `pwd` comprobar dónde estás</span>
+mkdir<span class="w"> </span>dir3
+<span class="nb">cd</span><span class="w"> </span>dir3<span class="w"> </span><span class="c1"># puedes hacer después `pwd` comprobar dónde estás</span>
+mkdir<span class="w"> </span>dir4
+<span class="nb">cd</span><span class="w"> </span>dir4<span class="w"> </span><span class="c1"># puedes hacer después `pwd` comprobar dónde estás</span>
+</pre></div>
+</div>
+<p>Hemos visto, de paso, que <code class="docutils literal notranslate"><span class="pre">mkdir</span></code> sirve para crear directorios. Vamos ahora a
+cambiar nuestra ubicación en la terminal a un directorio cualquiera como puede
+ser <code class="docutils literal notranslate"><span class="pre">/usr</span></code> para después regresar, haciendo uso de su path absoluto, a <code class="docutils literal notranslate"><span class="pre">dir4</span></code>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/usr
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>/home/diego/dir3/dir4
+<span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>Ahora que ya sabemos lo que es el path absoluto, veamos cómo nos podemos mover
+en el árbol de ficheros con paths relativos. Anteriormente hemos visto como
+subir un fichero en la jerarquía de la estructura. Si estamos por ejemplo en
+nuestro “home” basta con mencionar uno de los directorios que contiene para
+entrar en el:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="c1"># o sólamente cd</span>
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>dir3
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>dir4
+</pre></div>
+</div>
+<p>¿Y cómo retrocedemos? ¿Cómo descendemos en la estructura de ficheros hasta
+llegar a la raíz “/”? Supongamos que estamos en “dir4”, usamos <code class="docutils literal notranslate"><span class="pre">..</span></code> para
+descender un nivel -al directorio anterior-:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/dir3/dir4
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>..
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>..
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>..
+<span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>Puedes usarlo también de manera combinada para descender más de un nivel:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/dir3/dir4
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>../..
+<span class="nb">pwd</span>
+
+<span class="nb">cd</span><span class="w"> </span>~/dir3/dir4
+<span class="nb">cd</span><span class="w"> </span>../../..
+<span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>Puedes también construir paths que indican una ruta de cambio de directorio
+según el punto en el que estés, paths relativos:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/dir3/dir4
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>../../../../usr/local
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>../../bin
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>../home/diego/../diego/../diego/dir3/../../diego/dir3/dir4
+<span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>Por último, y para completar la sintaxis que debes conocer para moverte en el
+sistema de ficheros, así como <code class="docutils literal notranslate"><span class="pre">..</span></code> quiere decir <em>el directorio anterior</em>, <code class="docutils literal notranslate"><span class="pre">.</span></code>
+quiere decir <em>aquí</em>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span>
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>.
+<span class="nb">pwd</span>
+<span class="nb">cd</span><span class="w"> </span>dir3/dir4/.
+<span class="nb">pwd</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="creando-moviendo-y-borrando">
+<h2>Creando, moviendo y borrando<a class="headerlink" href="#creando-moviendo-y-borrando" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="mkdir-touch-mv-rm-y-rmdir">
+<h3>mkdir, touch, mv, rm y rmdir<a class="headerlink" href="#mkdir-touch-mv-rm-y-rmdir" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Como vimos en la sección anterior, podemos crear directorios con <code class="docutils literal notranslate"><span class="pre">mkdir</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>dir3
+<span class="nb">cd</span><span class="w"> </span>dir3<span class="w"> </span><span class="c1"># puedes hacer después `pwd` comprobar dónde estás</span>
+mkdir<span class="w"> </span>dir4
+</pre></div>
+</div>
+<p>Para borrar un directorio vacío podemos hacer uso del comando <code class="docutils literal notranslate"><span class="pre">rmdir</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/dir3/.
+rmdir<span class="w"> </span>dir4
+<span class="nb">cd</span><span class="w"> </span>..
+rmdir<span class="w"> </span>dir3
+<span class="nb">pwd</span>
+</pre></div>
+</div>
+<p>Has borrado los directorios <code class="docutils literal notranslate"><span class="pre">dir3</span></code> y <code class="docutils literal notranslate"><span class="pre">dir4</span></code>. Vamos a probar ahora crearlos de
+nuevo, pero esta vez los dos uno dentro del otro de una sóla vez:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>dir3/dir4
+</pre></div>
+</div>
+<p>Para borrar un fichero o directorio hacemos uso del comando <code class="docutils literal notranslate"><span class="pre">rm</span></code>. Debemos
+añadirle <code class="docutils literal notranslate"><span class="pre">-r</span></code> para hacer un borrado recursivo para borrar un directorio y todo
+su contenido:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>-r<span class="w"> </span>dir3
+</pre></div>
+</div>
+<p>Ahora, para crear ficheros -vacíos- podemos usar el comando <code class="docutils literal notranslate"><span class="pre">touch</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span>
+ls
+touch<span class="w"> </span>foo1
+touch<span class="w"> </span>foo2
+touch<span class="w"> </span>foo3
+ls
+</pre></div>
+</div>
+<p>Usamos ahora <code class="docutils literal notranslate"><span class="pre">rm</span></code> para borrar los ficheros. Recuerda que <code class="docutils literal notranslate"><span class="pre">rmdir</span></code> borra únicamente directorios vacios.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span>
+ls
+rm<span class="w"> </span>foo1<span class="w"> </span>foo2<span class="w"> </span>foo3
+ls
+</pre></div>
+</div>
+<p>Para renombrar o mover un fichero o directorio contamos con el comando <code class="docutils literal notranslate"><span class="pre">mv</span></code> (del inglés <em>move</em>):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span>
+ls
+mkdir<span class="w"> </span>zaragoza79
+touch<span class="w"> </span>zaragoza79/foo
+ls<span class="w"> </span>zaragoza79
+mv<span class="w"> </span>zaragoza79<span class="w"> </span>méxico16
+ls<span class="w"> </span>méxico16
+mv<span class="w"> </span>méxico16/foo<span class="w"> </span>.
+ls
+ls<span class="w"> </span>méxico16
+rmdir<span class="w"> </span>méxico16
+rm<span class="w"> </span>foo
+</pre></div>
+</div>
+<p>Nota que para borrar el directorio “méxico16” no hemos hecho uso del comando
+“rmdir”, ya que únicamente funciona con directorios vacíos. Para borrar
+<code class="docutils literal notranslate"><span class="pre">méxico16</span></code> hacemos un borrado recursivo con <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-r</span></code>. <code class="docutils literal notranslate"><span class="pre">-r</span></code> otorga efecto sobre
+el directorio y todo su contenido.</p>
+<p>Para terminar con la navegación de ficheros, veamos ciertos caracteres comodín
+(en inglés <em>wildcard</em>) muy utiles para hacer la gestión de ficheros más cómoda.
+Veamos si puedes deducir para qué podemos emplear el carácter <code class="docutils literal notranslate"><span class="pre">?</span></code> y el carácter
+<code class="docutils literal notranslate"><span class="pre">*</span></code> introducido en un path:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span>
+ls
+mkdir<span class="w"> </span>dir10<span class="w"> </span>dir20<span class="w"> </span>dir30<span class="w"> </span>dir01<span class="w"> </span>dir02<span class="w"> </span>dir03
+ls
+rmdir<span class="w"> </span>dir?0
+ls
+rmdir<span class="w"> </span>dir0?
+ls
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span>
+ls
+touch<span class="w"> </span>x1xpatatas<span class="w"> </span>x1xpatos<span class="w"> </span>x1xpatotas<span class="w"> </span>x1xpatitos
+ls
+rm<span class="w"> </span>x1xpat?tas
+ls
+rm<span class="w"> </span>x1xp*
+ls
+touch<span class="w"> </span>x1xpatatas<span class="w"> </span>x1xpatos<span class="w"> </span>x1xpatotas<span class="w"> </span>x1xpatitos
+rm<span class="w"> </span>x1xpat?t*
+ls<span class="w"> </span>x1x*
+rm<span class="w"> </span>x1x*
+</pre></div>
+</div>
+<p>Tienes más ejemplos del uso de los comodines en internet en páginas como
+<a class="reference external" href="https://kompjuteras.com/en/wildcards-in-linux-commands-with-practical-examples/">esta</a>
+o <a class="reference external" href="https://www.tecmint.com/use-wildcards-to-match-filenames-in-linux/">esta</a>.</p>
+</section>
+</section>
+<section id="imprimiendo-texto">
+<h2>Imprimiendo texto<a class="headerlink" href="#imprimiendo-texto" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="echo">
+<h3>echo<a class="headerlink" href="#echo" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Antes de ver en acción dos comandos muy útiles para visualizar el contenido de
+un fichero, veamos que hace el comando <code class="docutils literal notranslate"><span class="pre">echo</span></code>. <code class="docutils literal notranslate"><span class="pre">echo</span></code> imprime por pantalla el
+texto que pongamos a continuación:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;hola!&quot;</span>
+</pre></div>
+</div>
+<p>A la salida por terminal se llama <code class="docutils literal notranslate"><span class="pre">stdout</span></code> (del inglés <em>standard output</em>).
+Podemos redirigir la salida por <code class="docutils literal notranslate"><span class="pre">stdout</span></code> del comando a un fichero con el
+carácter <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;hola!&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>mi_nuevo_fichero
+</pre></div>
+</div>
+</section>
+</section>
+<section id="viendo-el-contenido-de-los-ficheros">
+<h2>Viendo el contenido de los ficheros<a class="headerlink" href="#viendo-el-contenido-de-los-ficheros" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="more-y-less">
+<h3>more y less<a class="headerlink" href="#more-y-less" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Ahora, para visualizar el contenido del fichero, es donde aparecen los comandos
+<code class="docutils literal notranslate"><span class="pre">less</span></code> o <code class="docutils literal notranslate"><span class="pre">more</span></code>. Los dos sirven para lo mismo aunque <code class="docutils literal notranslate"><span class="pre">less</span></code> se inventó más
+tarde superando en funcionalidad a <code class="docutils literal notranslate"><span class="pre">more</span></code>. Es por eso que se llamó <code class="docutils literal notranslate"><span class="pre">less</span></code>, por
+el dicho inglés: <em>less is more</em>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>more<span class="w"> </span>mi_nuevo_fichero
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>less<span class="w"> </span>mi_nuevo_fichero
+<span class="c1"># Presiona la tecla &#39;q&#39; para volver a la terminal</span>
+</pre></div>
+</div>
+<p>Pero el desvío de <code class="docutils literal notranslate"><span class="pre">stdout</span></code> a un fichero mediante <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> tiene una peculiaridad, siempre reescribe el fichero:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hola Ana&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>mi_nuevo_fichero
+more<span class="w"> </span>mi_nuevo_fichero
+
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hola Bastian&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>mi_nuevo_fichero
+more<span class="w"> </span>mi_nuevo_fichero
+
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hola Kitzia&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>mi_nuevo_fichero
+more<span class="w"> </span>mi_nuevo_fichero
+
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hola Emiliano&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>mi_nuevo_fichero
+more<span class="w"> </span>mi_nuevo_fichero
+</pre></div>
+</div>
+<p>Si quieres que las entradas vayan registrandose en el fichero de manera concatenada, has de usar <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hola Ana&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>mi_nuevo_fichero
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hola Bastian&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>mi_nuevo_fichero
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hola Kitzia&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>mi_nuevo_fichero
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hola Emiliano&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>mi_nuevo_fichero
+more<span class="w"> </span>mi_nuevo_fichero
+</pre></div>
+</div>
+<p>Una última cosa, si <code class="docutils literal notranslate"><span class="pre">more</span></code> saca por pantalla el contenido de un fichero, ¿podemos desviar su salida estandard a otro fichero?</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>more<span class="w"> </span>mi_nuevo_fichero<span class="w"> </span>&gt;<span class="w"> </span>otro_fichero
+more<span class="w"> </span>otro_fichero
+</pre></div>
+</div>
+</section>
+</section>
+<section id="concatenando-y-uniendo-ficheros">
+<h2>Concatenando y uniendo ficheros<a class="headerlink" href="#concatenando-y-uniendo-ficheros" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="cat-y-paste">
+<h3>cat y paste<a class="headerlink" href="#cat-y-paste" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Hagamos ahora un fichero con una columna de números y otro fichero con una columna de letras:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>fichero_numeros
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;2&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>fichero_numeros
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;3&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>fichero_numeros
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;4&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>fichero_numeros
+more<span class="w"> </span>fichero_numeros
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;a&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>fichero_letras
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;b&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>fichero_letras
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;c&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>fichero_letras
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;d&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>fichero_letras
+more<span class="w"> </span>fichero_letras
+</pre></div>
+</div>
+<p>Dejaré ahora que adivines el efecto de los comandos <code class="docutils literal notranslate"><span class="pre">cat</span></code> y <code class="docutils literal notranslate"><span class="pre">paste</span></code> cuando se aplican sobre más de un fichero:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>fichero_numeros<span class="w"> </span>fichero_letras
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>paste<span class="w"> </span>fichero_numeros<span class="w"> </span>fichero_letras
+</pre></div>
+</div>
+<p>O volcando la salida a un fichero:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat<span class="w"> </span>fichero_numeros<span class="w"> </span>fichero_letras<span class="w"> </span>&gt;<span class="w"> </span>nuevo_fichero
+more<span class="w"> </span>nuevo_fichero
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>paste<span class="w"> </span>fichero_numeros<span class="w"> </span>fichero_letras<span class="w"> </span>&gt;<span class="w"> </span>nuevo_fichero
+more<span class="w"> </span>nuevo_fichero
+</pre></div>
+</div>
+</section>
+</section>
+<section id="mi-primer-filtrado-de-texto">
+<h2>Mi primer filtrado de texto<a class="headerlink" href="#mi-primer-filtrado-de-texto" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="grep">
+<h3>grep<a class="headerlink" href="#grep" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Algo que harás habitualmente es el filtrado y reconocimiento de texto
+directamente desde la línea de comandos. Vamos a presentar en esta sección tres
+herramientas que pueden serte de utilidad. La primera, <code class="docutils literal notranslate"><span class="pre">grep</span></code>, filtra de manera
+muy sencilla líneas según contengan o no el patrón que estás buscando. Un
+ejemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 0   Energía 10.4&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 0   Temperatura 303&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 1   Energía 10.2&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 1   Temperatura 300&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 2   Energía 10.5&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 2   Temperatura 306&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 3   Energía 10.1&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 3   Temperatura 299&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 4   Energía 10.8&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 4   Temperatura 302&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 5   Energía 10.1&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 6   Temperatura 304&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+</pre></div>
+</div>
+<p>Podemos fácilmente filtrar las líneas que contienen o no la palabra <em>Temperatura</em>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>grep<span class="w"> </span><span class="s1">&#39;Temperatura&#39;</span><span class="w"> </span>Experimento_626.oup<span class="w"> </span>&gt;<span class="w"> </span>Temperatura_Experimento_626.oup
+grep<span class="w"> </span>-v<span class="w"> </span><span class="s1">&#39;Temperatura&#39;</span><span class="w"> </span>Experimento_626.oup<span class="w"> </span>&gt;<span class="w"> </span>Energía_Experimento_626.oup
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>more<span class="w"> </span>Temperatura_Experimento_626.oup
+more<span class="w"> </span>Energía_Experimento_626.oup
+</pre></div>
+</div>
+<p>En la terminal de Linux la salida de un comando se puede redireccionar como la
+entrada de otro comando. Por ejemplo, podemos filtrar <code class="docutils literal notranslate"><span class="pre">stdout</span></code> como si de un
+fichero se tratara:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>less<span class="w"> </span>Energía_Experimento_626.oup<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;10.1&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>Energía_10.1_Experimento_626.oup
+</pre></div>
+</div>
+<p>De hecho, es lo que hacemos cuando escribimos la salida de la línea anterior a
+un fichero, porque lo podríamos dejar únicamente como:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>less<span class="w"> </span>Energía_Experimento_626.oup<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;10.1&#39;</span>
+</pre></div>
+</div>
+<p>Así por ejemplo podemos concatenar filtros:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>less<span class="w"> </span>Experimento_626.oup<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;Energía&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;10.1&#39;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="mi-primer-script">
+<h2>Mi primer script<a class="headerlink" href="#mi-primer-script" title="Enlace permanente a este encabezado">#</a></h2>
+<section id="hola-mundo">
+<h3>Hola mundo!<a class="headerlink" href="#hola-mundo" title="Enlace permanente a este encabezado">#</a></h3>
+<p>A la terminal le podemos ofrecer ordenes de manera interactiva y secuencial, o
+podemos escribir esa lista de ordenes en un fichero y pedirle que las ejecute
+como un programa, línea a línea. Eso es un script: un fichero de texto plano
+que codifica secuencialmente la lista de ordenes que queremos ejecutar y que se
+ejecutan mediante la participación de un interpretador del fichero. En este
+caso el interpretador de Bash. Que dónde está ese interpretador:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>which<span class="w"> </span>bash
+</pre></div>
+</div>
+<p>Hagamos un ejemplos sencillo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="sb">`</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hola mundo!&quot;</span><span class="sb">`</span><span class="w"> </span>&gt;<span class="w"> </span>hola_mundo.sh
+</pre></div>
+</div>
+<p>Ahora prueba a decirle a tu computadora que procese ese fichero con
+el interpretador <code class="docutils literal notranslate"><span class="pre">bash</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash<span class="w"> </span>hola_mundo.sh
+</pre></div>
+</div>
+<p>Veremos en las semanas posteriores como hacer scripts mucho más complejos que
+este, cómo declarar el script ejecutable, y como declararlo como «comando» que
+puede ser ejecutado en la terminal desde cualquier sitio. Pero eso será más
+adelante, por ahora: ¡enhorabuena!, has escrito tu primer script.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-superusuario">El superusuario</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sudo">sudo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalando-software">Instalando software</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apt-get">apt-get</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#yum">yum</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-sistema-de-ficheros">El sistema de ficheros</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bin">/bin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#boot">/boot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dev">/dev</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#etc">/etc</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#home">/home</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib">/lib</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#media">/media</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mnt">/mnt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#opt">/opt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#proc">/proc</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#root">/root</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sbin">/sbin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sys">/sys</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tmp">/tmp</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usr">/usr</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#var">/var</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-navegacion-por-el-sistema-de-ficheros">La navegación por el sistema de ficheros</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pwd-ls-y-cd">pwd, ls y cd</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creando-moviendo-y-borrando">Creando, moviendo y borrando</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mkdir-touch-mv-rm-y-rmdir">mkdir, touch, mv, rm y rmdir</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imprimiendo-texto">Imprimiendo texto</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#echo">echo</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viendo-el-contenido-de-los-ficheros">Viendo el contenido de los ficheros</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#more-y-less">more y less</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concatenando-y-uniendo-ficheros">Concatenando y uniendo ficheros</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cat-y-paste">cat y paste</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mi-primer-filtrado-de-texto">Mi primer filtrado de texto</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grep">grep</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mi-primer-script">Mi primer script</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hola-mundo">Hola mundo!</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por 
+Liliana M. Moreno Vargas & Diego Prada Gracia | <a href= "mailto:uibcdf@gmail.com">Contáctanos</a>.
+<br>
+<a href="https://uibcdf.org">Unidad de Investigación en Biología Computacional y Diseño de Fármacos</a> del <a href=
+"http://himfg.com.mx">Hospital Infantil de México Federico Gómez.</a>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <div>
+        Web creada usando <a href="https://github.com/sphinx-doc/sphinx">Sphinx</a> 5.3.0 con
+        <a href="https://github.com/executablebooks/sphinx-book-theme">Sphinx Book Theme</a> 1.0.1.
+</div>
+
+
+<p xmlns:cc="http://creativecommons.org/ns#" >(2023) Todos los contenidos de este sitio están bajo la
+licencia <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+<!--
+<p xmlns:cc="http://creativecommons.org/ns#" >All contents of this site are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+--!>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

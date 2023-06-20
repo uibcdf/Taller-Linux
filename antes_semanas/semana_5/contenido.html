@@ -1,0 +1,721 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="../../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../../_static/icon.svg" rel="icon" type="image/svg+xml">
+    <title>Contenido &#8212; documentación de UIBCDF - Taller de Linux - 2023.2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'antes_semanas/semana_5/contenido';</script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-light" alt="UIBCDF Taller Linux"/>
+    <script>document.write(`<img src="../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-dark" alt="UIBCDF Taller Linux"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introducción</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../introduccion/quienes_somos.html">Quiénes somos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduccion/como_trabajar/como_trabajar.html">Cómo trabajar con este taller</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../introduccion/otras_herramientas/index.html">Herramientas necesarias</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/conda/conda.html">Conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/git/git.html">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/github/github.html">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/jupyter/jupyter.html">Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/notebook/notebook.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/markdown/markdown.html">Markdown</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contenidos/introduccion_linux/index.html">Introducción a Linux</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/introduccion_linux/que_es/que_es.html">¿Qué es Linux?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/introduccion_linux/por_que/por_que.html">¿Por qué Linux?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contenidos/instalacion_linux/instalacion_linux.html">Cómo instalar Linux</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contenidos/ayuda_comandos/index.html">Ayuda de comandos</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/ayuda_comandos/man/man.html"><code class="docutils literal notranslate"><span class="pre">man</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/ayuda_comandos/help/help.html"><code class="docutils literal notranslate"><span class="pre">help</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/ayuda_comandos/apropos/apropos.html"><code class="docutils literal notranslate"><span class="pre">apropos</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contenidos/filtrado_texto/index.html">Reconocimiento y filtrado de texto</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/fichero_trabajo/fichero_trabajo.html">Un fichero de texto para trabajar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/regex/regex.html">Expresiones regulares</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/grep/grep.html"><code class="docutils literal notranslate"><span class="pre">grep</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/awk/awk.html"><code class="docutils literal notranslate"><span class="pre">awk</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/sed/sed.html"><code class="docutils literal notranslate"><span class="pre">sed</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Linux" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Linux/blob/main/antes_semanas/semana_5/contenido.md?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/antes_semanas/semana_5/contenido.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Contenido</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-reconocimiento-y-filtrado-de-texto-grep-awk-y-sed-a-class-anchor-id-grep-a">El reconocimiento y filtrado de texto: grep, awk y sed. <a class="anchor" id="grep"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ayuda-de-comandos-con-man-help-y-apropos">Ayuda de comandos con man, –help y apropos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-enlaces-simbolicos-de-fichero-a-class-anchor-id-ln-a">Los enlaces simbólicos de fichero. <a class="anchor" id="ln"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-usuarios-y-los-grupos">Los usuarios y los grupos.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#root-el-superusuario-y-sudo-a-class-anchor-id-sudo-a">Root, el superusuario, y sudo. <a class="anchor" id="sudo"></a></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="contenido">
+<h1>Contenido<a class="headerlink" href="#contenido" title="Enlace permanente a este encabezado">#</a></h1>
+<p>Los siguientes contenidos serán presentados en <span class="xref myst">una sesión de videoconferencia</span>.
+Puedes encontrar en <a class="reference download internal" download="" href="../../_downloads/457c55a16887e4db70ffade48980778a/slides.pdf"><span class="xref download myst">este enlace</span></a> las slides usadas como soporte.</p>
+<section id="el-reconocimiento-y-filtrado-de-texto-grep-awk-y-sed-a-class-anchor-id-grep-a">
+<h2>El reconocimiento y filtrado de texto: grep, awk y sed. <a class="anchor" id="grep"></a><a class="headerlink" href="#el-reconocimiento-y-filtrado-de-texto-grep-awk-y-sed-a-class-anchor-id-grep-a" title="Enlace permanente a este encabezado">#</a></h2>
+<p>El segundo comando que vemos aquí, <code class="docutils literal notranslate"><span class="pre">awk</span></code>, es un poco más sofisticado a la hora
+de hacer búsqueda de patrones de texto. Vamos a poner un ejemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 0   Energía 10.4&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 0   Temperatura 303  Distancia 8.2&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 1   Energía 10.2&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 1   Temperatura 300  Distancia 8.1&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 2   Energía 10.5&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 2   Temperatura 306  Distancia 8.0&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 3   Energía 10.1&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 3   Temperatura 299  Distancia 7.8&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 4   Energía 10.8&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 4   Temperatura 302  Distancia 7.6&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 5   Energía 10.1&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Paso 5   Temperatura 304  Distancia 7.5&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>Experimento_626.oup
+</pre></div>
+</div>
+<p>Filtremos, como primer caso, según el número de campos. Antes de nada usemos
+<code class="docutils literal notranslate"><span class="pre">awk</span></code> para sacar por pantalla el número de campos por línea después de las dos
+primeras columnas</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>awk<span class="w"> </span><span class="s1">&#39;{print $1, $2, NF}&#39;</span><span class="w"> </span>Experimento_626.oup
+</pre></div>
+</div>
+<p>Filtremos entonces las líneas que contienen sólo 4 campos:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>awk<span class="w"> </span><span class="s1">&#39;{if (NF==4) print $0}&#39;</span><span class="w"> </span>Experimento_626.oup
+</pre></div>
+</div>
+<p>Ahora, como último ejemplo que ilustra para qué puedes emplear <code class="docutils literal notranslate"><span class="pre">awk</span></code>, filtremos
+las líneas en las que existe el patrón <em>Distancia</em> y su valor es menor o igual
+que 8.0, e imprimamos dicho valor precedido únicamente del índice de paso:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>awk<span class="w"> </span><span class="s1">&#39;/Distancia/ {if ($6&lt;=8.0) print $2, $6}&#39;</span><span class="w"> </span>Experimento_626.oup
+</pre></div>
+</div>
+<p>Ninguno de los dos comandos anteriores remplaza texto, bueno, con <code class="docutils literal notranslate"><span class="pre">awk</span></code> se
+puede. Pero <code class="docutils literal notranslate"><span class="pre">sed</span></code> puede ser otra alternativa a usar con este propósito. Veamos
+un ejemplo sencillo de substitución de texto con <code class="docutils literal notranslate"><span class="pre">sed</span></code>. En este caso, la
+palabra <em>Distancia</em> por la palabra <em>Posición</em>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sed<span class="w"> </span><span class="s1">&#39;s/Distancia/Posición X/g&#39;</span><span class="w"> </span>Experimento_626.oup
+</pre></div>
+</div>
+<p>Puede que la sintaxis de estos comandos te pueda parecer un poco complicada
+pero en internet es fácil encontrar tutoriales sobre su uso. Tanto <code class="docutils literal notranslate"><span class="pre">awk</span></code> como
+<code class="docutils literal notranslate"><span class="pre">sed</span></code> son herramientas muy poderosas para el tratamiento de patrones de texto.
+Hacen lo que hemos visto anteriormente, y mucho más. En principio no te
+recomiendo que te detengas ahora para hacerte un super experto o experta de
+<code class="docutils literal notranslate"><span class="pre">awk</span></code>, por ejemplo. Es mejor que continues tu proceso de formación y cuando
+tengas la necesidad de usar el comando encuentres un tiempo para saber más. Por
+el momento, es suficiente saber que existe y qué es lo que hace.</p>
+</section>
+<section id="ayuda-de-comandos-con-man-help-y-apropos">
+<h2>Ayuda de comandos con man, –help y apropos<a class="headerlink" href="#ayuda-de-comandos-con-man-help-y-apropos" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Hemos visto en la sección anterior como <code class="docutils literal notranslate"><span class="pre">man</span></code>, o la bandera <code class="docutils literal notranslate"><span class="pre">--help</span></code>, sobre cualquier comando puede
+dar algo de información sobre dicha orden. Vamos a ver ahora cómo la misma terminal puede
+sugerirnos una lista de comandos según una búsqueda en su documentación. Pongamos por caso que
+queremos unir dos ficheros pdf. ¿Qué podemos hacer si no tenemos internet ni otra documentación?
+<code class="docutils literal notranslate"><span class="pre">apropos</span></code> nos puede ayudar. Digámosle a <code class="docutils literal notranslate"><span class="pre">apropos</span></code> que nos liste los comandos que tenemos instalados
+en la computadora relacionados con la palabra “pdf”:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apropos<span class="w"> </span>pdf
+</pre></div>
+</div>
+<p>El listado es largo, ¿verdad? Vamos a filtrar con la palabra “join” (unir o juntar en inglés):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apropos<span class="w"> </span>pdf<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>join
+</pre></div>
+</div>
+<p>En mi caso obtengo la siguiente propuesta de comando útil para nuestro propósito:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pdfjoin</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>          <span class="o">-</span> <span class="n">join</span> <span class="n">together</span> <span class="n">pages</span> <span class="kn">from</span> <span class="nn">multiple</span> <span class="n">PDF</span> <span class="n">files</span>
+</pre></div>
+</div>
+<p>Puedo ahora encontrar más información sobre cómo se usa <code class="docutils literal notranslate"><span class="pre">pdfjoin</span></code> con <code class="docutils literal notranslate"><span class="pre">man</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>man<span class="w"> </span>pdfjoin
+<span class="c1"># puede salir con la tecla &#39;q&#39;</span>
+</pre></div>
+</div>
+<p>O si te resulta muy extensa y sólo quieres un resumen de su uso:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pdfjoin<span class="w"> </span>--help
+</pre></div>
+</div>
+</section>
+<section id="los-enlaces-simbolicos-de-fichero-a-class-anchor-id-ln-a">
+<h2>Los enlaces simbólicos de fichero. <a class="anchor" id="ln"></a><a class="headerlink" href="#los-enlaces-simbolicos-de-fichero-a-class-anchor-id-ln-a" title="Enlace permanente a este encabezado">#</a></h2>
+<p>En Linux hay un tipo de fichero que únicamente sirve para apuntar a otro. Se llama enlace simbólico, funciona como un alias del fichero al que apunta y se declara con el comando <code class="docutils literal notranslate"><span class="pre">ln</span></code>. Veamos un ejemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch<span class="w"> </span>foo1
+ln<span class="w"> </span>-s<span class="w"> </span>foo1<span class="w"> </span>foo2
+</pre></div>
+</div>
+<p>Hemos creado “foo2” como enlace a “foo1”. Puedes distinguir el original del enlace porque este último toma un color especial en la terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln<span class="w"> </span>-s<span class="w"> </span>foo?
+</pre></div>
+</div>
+<p>También puedes saber a qué apunta un enlace con el comando <code class="docutils literal notranslate"><span class="pre">ls</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>-lah<span class="w"> </span>foo2
+</pre></div>
+</div>
+<p>Así, cualquier modificación a “foo2” será hecha en “foo1”:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;Esta es una linea de texto&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>foo2
+less<span class="w"> </span>foo1
+</pre></div>
+</div>
+<p>De hecho, el enlace no tiene contenido y por lo tanto no ocupa memoria de disco. Puedes checar su tamaño con <code class="docutils literal notranslate"><span class="pre">du</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>du<span class="w"> </span>-sh<span class="w"> </span>foo2
+</pre></div>
+</div>
+<p>Podemos hacer enlaces de cualquier tipo de fichero, incluidos directorios. Borremos los ficheros anteriores y hagamos un ejemplo con ficheros:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm<span class="w"> </span>foo1<span class="w"> </span>foo2
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>dir1/dir2/dir3
+mkdir<span class="w"> </span>dirA
+ln<span class="w"> </span>-s<span class="w"> </span>/home/diego/dir1/dir2/dir3<span class="w"> </span>/home/diego/dirA/dir3<span class="w"> </span><span class="c1">#nota que los paths deben ser absolutos</span>
+ls<span class="w"> </span>-lah<span class="w"> </span>dirA/dir3
+touch<span class="w"> </span>dir1/dir2/dir3/nada
+ls<span class="w"> </span>dirA/dir3
+<span class="nb">cd</span><span class="w"> </span>dirA/dir3
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;Con cien cañones por banda...&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>nada
+less<span class="w"> </span>../../dir1/dir2/dir3/nada
+</pre></div>
+</div>
+<p>No podemos acabar esta sección sin responder algo que vienes preguntándote desde la generación del primer enlace simbólico: ¿Para qué la bandera <code class="docutils literal notranslate"><span class="pre">-s</span></code>? Hay dos tipos de enlaces, suaves o simbólicos (la <code class="docutils literal notranslate"><span class="pre">-s</span></code>) y rígidos. Los enlaces rígidos no los hemos tratado aquí. Los enlaces rígidos se declaran sin <code class="docutils literal notranslate"><span class="pre">-s</span></code> y tienen tres peculiaridades que los distinguen de los simbólicos. Primero, el original y el enlace deben estar en la misma partición. Segundo, no podemos hacer enlaces rígidos de directorios. Y tercero, si borramos el archivo original el enlace rígido sigue respaldando el contenido de dicho archivo, no queda huerfano. Al contrario del enlace simbólico, que queda sin contenido al borrar el archivo al que apunta.</p>
+</section>
+<section id="los-usuarios-y-los-grupos">
+<h2>Los usuarios y los grupos.<a class="headerlink" href="#los-usuarios-y-los-grupos" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Linux está diseñado desde su concepción para soportar sobre la misma máquina la actividad simultanea de varios usuarios. Esos usuarios tienen todos un número de identificación, un directorio hogar y una contraseña.</p>
+<p>Tu número de identificación lo puedes encontrar con el siguiente comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>id<span class="w"> </span>-u
+</pre></div>
+</div>
+<p>Tu directorio hogar ya lo conoces, su path está en tu variable HOME:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="nv">$HOME</span>
+</pre></div>
+</div>
+<p>Tu contraseña la puedes cambiar con el comando <code class="docutils literal notranslate"><span class="pre">passwd</span></code>. Si quisieras hacerlo puedes ejecutar el comando en una terminal e introducir en primer lugar tu contraseña actual y luego la nueva.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>passwd
+</pre></div>
+</div>
+<p>Linux lleva el control de usuarios y sus características en el fichero “/etc/passwd”. Puedes echarle un ojo, si es la primera vez que lo haces vas a llevarte una sorpresa:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>less<span class="w"> </span>/etc/passwd
+</pre></div>
+</div>
+<p>¿Has encontrado tu usuario en esa lista? Hay muchos usuarios, ¿verdad? Hay usuarios que en realidad no son personas, no son usuarios reales. Se llaman demonios (en inglés <em>daemons</em>) y son aplicaciones que tienen un usuario virtual para realizar ciertas gestiones. Este hecho, que está en el nucleo del diseño del sistema Linux, es parte de lo que lo ha hecho tan eficiente con respecto a otros sistemas operativos.</p>
+<p>Y además de usuarios, en Linux se definen grupos de usuarios. Esto es muy útil a la hora de gestionar acciones sobre conjuntos definidos de usuarios. Tu usuario, puede que todavía no lo sepas, pertenece a varios grupos. De hecho, tu usuario mismo define un grupo, con su número de identificación que seguramente será igual que el de usuario para para el registro de grupos. Puedes checarlo con el siguiente comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>id<span class="w"> </span>-g
+</pre></div>
+</div>
+<p>¿Y a que otros grupos perteneces? En el siguiente comando identificarás tu nombre e id de usuario, el nombre de tu usuario como grupo y su id, y la lista de grupos a los que perteneces:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>id
+</pre></div>
+</div>
+<p>¿Perteneces por ejemplo al grupo “lpadmin”? Sólo los usuarios que pertenecen a ese grupo pueden hacer gestión de los recursos de impresión, como configurar la comunicación con una nueva impresora.</p>
+<p>La lista de grupos se gestiona en casi toda distribución de Linux gracias al fichero “/etc/group”:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>less<span class="w"> </span>/etc/group
+</pre></div>
+</div>
+<p>Por último, mira qué usuario está al comienzo de la lista de “/etc/passwd”: root. En la siguiente sección abordaremos las cuestiones ¿Quién es root?, ¿Y quién además puede hacer tareas de gestión del sistema operativo? Te habrás dado cuenta de que en esta sección de usuarios y grupos no hemos dicho nada sobre cómo se crean. Es porque puede que no tengas permisos para realizar esas acciones. O sí.</p>
+</section>
+<section id="root-el-superusuario-y-sudo-a-class-anchor-id-sudo-a">
+<h2>Root, el superusuario, y sudo. <a class="anchor" id="sudo"></a><a class="headerlink" href="#root-el-superusuario-y-sudo-a-class-anchor-id-sudo-a" title="Enlace permanente a este encabezado">#</a></h2>
+<br>
+<center><img src="https://www.explainxkcd.com/wiki/images/b/b1/sandwich.png" width="25%"></center>
+<br>
+<p>El usuario root, o superusuario, es el usuario definido en el sistema con permisos para realizar cualquier tarea. Es el usuario con la capacidad innata de administrar el sistema operativo. Hace un tiempo muchas distribuciones pedían a la hora de ser instaladas una contraseña para el usuario root. Suponiendo, claro, que la persona que instala el sistema operativo es el mismo que va a ejercer de administrador. Hoy en día, en el caso de Ubuntu por ejemplo, en la instalación se define un usuario con permisos de actuación «como si fuera» root. Es lo que se conoce como “sudo”. Probablemente, si eres la persona que instaló el SO que estás usando y tu usuario es el primero que se creó, tu usuario tiene la capacidad de hacer <code class="docutils literal notranslate"><span class="pre">sudo</span></code>. De nuevo en el caso de Ubuntu, los usuarios con la capacidad de realizar tareas de administración como si fueran root deben pertenecer al grupo que lleva el nombre de “sudo”. Puedes comprobar con el siguiente comando si perteneces a dicho grupo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>id
+</pre></div>
+</div>
+<p>Si es el caso, puedes continuar de forma activa esta sección. Veamos por ejemplo que significa pertenecer al grupo “sudo”, o tener la capacidad de hacer <code class="docutils literal notranslate"><span class="pre">sudo</span></code>. Ejecuta el siguiente comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>less<span class="w"> </span>/etc/shadow
+</pre></div>
+</div>
+<p>Te dirá que no tienes permiso para ver su contenido. “/etc/shadow” contiene la encriptación de las contraseñas de los usuarios. Ahora prueba con el siguiente comando (pedirá tu contraseña de usuario):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>less<span class="w"> </span>/etc/shadow
+</pre></div>
+</div>
+<p>En este caso estás ejecutando el comando <code class="docutils literal notranslate"><span class="pre">less</span></code> como si fueras root, como si fueras administrador, con plenos poderes para hacer cualquier cosa. Y ya sabes lo que le dijeron a Spiderman citando un discurso del expresidente estadounidense Franklin Delano Roosevelt: «… un gran poder conlleva una gran responsabilidad». Podrías por ejemplo generar un gran problema con el comando <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">rm</span> <span class="pre">/etc/shadow</span></code>, o con el más desastroso de todos si no tienes copia respaldo de absolutamente todo: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">rm</span> <span class="pre">-r</span> <span class="pre">/*</span></code>.</p>
+<p>Teniendo la posibilidad de ejecutar comandos con <code class="docutils literal notranslate"><span class="pre">sudo</span></code>, puedes, si tienes que realizar muchas tareas de administración que requieram ser superusuario, hacer uso del comando <code class="docutils literal notranslate"><span class="pre">su</span></code> para cambiar de tu usuario al usuario root. Antes de eso veamos que <code class="docutils literal notranslate"><span class="pre">su</span></code> también nos permite cambiar a cualquier otro usuario. Vamos a hacer un ejemplo de cambio a otro usuario antes de pasar a root. Primero vamos a crear un usuario nuevo que llamaremos “thanos” desde la terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>adduser<span class="w"> </span>thanos
+</pre></div>
+</div>
+<p>Verás que pide que introduzcas la contraseña que usará “thanos” además de otra información personal de caracter informativo -que puedes dejar en blanco presionando la tecla “entrar”-. Ahora para comprobar que el usuario se ha creado satisfactoriamente hay muchas maneras. Por ejemplo, puedes cerciorarte de que su directorio hogar fue creado:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/home
+</pre></div>
+</div>
+<p>Puedes también comprobar que su usuario aparece en el fichero “/etc/passwd”:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>less<span class="w"> </span>/etc/passwd<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>thanos
+</pre></div>
+</div>
+<p>O puedes, porque tienes la capacidad de actuar como superusuario gracias al comando <code class="docutils literal notranslate"><span class="pre">sudo</span></code>, cambiarte por el…</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>su<span class="w"> </span>thanos<span class="w"> </span><span class="c1">#la contraseña que pide es la de tu usuario... es sudo quien está asegurandose de que eres tu.</span>
+</pre></div>
+</div>
+<p>Et voilà! Ya eres thanos. Verás que el prompt cambió y ahora dice comienza con “thanos&#64;…” Puedes hacer cualquier cosa en la terminal y todo quedará registrado como “thanos”, porque de hecho, ahora mismo, eres “thanos”. Pero “thanos” no tiene permiso para usar <code class="docutils literal notranslate"><span class="pre">sudo</span></code>. Supongamos, únicamente como ejemplo de cómo puede hacerse, que queremos darle a “thanos” permisos de superusuario. Ahora no tiene, prueba:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>less<span class="w"> </span>/etc/shadow
+</pre></div>
+</div>
+<p>Sólo tu usuario, a través de <code class="docutils literal notranslate"><span class="pre">sudo</span></code>, y root pueden otorgarle ese poder. Así que sal de “thanos” y vuelve a tu usuario, lo primero:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">exit</span>
+</pre></div>
+</div>
+<p>¿Ya pone tu nombre de usuario en el prompt? Ahora ya puedes añadir a “thanos” al grupo sudo. Siguiendo con el ejemplo de cómo se hace en Ubuntu:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>sudo<span class="w"> </span>thanos
+</pre></div>
+</div>
+<p>Verás que ya pertenece al grupo privilegiado:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>id<span class="w"> </span>thanos
+</pre></div>
+</div>
+<p>Hagamos la prueba:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>su<span class="w"> </span>thanos<span class="w">   </span><span class="c1"># sudo quiere saber si eres tu, es tu contraseña</span>
+sudo<span class="w"> </span>less<span class="w"> </span>/etc/shadow<span class="w"> </span><span class="c1"># sudo pide aquí la contraseña de thanos para asegurarse de que es él</span>
+</pre></div>
+</div>
+<p>De este modo le hemos dado a “thanos” la posibilidad de modificar cualquier cosa en tu sistema operativo. Incluso, por ejemplo, de decidir qué usuario es aniquilado y qué usuario sobrevive. Pero antes de que él lo haga, borrémoslo a él para terminar el ejemplo. Para ello, sal de nuevo de “thanos”:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">exit</span>
+</pre></div>
+</div>
+<p>Con tu usuario ahora elimina a “thanos” y su directorio hogar:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>userdel<span class="w"> </span>thanos
+sudo<span class="w"> </span>rm<span class="w"> </span>-r<span class="w"> </span>/home/thanos
+</pre></div>
+</div>
+<p>Puedes comprobar, como hiciste antes, que “thanos” ya no existe.</p>
+<p>Por último, si tienes que realizar muchas gestiones de administración y no quieres estar a cada comando anticipándole el <code class="docutils literal notranslate"><span class="pre">sudo</span></code> puedes saltar al usuario root de este manera:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>su
+</pre></div>
+</div>
+<p>Verás que el prompt ahora dice “root&#64;…”. Recuerda que siendo root tienes todo el poder, y una gran responsabilidad.</p>
+<p>Para salir del superusuario root, basta con que hagas:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">exit</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-reconocimiento-y-filtrado-de-texto-grep-awk-y-sed-a-class-anchor-id-grep-a">El reconocimiento y filtrado de texto: grep, awk y sed. <a class="anchor" id="grep"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ayuda-de-comandos-con-man-help-y-apropos">Ayuda de comandos con man, –help y apropos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-enlaces-simbolicos-de-fichero-a-class-anchor-id-ln-a">Los enlaces simbólicos de fichero. <a class="anchor" id="ln"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#los-usuarios-y-los-grupos">Los usuarios y los grupos.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#root-el-superusuario-y-sudo-a-class-anchor-id-sudo-a">Root, el superusuario, y sudo. <a class="anchor" id="sudo"></a></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por 
+Liliana M. Moreno Vargas & Diego Prada Gracia | <a href= "mailto:uibcdf@gmail.com">Contáctanos</a>.
+<br>
+<a href="https://uibcdf.org">Unidad de Investigación en Biología Computacional y Diseño de Fármacos</a> del <a href=
+"http://himfg.com.mx">Hospital Infantil de México Federico Gómez.</a>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <div>
+        Web creada usando <a href="https://github.com/sphinx-doc/sphinx">Sphinx</a> 5.3.0 con
+        <a href="https://github.com/executablebooks/sphinx-book-theme">Sphinx Book Theme</a> 1.0.1.
+</div>
+
+
+<p xmlns:cc="http://creativecommons.org/ns#" >(2023) Todos los contenidos de este sitio están bajo la
+licencia <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+<!--
+<p xmlns:cc="http://creativecommons.org/ns#" >All contents of this site are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+--!>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

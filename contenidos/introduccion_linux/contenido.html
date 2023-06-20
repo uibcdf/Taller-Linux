@@ -1,0 +1,878 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="../../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../../_static/icon.svg" rel="icon" type="image/svg+xml">
+    <title>Contenido &#8212; documentación de UIBCDF - Taller de Linux - 2023.2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contenidos/introduccion_linux/contenido';</script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-light" alt="UIBCDF Taller Linux"/>
+    <script>document.write(`<img src="../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-dark" alt="UIBCDF Taller Linux"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introducción</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../introduccion/quienes_somos.html">Quiénes somos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduccion/como_trabajar/como_trabajar.html">Cómo trabajar con este taller</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../introduccion/otras_herramientas/index.html">Herramientas necesarias</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/conda/conda.html">Conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/git/git.html">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/github/github.html">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/jupyter/jupyter.html">Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/notebook/notebook.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/markdown/markdown.html">Markdown</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Introducción a Linux</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="que_es/que_es.html">¿Qué es Linux?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="por_que/por_que.html">¿Por qué Linux?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../instalacion_linux/instalacion_linux.html">Cómo instalar Linux</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ayuda_comandos/index.html">Ayuda de comandos</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ayuda_comandos/man/man.html"><code class="docutils literal notranslate"><span class="pre">man</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ayuda_comandos/help/help.html"><code class="docutils literal notranslate"><span class="pre">help</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ayuda_comandos/apropos/apropos.html"><code class="docutils literal notranslate"><span class="pre">apropos</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../filtrado_texto/index.html">Reconocimiento y filtrado de texto</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../filtrado_texto/fichero_trabajo/fichero_trabajo.html">Un fichero de texto para trabajar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../filtrado_texto/regex/regex.html">Expresiones regulares</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../filtrado_texto/grep/grep.html"><code class="docutils literal notranslate"><span class="pre">grep</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../filtrado_texto/awk/awk.html"><code class="docutils literal notranslate"><span class="pre">awk</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../filtrado_texto/sed/sed.html"><code class="docutils literal notranslate"><span class="pre">sed</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Linux" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Linux/blob/main/contenidos/introduccion_linux/contenido.md?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/contenidos/introduccion_linux/contenido.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Contenido</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-linux">¿Qué es Linux?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-linux">¿Por qué Linux?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribuciones-de-linux">Distribuciones de Linux.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubuntu">Ubuntu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elementaryos">ElementaryOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arch">Arch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centos">CentOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pop-os">Pop!_OS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otras-distribuciones">Otras distribuciones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-instala-a-class-anchor-id-como-a">¿Cómo se instala? <a class="anchor" id="Como"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-el-kernel">¿Qué es el kernel?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entornos-de-escritorio">Entornos de escritorio.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-la-terminal">¿Qué es la terminal?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-el-prompt">¿Qué es el prompt?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-bash">¿Qué es Bash?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a">Más recursos útiles <a class="anchor" id="recursos"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-a-class-anchor-id-documentacion-a">Documentación <a class="anchor" id="documentacion"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="contenido">
+<h1>Contenido<a class="headerlink" href="#contenido" title="Enlace permanente a este encabezado">#</a></h1>
+<figure class="align-center">
+<a class="reference internal image-reference" href="contenidos/introduccion_linux/tux.png"><img alt="contenidos/introduccion_linux/tux.png" src="contenidos/introduccion_linux/tux.png" style="width: 40%;" /></a>
+</figure>
+<p>Los siguientes contenidos serán presentados en <span class="xref myst">una sesión de videoconferencia</span>.
+Puedes encontrar en <span class="xref myst">este enlace</span> las slides usadas como soporte.</p>
+<section id="que-es-linux">
+<h2>¿Qué es Linux?<a class="headerlink" href="#que-es-linux" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Un sistema operativo (SO) es el software que instalas en tu computadora para
+gestionar el uso de su hardware (monitor, teclado, procesador, etc.) y que
+sirve de plataforma para la instalación de las herramientas que usarás (editor
+de texto, editor de imágenes, navegador, etc.). En ese sentido Linux no es un
+sistema operativo. Es una familia de sistemas operativos. Todos basados en la
+misma tecnología y filosofía de desarrollo, todos descendientes del mismo
+sistema madre.</p>
+<p>Es relevante entender cómo nace Linux para valorar en lo que se ha convertido,
+y así saber qué podemos esperar de él. En la década de los 90, lo que comenzó
+en los 60 como un proyecto frustrado -MULTICS- entre el MIT, AT&amp;T Bell Labs y
+General electric, cristalizó en un proyecto de sistema operativo casi como un
+proyecto académico. En 1970, Ken Thompson, un ingeniero de AT&amp;T que seguía
+trabajando por iniciativa propia sobre los rescoldos del sistema operativo
+creado para MULTICS, programó un nuevo sistema operativo multitarea con linea
+de comandos y unas poquitas aplicaciones: UNICS (más tarde llamado UNIX). Ken
+Thompson en realidad sólo pretendía que un juego que Bell Labs había programado
+para la computadora del proyecto MULTICS, Space Travel, corriera de manera
+rápida y barata. Pero su proyecto acabo siendo empujado por su equipo de
+trabajo para crear un sistema operativo de soporte para los desarrolladores de
+nuevas aplicaciones de entonces. Años después, en 1985, Richard Stallman crea
+la licencia GNU y funda la Free Software Foundation. Richard S. había entendido
+que el desarrollo de aplicaciones de uso libre, el acceso a ellas y la
+posibilidad de modificarlas y transformarlas, iba a impulsar rápidamente el
+progreso científico y tecnológico. En este contexto, en un momento en el que ya
+se contaba con varias aplicaciones de uso libre para UNIX y un pequeño grupo de
+desarrolladores que apostaban por el acceso libre y la cooperación, Linus
+Torvals en 1991 programa un sistema operativo basado en los mismos principios
+que UNIX y bajo licencia GNU. Linux, así llamado, nace libre de uso y
+desarrollo, con un conjunto de aplicaciones plenamente operativas con las
+mismas características y con el potencial de ser modificadas y mejoradas por
+cualquiera.</p>
+<p>Es así como, desde el comienzo de los 90, Linux comienza en la cabeza y las
+manos de varios desarrolladores a generar ramificaciones en forma de distintas
+distribuciones. Muchas de ellas respetando el espíritu inicial de la licencia
+GNU, de acceso y desarrollo libre. Esto cataliza su uso primero en el entorno
+académico para más tarde saltar a la iniciativa privada y el uso doméstico. La
+posibilidad para cualquier usuario de actuar de forma activa en el desarrollo:
+documentando, reportando fallos, generando soluciones, creando software o
+incluso generando nuevas distribuciones de Linux; hace que este proyecto haya
+de manera muy rápida resuelto problemas de uso general, como entornos sencillos
+y ligeros para el uso de la ofimática, y específicos, como protocolos de
+seguridad que hacen de Linux la base para el sistema operativo que opera por
+ejemplo en el Departamento de Defensa de Estados Unidos o en el Banco de China.</p>
+</section>
+<section id="por-que-linux">
+<h2>¿Por qué Linux?<a class="headerlink" href="#por-que-linux" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Los motivos para usar Linux como SO de trabajo van mucho más allá que una
+cuestión de principios. Linux nació como un SO capaz de manejar múltiples
+procesos y múltiples usuarios en la misma computadora. Desde entonces ha ido
+sofisticándose y adaptándose, gracias a la gran población de
+usuario/desarrolladores, para ser eficaz en cuestiones como el cálculo
+científico o el análisis masivo de datos. Por ir concretamente a lo que más nos
+interesa. Linux es el entorno usado desde su nacimiento en entornos académicos
+donde la computación es una herramienta de desarrollo esencial. La manera de
+trabajar de Linux nos permite tener todo el control de la máquina de un modo
+óptimo en la programación de tareas, aunque esto requiera un esfuerzo de
+aprendizaje. Puede que tengas experiencia en el manejo de Windows o MacOS, y
+son perfectamente útiles para todas las cuestiones que aprenderás en este
+repositorio, pero su diseño original fue hecho para cubrir otras necesidades.
+Es cierto que sus entornos de escritorio ya no son la única interfaz de
+interacción con la máquina, puedes usar también terminales. Al igual que Linux
+incluyó también un entorno gráfico sofisticado para navegar con ventanas. Pero
+el desarrollo de aplicaciones de alta demanda computacional se hace, no por
+motivos ideológicos, en Linux. A esto podemos añadir que:</p>
+<ul class="simple">
+<li><p>Encontrarás un activo y numeroso grupo de usuarios como tú comentando en
+foros y blogs sus problemas de uso y sus soluciones.</p></li>
+<li><p>El aprendizaje de su uso te permite convertirte no sólo en consumidor de
+aplicaciones, sino en generador de tus propias soluciones (que pueden ser
+útiles para los demás también).</p></li>
+<li><p>Tiene menos problemas de seguridad que otros SOs.</p></li>
+<li><p>Está en constante evolución, dictada por las necesidades de la comunidad, no
+por criterios de mercado.</p></li>
+<li><p>La mayoría de distribuciones pueden ser instaladas sin coste alguno. Este es
+el caso de todos los programas y librerías que vas a necesitar a lo largo de
+todas las unidades de UIBCDF-Academia.</p></li>
+<li><p>Linux tiene problemas, y más si usas la última versión de ciertas
+distribuciones más experimentales. Pero los desarrolladores o la comunidad de
+usuarios pronto encuentra la solución y ésta es implementada para todos los
+usuarios.</p></li>
+</ul>
+<br>
+<figure class="align-center">
+<a class="reference internal image-reference" href="contenidos/introduccion_linux/command_line_fu.png"><img alt="contenidos/introduccion_linux/command_line_fu.png" src="contenidos/introduccion_linux/command_line_fu.png" style="width: 80%;" /></a>
+</figure>
+</section>
+<section id="distribuciones-de-linux">
+<h2>Distribuciones de Linux.<a class="headerlink" href="#distribuciones-de-linux" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Hay infinidad de distribuciones de Linux (<a class="reference external" href="https://distrowatch.com/dwres.php?resource=popularity">aquí por ejemplo una lista ordenada
+por popularidad</a>). Pero si Linux es la base común de
+estos sistemas operativos, ¿de qué estamos hablando cuando nos referimos a
+distribuciones de Linux? Una distribución es un sistema operativo configurado
+sobre Linux con cierto grado de personalización y optimización, con una serie
+de paquetes de software ajustados entre sí para que el entorno funcione
+amigablemente y facilitando una experiencia de uso particular. La distribución
+de Linux suele condicionar la forma en que se instala, el entorno de
+escritorio, las utilidades de administración y los paquetes más sencillos que
+cualquier usuario usa para su gestión. Sin embargo las distribuciones no
+limitan ni restringen las utilidades o paquetes a instalar; y la experiencia de
+uso a través de la terminal no suele depender de la distribución más que en
+unos pocos comandos como por ejemplo la manera en la que instalamos paquetes.
+Vamos a hablar de algunas distribuciones para que entiendas a qué nos referimos
+con “distribución” y <a class="reference external" href="https://distrowatch.com/dwres.php?resource=major">cúal se recomienda para cada caso</a>.</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p>Los contenidos de este taller no dependen en absoluto de la distribución de
+Linux que estés usando o quieras usar. Los comandos y conceptos que aprenderás
+en esta unidad, comunes a todas las distribuciones por estar en la esencia del
+funcionamiento de Linux.</p>
+</div>
+<section id="ubuntu">
+<h3>Ubuntu<a class="headerlink" href="#ubuntu" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Si es la primera vez que usas Linux para trabajar, <a class="reference external" href="https://www.ubuntu.com/">Ubuntu</a> puede ser
+la distribución más adecuada para tu máquina de trabajo (de escritorio o
+laptop). Ubuntu lleva años haciendo un esfuerzo por ser una de las
+distribuciones más amistosas en su instalación y uso para usuarios no expertos.
+Además, puedes encontrar la estabilidad necesaria en sus versiones LTS (Long
+Time Stable). El corazón de un sistema operativo Linux, el kernel, se actualiza
+constantemente para incluir la compatibilidad necesaria con el nuevo software o
+hardware, así como para solucionar problemas de seguridad o adoptar los últimos
+protocolos de operabilidad. Es habitual que todos los años se liberen varios
+kernels y tengas que actualizar el tuyo para estar “a la última”. Sin embargo
+esto puede generar inestabilidades, ya que caminas siempre en el terreno de la
+innovación con herramientas y configuraciones no tan “testeadas”. Ubuntu libera
+dos versiones de su distribución nuevas y actualizadas al año. Y a pesar de que
+su vocación es ofrecer un sistema operativo con pocos fallos de uso a usuarios
+no expertos, suelen aparecer algunos problemas que a los usuarios de linux con
+experiencia no nos parecen graves, pero a un usuario novato pueden generarle
+una sensación de inseguridad. Por eso, y para no comprometer máquinas dedicadas
+a la producción, hay una versión cada cierto tiempo cuyo mantenimiento y
+estabilidad se cuida por encima de las demás: <a class="reference external" href="https://www.ubuntu.com/download/desktop">la versión LTS (Long Time
+Stable)</a>. Te aconsejamos que para tu máquina de trabajo, si
+eres principiante, instales la última versión LTS de Ubuntu. Afrontarás menos
+problemas, disfrutarás de un entorno fácil de configurar y dispondrás de todo
+lo necesario para trabajar.</p>
+<p>Además, Ubuntu, por ser una de las distribuciones más usadas, cuenta en
+internet con un elevado número de blogs y foros donde encontrarás información
+sobre todo lo que quieres hacer tanto en español como en inglés.</p>
+<div class="admonition hint">
+<p class="admonition-title">Consejo</p>
+<p>Si es la primera vez que vas a usar Linux, y si además te vas atrever a
+instalarlo en tu computadora, te recomendamos que uses Ubuntu. Ubuntu es una de
+las distribuciones más estables y sencillas en su uso e instalación. Además es
+una de las distribuciones más documentadas y cuenta con una gran comunidad de
+usuarios que publican en internet dudas, soluciones, tutoriales y demás
+información que seguro que encontrarás de utilidad.</p>
+</div>
+</section>
+<section id="elementaryos">
+<h3>ElementaryOS<a class="headerlink" href="#elementaryos" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Si lo que buscas es algo más estético, sencillo para una primera experiencia de
+uso, y que nadie te mire como a un o una nerd: puede que esta sea tu
+distribución. En el laboratorio no tenemos experiencia con
+<a class="reference external" href="https://elementary.io/">ElementaryOS</a> y por lo tanto no la recomendamos para un entorno
+de producción. Pero últimamente está ganando mucha popularidad y entendemos que
+si vienes de MacOs, ElementaryOS te parezca muy agradable.</p>
+</section>
+<section id="arch">
+<h3>Arch<a class="headerlink" href="#arch" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Si lo que buscas es una distribución que venga ligera en su instalación
+original y en la que puedas configurarlo todo como un profesional, échale un
+ojo a <a class="reference external" href="https://www.archlinux.org/">ArchLinux</a>. Esta distro es para usuarios más experimentados o
+para valientes novatos; y para máquinas que requieren un sistema operativo
+liviano y ajustable a su hardware, sin artificios ni vistosos procesos poco
+útiles.</p>
+</section>
+<section id="centos">
+<h3>CentOS<a class="headerlink" href="#centos" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Gran parte de los servidor y supercomputadores dedicados a cómputo científico
+suelen correr con <a class="reference external" href="https://www.centos.org/">CentoOS</a>. Esta distribución está bien optimizada y
+equipada, y es muy estable para este tipo de máquinas. Sin embargo, no es una
+distro muy popular para instalar en una laptop de alguien que está comenzando a
+usar Linux.</p>
+</section>
+<section id="pop-os">
+<h3>Pop!_OS<a class="headerlink" href="#pop-os" title="Enlace permanente a este encabezado">#</a></h3>
+<p><a class="reference external" href="https://system76.com/pop">System76</a>, además de hacer unos laptops y unas computadoras de
+escritorio muy atractivos, han desarrollado una distribución de Linux pensada
+para el científico con una estética muy agradable: Pop!_OS. Si estás buscando
+una distribución productiva, no orientada tanto a la ofimática o el uso
+doméstico-personal, sino al trabajo computacional intensivo, puede que Pop!_OS
+sea lo que buscas.</p>
+</section>
+<section id="otras-distribuciones">
+<h3>Otras distribuciones<a class="headerlink" href="#otras-distribuciones" title="Enlace permanente a este encabezado">#</a></h3>
+<p>Con el tiempo aprenderás que en el mundo de Linux, las distribuciones son como
+los equipos de futbol. Hay razones de todo tipo para ser fan de una u otra.
+<a class="reference external" href="https://linuxmint.com/">LinuxMint</a> está los últimos años ganando mucho seguidores por
+conjugar una buena experiencia de uso para usuarios inexpertos y una larga
+colección de paquetes personalizados y versatiles, <a class="reference external" href="https://www.debian.org/">Debian</a> puede que
+funcione para perfiles más expertos y nostálgicos (fue el primer sistema
+operativo Linux de muchos de nosotros), <a class="reference external" href="https://www.redhat.com/en">RedHat</a> es una distro que se
+ha especializado en servir para entornos laborales privados con soporte bajo
+pago… Y así podemos encontrar personas que nos defiendan con argumentos
+plausibles, y pasión, que indudablemente <a class="reference external" href="https://www.opensuse.org/">OpenSUSE</a>,
+<a class="reference external" href="https://getfedora.org/">Fedora</a>, <a class="reference external" href="http://www.slackware.com/">Slackware</a>, <a class="reference external" href="https://www.gentoo.org/">Gentoo</a>, <a class="reference external" href="https://www.freebsd.org/">FreeBSD</a>
+o <a class="reference external" href="https://www.openmandriva.org/">Mandriva</a>, son las mejores distribuciones de Linux.</p>
+</section>
+</section>
+<section id="como-se-instala-a-class-anchor-id-como-a">
+<h2>¿Cómo se instala? <a class="anchor" id="Como"></a><a class="headerlink" href="#como-se-instala-a-class-anchor-id-como-a" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Puede que quieras instalar Linux en una computadora nueva como único sistema
+operativo. O puede que quieres en tu computadora disponer de dos sistemas
+operativos, Windows y Linux. O quizá no quieres instalar Linux y prefieras
+probarlo antes desde una USB booteable sin alterar lo que tienes en tu máquina.
+O si tienes Windows 10 u 11, seguramente te va a parecer más sencillo probar
+Linux instalando Ubuntu como si fuera un programa más de tu máquina</p>
+<p>Sea cual sea tu caso, encontrarás información sobre cómo puedes instalar Linux
+(específicamente Ubuntu), probarlo y/o trabajar con él, en la página <span class="xref myst">«Como
+instalar y/o trabajar con Linux» del Material Suplementario del Taller</span>.</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p>Si quieres instalar una distribución de Linux, nada mejor que acudir a su
+documentación oficial para encontrar una buena guía sobre el proceso de instalación.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Consejo</p>
+<p>Puedes probar Ubuntu antes de instalarlo en tu máquina. Sólo necesitas una
+memoria USB o un DVD para crear un sistema operativo “externo” con el que
+puedes arrancar cualquier máquina -y probar la distribución-.
+O puedes, si tienes Windows 10 u 11, instalar Ubuntu en tu sesión de Windows
+como si fuera un programa más.</p>
+</div>
+</section>
+<section id="que-es-el-kernel">
+<h2>¿Qué es el kernel?<a class="headerlink" href="#que-es-el-kernel" title="Enlace permanente a este encabezado">#</a></h2>
+<p>El kernel de Linux es el elemento principal del sistema operativo Linux. Es el nucleo del sistema operativo encargado de:</p>
+<ul class="simple">
+<li><p>La gestión de los procesos.</p></li>
+<li><p>La gestión de la memoria.</p></li>
+<li><p>Comunicación con los componentes internos de la computadora y sus periféricos.</p></li>
+<li><p>La comunicación entre el software instalado en la máquina.</p></li>
+<li><p>La seguridad de tu sistema operativo.</p></li>
+</ul>
+<p>Las primeras versiones del kernel de Linux se remontan a 1991, pero la que
+usarás en tu distribución tiene ya poco que ver con esas.</p>
+<p>Con respecto al kernel, como usuario, no interaccionarás. Y como administrador,
+debes saber que cada poco tiempo (a veces cada pocas semanas) se publican
+versiones nuevas que debes de considerar por motivos de seguridad. No tengas
+reparo en actualizar con frecuencia el kernel de tu máquina: estos harán que tu
+máquina sea más estable y segura.</p>
+</section>
+<section id="entornos-de-escritorio">
+<h2>Entornos de escritorio.<a class="headerlink" href="#entornos-de-escritorio" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Si estás aproximándote a Linux desde hace poco es posible que confundas los
+entornos de escritorio con las distribuciones. El entorno de escritorio es la
+parte más visible de la distribución y lo primero con lo que probablemente vas
+a interaccionar: el escritorio, la barra superior, el menú desplegable, el
+docker, las ventanas, etc. Hay entornos de escritorio tradicionales, tan
+populares como sólidos, como son <a class="reference external" href="https://www.gnome.org/">Gnome</a> (<a class="reference external" href="https://www.xataka.com.mx/aplicaciones/miguel-de-icaza-y-federico-mena-los-padres-mexicanos-del-proyecto-gnome-uno-de-los-entornos-de-escritorio-mas-famosos-de-linux">proyecto
+fundado por los
+mexicanos</a>
+<a class="reference external" href="https://en.wikipedia.org/wiki/Miguel_de_Icaza">Miguel de Icaza</a> y <a class="reference external" href="https://es.wikipedia.org/wiki/Federico_Mena">Federico
+Mena</a>) o
+<a class="reference external" href="https://www.kde.org/">KDE</a>, y otros más novedosos y vistosos como
+<a class="reference external" href="https://www.fosslinux.com/4652/pantheon-everything-you-need-to-know-about-the-elementary-os-desktop.htm/">Pantheon</a>,
+o ligeros y sencillos como <a class="reference external" href="https://www.xfce.org/">XFCE</a>. Aunque las
+distribuciones apuestan por que uno u otro venga instalado por defecto, y a
+veces desarrollan su propio entorno de escritorio (como hizo Ubuntu con
+<a class="reference external" href="https://unity8.io/">Unity</a> o Elementary con Pantheon), casi todos los entornos
+de escritorio pueden ser instalados en cualquier distribución. Es por esto que
+no debería de condicionar tu elección de distribución, puedes <a class="reference external" href="https://www.maketecheasier.com/install-run-pantheon-desktop-ubuntu/">instalar
+Pantheon en
+Ubuntu</a> o
+descargar <a class="reference external" href="https://kubuntu.org/">KUbuntu -Ubuntu con KDE-</a>, aunque por defecto
+ahora venga con GNOME.</p>
+</section>
+<section id="que-es-la-terminal">
+<h2>¿Qué es la terminal?<a class="headerlink" href="#que-es-la-terminal" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Probablemente estés habituado/a a interaccionar con tu computadora a través del
+entorno gráfico de escritorio. Resulta muy intuitivo y casi no requiere proceso
+de aprendizaje, pero consume muchos recursos y es altamente ineficiente cuando
+la computadora es tu herramienta para algo más que el uso de una o dos
+herramientas de ofimática.</p>
+<p>La terminal es esa ventanita monocolor que sólo contiene texto y cuya última
+linea siempre acaba con un cursor parpadeante que puede resultar al principio
+intimidante… ya que aparece y desaparece intermitentemente como diciendote:
+¿y ahora qué? Pues bien, efectivamente es la puerta de entrada a la interacción
+con tu máquina. El cursor espera comandos, y esa lista de comandos que entiende
+son un lenguage, con sus reglas sintácticas, que debes aprender para
+comunicarte con tu máquina. El lenguage que puebla por defecto la mayoría de
+los sistemas Linux se llama Bash. ¿Es el único? No, hay otros lenguajes para la
+terminal más sofisticados como Zsh o Fish, pero Bash es el interpretador más
+común y el que únicamente usarás a lo largo de tu vida si no es que eres una
+persona muy curiosa o alcanzas un nivel de experiencia como para encontrar los
+límites e incomodidades del uso de Bash.</p>
+</section>
+<section id="que-es-el-prompt">
+<h2>¿Qué es el prompt?<a class="headerlink" href="#que-es-el-prompt" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Antes de hablar de qué vamos a escribir en la terminal, hagamos un breve
+comentario sobre lo que precede al cursor en la terminal. Ese fragmento de
+texto que no desaparece por mucho que le demos a la tecla “entrar” se llama
+“prompt”. Es perfectamente configurable y personalizable y habitualmente suele
+contener el nombre del usuario que está operando la terminal, el nombre de la
+máquina precedido del símbolo “&#64;” (muy util cuando en la misma terminal hacemos
+conexiones remotas con otras máquinas) y por último la dirección o “path” del
+archivo en el que nos encontramos en la terminal. Esto nos lleva otro concepto
+que usaremos como punto de inicio en nuestro aprendizaje de Bash: la navegación
+de ficheros.</p>
+</section>
+<section id="que-es-bash">
+<h2>¿Qué es Bash?<a class="headerlink" href="#que-es-bash" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Bash es el interpretador más usado en los sistemas operativos Linux. ¿Qué
+significa que sea el interpretador? Sencillo, en la terminal escribirás
+comandos e instrucciones que un programa que forma parte de tu sistema
+operativo leerá, interpretará y ejecutará: ese es Bash. Y por extensión, el
+lenguaje que entiende lo llamamos “bash”. Este lenguaje te servirá para
+interaccionar con tu computadora mediante la terminal, así como para escribir
+scripts.</p>
+<p>La mayor parte del contenido de este taller pretende enseñarte la sintaxis de
+bash para que puedas hacer uso eficientemente de la terminal como usuario y/o
+como administrador.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Si eres usuario de macOS y la versión que usas es posterior a la versión 10.15,
+seguramente el interpretador de tu máquina no es Bash, es Zsh. No te preocupes,
+la sintaxis más básica está heredada de Bash. Puedes seguir el taller
+perfectamente. Cuando haya alguna diferencia no nos olvidaremos de ti, haremos las precisiones necesarias.</p>
+</div>
+</section>
+<section id="dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">
+<h2>Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a><a class="headerlink" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Para centralizar esas dudas, sugerencias o soluciones técnicas sobre el tema de este notebook, haz uso del siguiente canal:</p>
+<p><a class="reference external" href="https://github.com/uibcdf/Academia/issues/9">Foro Técnico: Linux</a></p>
+</section>
+<section id="mas-recursos-utiles-a-class-anchor-id-recursos-a">
+<h2>Más recursos útiles <a class="anchor" id="recursos"></a><a class="headerlink" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Esto era sólo una guia introductoria. No es funcional documentarse o estudiar mucho sin antes comenzar a usar el sistema operativo Linux. Aprenderás de manera más solida si con el uso te van surgiendo necesidades a las que vas dando solución poco a poco. Si la computadora es tu herramienta de trabajo, es tu deber conocerla. Puedes encontrar -o contribuir añadiendo- más información útil en el siguiente listado.</p>
+<section id="documentacion-a-class-anchor-id-documentacion-a">
+<h3>Documentación <a class="anchor" id="documentacion"></a><a class="headerlink" href="#documentacion-a-class-anchor-id-documentacion-a" title="Enlace permanente a este encabezado">#</a></h3>
+<p>https://en.wikipedia.org/wiki/List_of_Linux_distributions<br />
+https://www.linux.com/<br />
+https://www.linux.com/what-is-linux<br />
+https://en.wikipedia.org/wiki/Linux<br />
+https://www.linux.org/<br />
+https://en.wikipedia.org/wiki/Unix_shell<br />
+https://www.tldp.org/LDP/intro-linux/html/index.html<br />
+https://www.linux.com/blog/learn/intro-to-linux/2018/4/linux-filesystem-explained<br />
+https://www.tecmint.com/linux-file-system-explained/</p>
+</section>
+<section id="tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">
+<h3>Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a><a class="headerlink" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a" title="Enlace permanente a este encabezado">#</a></h3>
+<p>http://swcarpentry.github.io/shell-novice-es/<br />
+http://swcarpentry.github.io/shell-novice/</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-linux">¿Qué es Linux?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#por-que-linux">¿Por qué Linux?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribuciones-de-linux">Distribuciones de Linux.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ubuntu">Ubuntu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elementaryos">ElementaryOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arch">Arch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#centos">CentOS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pop-os">Pop!_OS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otras-distribuciones">Otras distribuciones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-se-instala-a-class-anchor-id-como-a">¿Cómo se instala? <a class="anchor" id="Como"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-el-kernel">¿Qué es el kernel?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#entornos-de-escritorio">Entornos de escritorio.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-la-terminal">¿Qué es la terminal?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-el-prompt">¿Qué es el prompt?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-bash">¿Qué es Bash?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a">Más recursos útiles <a class="anchor" id="recursos"></a></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-a-class-anchor-id-documentacion-a">Documentación <a class="anchor" id="documentacion"></a></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por 
+Liliana M. Moreno Vargas & Diego Prada Gracia | <a href= "mailto:uibcdf@gmail.com">Contáctanos</a>.
+<br>
+<a href="https://uibcdf.org">Unidad de Investigación en Biología Computacional y Diseño de Fármacos</a> del <a href=
+"http://himfg.com.mx">Hospital Infantil de México Federico Gómez.</a>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <div>
+        Web creada usando <a href="https://github.com/sphinx-doc/sphinx">Sphinx</a> 5.3.0 con
+        <a href="https://github.com/executablebooks/sphinx-book-theme">Sphinx Book Theme</a> 1.0.1.
+</div>
+
+
+<p xmlns:cc="http://creativecommons.org/ns#" >(2023) Todos los contenidos de este sitio están bajo la
+licencia <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+<!--
+<p xmlns:cc="http://creativecommons.org/ns#" >All contents of this site are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+--!>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

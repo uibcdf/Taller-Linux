@@ -1,0 +1,826 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="es" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="../../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../../_static/icon.svg" rel="icon" type="image/svg+xml">
+    <title>Editores de texto. &#8212; documentación de UIBCDF - Taller de Linux - 2023.2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'antes_semanas/semana_5/linux';</script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-light" alt="UIBCDF Taller Linux"/>
+    <script>document.write(`<img src="../../_static/LogoUIBCDF_vectorizado.svg" class="logo__image only-dark" alt="UIBCDF Taller Linux"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introducción</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../introduccion/quienes_somos.html">Quiénes somos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduccion/como_trabajar/como_trabajar.html">Cómo trabajar con este taller</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../introduccion/otras_herramientas/index.html">Herramientas necesarias</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/conda/conda.html">Conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/git/git.html">Git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/github/github.html">GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/jupyter/jupyter.html">Jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/notebook/notebook.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduccion/otras_herramientas/markdown/markdown.html">Markdown</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contenidos/introduccion_linux/index.html">Introducción a Linux</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/introduccion_linux/que_es/que_es.html">¿Qué es Linux?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/introduccion_linux/por_que/por_que.html">¿Por qué Linux?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contenidos/instalacion_linux/instalacion_linux.html">Cómo instalar Linux</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contenidos/ayuda_comandos/index.html">Ayuda de comandos</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/ayuda_comandos/man/man.html"><code class="docutils literal notranslate"><span class="pre">man</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/ayuda_comandos/help/help.html"><code class="docutils literal notranslate"><span class="pre">help</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/ayuda_comandos/apropos/apropos.html"><code class="docutils literal notranslate"><span class="pre">apropos</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contenidos/filtrado_texto/index.html">Reconocimiento y filtrado de texto</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/fichero_trabajo/fichero_trabajo.html">Un fichero de texto para trabajar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/regex/regex.html">Expresiones regulares</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/grep/grep.html"><code class="docutils literal notranslate"><span class="pre">grep</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/awk/awk.html"><code class="docutils literal notranslate"><span class="pre">awk</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contenidos/filtrado_texto/sed/sed.html"><code class="docutils literal notranslate"><span class="pre">sed</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Linux" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/uibcdf/Taller-Linux/blob/main/antes_semanas/semana_5/linux.md?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/antes_semanas/semana_5/linux.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Editores de texto.</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Editores de texto.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vi-o-vim">Vi o Vim</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emacs">Emacs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spacemacs-o-spacevim">Spacemacs o Spacevim</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atom">Atom</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sublime">Sublime</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#los-ficheros-de-configuracion-de-usuario-a-class-anchor-id-configuracion-usuario-a">Los ficheros de configuración de usuario. <a class="anchor" id="configuracion_usuario"></a></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bashrc">~/.bashrc</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bash-aliases">~/.bash_aliases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#profile">~/.profile</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bash-history">~./bash_history</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-ficheros">Otros ficheros</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#las-variables-de-entorno">Las variables de entorno.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#path">PATH</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#library-path-y-ld-library-path">LIBRARY_PATH y LD_LIBRARY_PATH</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-variables-de-entorno">Más variables de entorno?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ssh-y-la-conexion-con-otras-maquinas-a-class-anchor-id-ssh-a">SSH y la conexión con otras máquinas. <a class="anchor" id="ssh"></a></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#puedes-operar-con-hostnames-en-lugar-de-ips">Puedes operar con hostnames en lugar de IPs</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nota-final">Nota final.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a">Más recursos útiles <a class="anchor" id="recursos"></a></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-a-class-anchor-id-documentacion-a">Documentación <a class="anchor" id="documentacion"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a></a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="editores-de-texto">
+<h1>Editores de texto.<a class="headerlink" href="#editores-de-texto" title="Enlace permanente a este encabezado">#</a></h1>
+<p>Hasta este punto, en esta unidad, hemos realizado la mayoría de las creaciones y modificaciones de ficheros de texto con el comando <code class="docutils literal notranslate"><span class="pre">echo</span></code>. Esto no es el del todo común -ni útil-. Se ha hecho así para evitar el tema de los editores de texto hasta llegar a esta sección.</p>
+<p>Aclaremos qué entendemos aquí por editor de texto. Editor de texto es una aplicación que sirve para el registro de texto en las unidades de memoria. Todos los editores que vamos a mencionar tienen el mismo efecto, y todos realizan la función que los define con el mismo resultado. En general no podemos adivinar con qué editor fue escrito un fichero. La diferencia entre editores está en la experiencia de usabilidad.</p>
+<p>Si eres un usuario poco experimentado puede que comiences sientiéndote más cómodo con editores sencillos que cuentan con modo gráfico (una ventana en el escritorio y un explicito menú de opciones). Un editor con estas características que está instalados por defecto en tu distribución puede ser <code class="docutils literal notranslate"><span class="pre">gedit</span></code>. Otros editores, como <code class="docutils literal notranslate"><span class="pre">nano</span></code>, convirten la misma terminal en un sencilla ventana de edición con un menú cuyas opciones son visibles y de fácil entendimiento. Te recomiendo que pruebes todos los editores antes de elegir el más cómodo.</p>
+<p>Para ayudarte a que comiences inmediatamente a tener un sencillo editor con el que empezar a trabajar, aquí tienes cómo se invocan desde la terminal cualquiera de los dos anteriores (y como se cierran):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gedit<span class="w"> </span>foo.txt<span class="w"> </span><span class="c1"># se cierra con el menú de la barra superior de la ventana</span>
+nano<span class="w"> </span>foo.txt<span class="w"> </span><span class="c1"># se cierra con la combinación de teclas &#39;ctrl&#39;+&#39;x&#39;</span>
+</pre></div>
+</div>
+<p>Hasta aquí la parte más sencilla. Ahora, si no lo sabes ya, debes saberlo. El mundo de los editores de texto es un mundo ámplio y espinoso. La edición de textos es la herramienta principal y fundamental de un programador. ¿Has visto unos videos en youtube titulados algo así como <a class="reference external" href="https://www.youtube.com/watch?v=RYK7fKsL9XQ">“Trabajadores rápidos nivel dios”</a>? La mayoría de programadores y científicos computacionales pasan una enorme cantidad de horas al cabo de la semana trabajando en el editor de textos, por eso alcanzan un <a class="reference external" href="https://vimeo.com/53144573">nivel de dominio y comunión con el editor que resulta asombroso</a>. Cuando trabajas así, quieres que la edición de un archivo sea un proceso ágil. Quieres conocer las combinaciones de teclas y atajos que te facilitan el trabajo. Quieres que el editor te facilite la vida y no te retarde innecesariamente en tu trabajo. Por ejemplo, puede parecerte una tontería aunque seguramente lo experimentarás: el uso del ratón resulta molesto porque retarda la velocidad de edición al separar continuamente una mano del teclado. <a class="reference external" href="https://github.com/PhungLuan/docs/blob/master/Drew%20Neil%20-%20Practical%20Vim%20Edit%20Text%20at%20the%20Speed%20of%20Thought%2C%202nd%20Edition%20-%202015.pdf">Se trata de alcanzar el modo de trabajo óptimo en el que casi la edición de un texto sucede a la misma velocidad que se piensa. ¿Te imaginas?</a></p>
+<p>Así, porque el editor de textos junto con la terminal han sido las herramientas de trabajo principales, igual que se han desarrollado distintas distribuciones de Linux, existen, se mantienen y siguen apareciendo una gran variedad de editores de texto. Desde finales de los años ochenta, dos editores de uso libre han mantenido una historica pugna entre la comunidad de usuarios: Vim y Emacs. La comunidad ha estado durante años dividida entre seguidores defensores uno y otro. Es lo que se ha llamado <a class="reference external" href="https://en.wikipedia.org/wiki/Editor_war">la guerra de los editores</a>. En la última década, o puede que un poco más, han aparecido otros editores (gratuitos y de pago) estéticamente más atractivos, con funciones y experiencias de uso muy agradables, aunque no todavía con la versatilidad y la comunidad de usuarios que te da una trayectoria de más de tres décadas. Hagamos unos breves comentarios a estos editores de texto «más profesionales». Será tu tarea elegir uno y aprender a manejarlo.</p>
+<p>Todos estos editores reconocen, por la extensión del fichero, distintos formatos como pueda ser un programa en python, un fichero escrito en markdown, un fichero html, etc. Y dependiendo de este reconocimiento implementan funcionalidades como el coloreado de sintaxis del lenguaje, la posibilidad de completar comandos con tabulador, la detección de errores en el programa, etc. Todos ellos pueden transformarse en autenticos IDEs (del inglés Integrated Development Environment) proporcionando los mismos servicios integrales para programación que plataformas como <a class="reference external" href="https://www.eclipse.org/ide/">Eclipse</a>, <a class="reference external" href="https://developer.apple.com/xcode/ide/">Xcode</a> o <a class="reference external" href="https://netbeans.org/">Netbeans</a>.</p>
+<section id="vi-o-vim">
+<h2>Vi o Vim<a class="headerlink" href="#vi-o-vim" title="Enlace permanente a este encabezado">#</a></h2>
+<p><a class="reference external" href="https://www.vim.org/">Vim</a> y <a class="reference external" href="https://www.gnu.org/software/emacs/">Emacs</a> son la pareja de editores de texto por excelencia en Linux. <a class="reference external" href="https://www.vim.org/">Vim</a> está instalado por defecto en casi todas las distribuciones, al menos en su versión más ligera, sencilla y antigua: Vi.</p>
+<p>Aprender a manejar Vim para alcanzar un nivel de trabajo cómodo y eficiente toma su tiempo. Puedes encontrar numerosas bromas en internet sobre la curva de aprendizaje de Vim. Pero, al igual que con Emacs, con un poco de adiestramiento la edición de textos -y la programación- se vuelve una tarea más rápida.</p>
+<p>Vim tiene la peculiaridad de que trabaja con una filosofía de “modos”. Está por ejemplo el “modo insertar texto”, o el modo “comandos” o el modo “seleccionar texto”. De nuevo, al principio puede parecer molesto, pero con la práctica se le encuentra el sentido.</p>
+<p>Vim es casi completamente modificable y personalizable en su uso, hackeable. Como cualquiera de los editores de esta lista. Por eso, la mayoría de usuarios arrastran a lo largo de su vida un fichero donde se definen los atajos, combinaciones de teclas, funcionalidades, implementaciones y modificaciones al comportamiento nativo, realizadas por uno mismo o encontradas en foros de internet.</p>
+<p>Vim es uno de los editores de texto para terminal que más rápido te permite abrir un fichero, hacer una pequeña edición, guardar y volver a la terminal.</p>
+</section>
+<section id="emacs">
+<h2>Emacs<a class="headerlink" href="#emacs" title="Enlace permanente a este encabezado">#</a></h2>
+<p><a class="reference external" href="https://www.gnu.org/software/emacs/">Emacs</a> es el otro contendiente en la histórica guerra de editores de texto.</p>
+<p>Emacs, como Vim, también requiere un poco de paciencia al principio. Tras unas horas de práctica alcanzarás un nivel de uso que cubrirá de manera rápida tus necesidades más habituales, pero si quieres seguir aprendiendo y optimizando tu edición de textos, estos dos editores te ofrecen unas posibilidades inmensas. Sólo después de años de uso, si es que no te lo tomas de manera muy intensa, llegas a apreciar los límites de cada editor.</p>
+<p>Emacs no trabaja desde una filosofía de “modos” de edición. Emacs tiene un amplio repertorio de combinación de teclas y opciones de entrada de comandos que cubre casi cualquier necesidad. Además Emacs tiene en su nucleo una especie de sistema operativo que lo hace adaptable a cualquier necesidad. Con la posibilidad de implementar modificaciones para cualquier función. Por poner unos ejemplos sencillos que puedas entender, con emacs tienes la posibilidad de <a class="reference external" href="https://www.emacswiki.org/emacs/DocViewMode">visualizar por ejemplo un pdf</a> o de <a class="reference external" href="https://www.emacswiki.org/emacs/TwitteringMode">publicar un tweet en tu cuenta de twitter</a> sin salir del editor.</p>
+<p>Vim o Emacs son dos muy buenos editores. Si no fuera así no hubieran sobrevivido tantos años en una comunidad tan exigente.</p>
+</section>
+<section id="spacemacs-o-spacevim">
+<h2>Spacemacs o Spacevim<a class="headerlink" href="#spacemacs-o-spacevim" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Han surgido varios intentos de editor de texto híbridos entre Vim y Emacs. Editores que puedan toman lo mejor de cada uno de ellos, o que te permiten personalizar el grado de «vimificación» o «emacsficación» con el que estás trabajando. Un ejemplo es <a class="reference external" href="http://spacemacs.org/">Spacemacs</a>, y más tarde <a class="reference external" href="https://spacevim.org/">Spacevim</a>. Spacemacs es un emacs con una filosofía de modos integrada como la de Vim. Puedes elegir dos sabores de uso, “glory”, con un universo de atajos y combinaciones de teclas similar al Emacs original y “hell”, con una experiencia de uso más parecida a Vim.</p>
+<p>Su arranque, dado que carga muchas librerías, puede resultar un poco lento.</p>
+</section>
+<section id="atom">
+<h2>Atom<a class="headerlink" href="#atom" title="Enlace permanente a este encabezado">#</a></h2>
+<p><a class="reference external" href="https://atom.io/">Atom</a> es un moderno editor de texto de uso libre con una estética más actual y unas funcionalidades que le pueden hacer competir con Vim o Emacs. Nació directamente en GitHub como un proyecto de editor moderno de uso libre para desarrolladores.</p>
+<p>Atom no está instalado por defecto y puede que no lo encuentres en el repositorio de tu distribución de Linux. Pero lo puedes instalar en MacOs, Windows o Linux facilmente desde <a class="reference external" href="https://atom.io/">su web</a>.</p>
+</section>
+<section id="sublime">
+<h2>Sublime<a class="headerlink" href="#sublime" title="Enlace permanente a este encabezado">#</a></h2>
+<p><a class="reference external" href="https://www.sublimetext.com/">Sublime</a> es un editor de uso no libre, de pago. La especial orientación de Sublime para la edición de código de programación y sus funciones como IDE, han hecho que gane en los últimos años una enorme popularidad entre profesionales del cómputo, programadores y usuarios avanzados.</p>
+<br>
+<center><img src="https://imgs.xkcd.com/comics/real_programmers.png" width="50%"></center>
+<br>
+<br>
+<center><img src="https://imgs.xkcd.com/comics/types_of_editors.png" width="50%"></center>
+<br>
+<br>
+<center><img src="https://imgs.xkcd.com/comics/hottest_editors.png" width="25%"></center>
+<br>
+</section>
+</section>
+<section id="los-ficheros-de-configuracion-de-usuario-a-class-anchor-id-configuracion-usuario-a">
+<h1>Los ficheros de configuración de usuario. <a class="anchor" id="configuracion_usuario"></a><a class="headerlink" href="#los-ficheros-de-configuracion-de-usuario-a-class-anchor-id-configuracion-usuario-a" title="Enlace permanente a este encabezado">#</a></h1>
+<p>Los ficheros de configuración de cada usuario están ocultos en su directorio “home”. ¿Cómo se oculta un archivo en Linux? Un archivo se oculta comenzando su nombre con un “.”, y para listarlos y verlos hay que añadir a <code class="docutils literal notranslate"><span class="pre">ls</span></code> la bandera <code class="docutils literal notranslate"><span class="pre">-a</span></code> (del inglés <em>all</em>):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>-a
+.<span class="w">   </span>.bash_history<span class="w">  </span>.bashrc<span class="w">  </span>.profile
+..<span class="w">  </span>.bash_logout<span class="w">   </span>.cache<span class="w">   </span>.gnupg
+</pre></div>
+</div>
+<p>Es cierto que hay parámetros de configuración de un usuario que se encuentran en los ficheros del sistema. Porque se definen como opciones «por defecto» válidas para todo usuario. Pero en la jerarquía de los ficheros que definen el comportamiento de tu usuario, siempre tiene prioridad lo que puedas definir en tus ficheros. Hablaremos de los más importantes:</p>
+<section id="bashrc">
+<h2>~/.bashrc<a class="headerlink" href="#bashrc" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Es el archivo más importante que tienes para definir el comportamiento de tu usuario. Cada vez que abres una terminal, este fichero se ejecuta. ¿No te lo crees? Vamos a hacer un prueba. Abre tu “.bashrc” con un editor para incluir al final del fichero estas tres lineas:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">mi_variable</span><span class="o">=</span><span class="s1">&#39;tururú&#39;</span>
+<span class="n">alias</span> <span class="n">cuantos_ficheros_hay_en_esta_carpeta</span><span class="o">=</span><span class="s1">&#39;ls -l | wc -l&#39;</span>
+<span class="n">echo</span> <span class="s2">&quot;Hola! Ya terminé de ejecutar el .bashrc&quot;</span>
+</pre></div>
+</div>
+<p>Guarda, cierra el fichero y abre una nueva terminal. Verás que antes de colocar el primer prompt la terminal muestra el resultado del último comando que añadirmos al final de “.bashrc”. Ahora prueba que las otras dos líneas que añadimos se ejecutaron.</p>
+<div class="highlight-bashrc notranslate"><div class="highlight"><pre><span></span>## Saca el contenido de la nueva variable
+echo $mi_variable
+</pre></div>
+</div>
+<div class="highlight-bashrc notranslate"><div class="highlight"><pre><span></span>## No hace falta que lo escribas todo, la tecla &#39;tab&#39; completará el comando
+cuantos_ficheros_hay_en_esta_carpeta
+</pre></div>
+</div>
+<p>Ahora que ya viste en acción la función de este fichero, puedes volver a abrirlo y borrar esas lineas.</p>
+</section>
+<section id="bash-aliases">
+<h2>~/.bash_aliases<a class="headerlink" href="#bash-aliases" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Algunas distribuciones de Linux configuran la plantilla de “.bashrc” que se colocará en cada nuevo usuario. Puedes comprobar, como seguramente le sucede a tu “.bashrc”, que incluye la siguiente instrucción:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span>~/.bash_aliases<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span>.<span class="w"> </span>~/.bash_aliases
+<span class="k">fi</span>
+</pre></div>
+</div>
+<p>Si leistes las secciones anteriores, puedes adivinar que lo que está haciendo ese segmento de código es comprobar si en tu directorio hogar existe el fichero “.bash_aliases”, y si es así, lo ejecuta. Es una manera de que “.bashrc” no se haga inmensamente largo y puedas organizar la configuración de tu usario un poco. De este modo, las definiciones de alias las sacaremos de “.bashrc” y las pondremos en “.bash_aliases”. Y no, no hemos olvidad que todavía no dijimos nada aquí de qué es un alias, pero lo pudiste deducir de nuestro ejericio con “.bashrc”. Un alias es eso, un alias. Es renombrar un comando con otra cadena de caracteres para que pueda ser invocado de una manera más comoda, más rápida y más facil de recordar.</p>
+<p>Hay alias definidos casi en todas las distribuciones de Linux como son:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">alias</span><span class="w"> </span><span class="nv">ls</span><span class="o">=</span><span class="s1">&#39;ls --color=auto&#39;</span><span class="w"> </span><span class="c1"># ls dará color a los ficheros según su naturaleza</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -alFh&#39;</span><span class="w">        </span><span class="c1"># ll listará todos los ficheros junto con permisos y tamaño en formato leible por humanos</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">la</span><span class="o">=</span><span class="s1">&#39;ls -A&#39;</span>
+<span class="nb">alias</span><span class="w"> </span><span class="nv">l</span><span class="o">=</span><span class="s1">&#39;ls -CF&#39;</span>
+</pre></div>
+</div>
+<p>Te dejo como tarea acudir a internet, a <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">--help</span></code> o <code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">help</span></code> para averiguar el significado de los dos últimos alias.</p>
+</section>
+<section id="profile">
+<h2>~/.profile<a class="headerlink" href="#profile" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Este fichero es muy similar a “./bashrc”. En realidad en algunas distribuciones como Ubuntu, este fichero se ejecuta antes. Este es el fichero que ordena ejecutar “./bashrc” si es que lo tienes. Verás que “./profile” contiene:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># if running bash</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$BASH_VERSION</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="c1"># include .bashrc if it exists</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.bashrc&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">        </span>.<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.bashrc&quot;</span>
+<span class="w">    </span><span class="k">fi</span>
+<span class="k">fi</span>
+</pre></div>
+</div>
+<p>Este parrafo comprueba primero que la computadora tiene Bash instalado, y en ese caso busca que el usuario tenga un fichero “.bashrc”. Si esto último sucede, lo ejecuta.</p>
+<p>Podemos usar “.profile” para la personalización de variables de entorno. Veremos un ejemplo de esto en la siguiente sección.</p>
+</section>
+<section id="bash-history">
+<h2>~./bash_history<a class="headerlink" href="#bash-history" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Este no es exactamente un fichero de configuración, pero le debemos reconocer mucha utilidad. <code class="docutils literal notranslate"><span class="pre">~/.bash_history</span></code> guarda la secuencia de los <span class="math notranslate nohighlight">\(N\)</span> últimos comandos ejecutados por tu usuario. Como su nombre indica, es un histórico. Prueba antes que nada en tu terminal a mantener presionada la tecla “ctrl” mientras pulsas varias veces la tecla “p”. ¿No estás viendo los últimos comandos que realizaste?, ¿no estás caminando hacia atrás en tu historico? Prueba ahora otra cosa. Borra la linea que “ctrl”+”p” dejó en la terminal y ahora haz “ctrl”+”r”. ¿Te aparece algo así?</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>diego@nauta:~$ 
+(reverse-i-search)`&#39;: 
+</pre></div>
+</div>
+<p>Puedes ahora teclear una cadena de caracteres y que se buscarán de manera reversa en el histórico. Vamos a probar a ver cúal fue el último comando que empezaba con “echo”. Teclea “echo” si tu terminal dice <code class="docutils literal notranslate"><span class="pre">reverse-i-search</span></code>. ¿Ya salió? Ahora, con la tecla “ctrl” presionada pulsas varias veces “r”, verás que aparecen la serie de comandos que contienen los caracteres “echo” en búsqueda reversa del historico. Ya puedes borrar la linea que la búsqueda reversa te dejó.</p>
+<p>Entonces, ¿dónde “ctrl”+”p” o “ctrl”+”r” encuentra tu historial de comandos?:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.bash_history
+</pre></div>
+</div>
+<p>Pero este fichero tiene una cantidad de líneas limitada. Comprueba cual es la longitud, en cantidad de líneas, que tiene tu fichero:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wc<span class="w"> </span>-l
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">wc</span></code> sirve también para contar la cantidad de caracteres de un fichero de texto:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wc<span class="w"> </span>-m<span class="w"> </span>.bash_history
+</pre></div>
+</div>
+<p>Para modificar la cantidad de información que puede quedar registrada en tu histórico tendrás que editar las variables <code class="docutils literal notranslate"><span class="pre">HISTSIZE</span></code> e <code class="docutils literal notranslate"><span class="pre">HISTFILESIZE</span></code> en tu fichero “.bashrc”. Qué hace cada variable lo puedes encontrar en la documentación o foros como <a class="reference external" href="https://stackoverflow.com/questions/19454837/bash-histsize-vs-histfilesize">este</a>. En mi caso yo modifiqué el valor de esas variables para tener un histórico razonable en el que poder buscar los comandos que ejecuté en el pasado.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">HISTSIZE</span><span class="o">=</span><span class="m">200000</span>
+<span class="nv">HISTFILESIZE</span><span class="o">=</span><span class="m">200000</span>
+</pre></div>
+</div>
+<p>Por último y antes de pasar a la siguiente subsección, un consejo: “ctrl”+”p” y “ctrl”+”r” pueden hacer que tu interacción con la terminal sea más cómoda. Yo los uso con frecuencia para trabajar más ágil, ¿Para qué voy a teclear de nuevo el comando anterior?, ¿para qué vamos a teclear entero el comando que fué ejecutado hace unos minutos?</p>
+</section>
+<section id="otros-ficheros">
+<h2>Otros ficheros<a class="headerlink" href="#otros-ficheros" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Distintas distribuciones de Linux organizan la información de distinta manera. Aquí estamos siendo un poco más fieles a la distribución Ubuntu porque es la que hemos recomendado para un usuario no experto que necesita un entorno de trabajo estable y productivo en el laboratorio. Puede que tengas otra distribución y veas ficheros como <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> o <code class="docutils literal notranslate"><span class="pre">.bash_login</span></code>. En internet vas a encontrar fácilmente información sobre su función.</p>
+</section>
+</section>
+<section id="las-variables-de-entorno">
+<h1>Las variables de entorno.<a class="headerlink" href="#las-variables-de-entorno" title="Enlace permanente a este encabezado">#</a></h1>
+<p>Hemos hablado anteriormente de las variables en Linux. También de las variables de usuario como <code class="docutils literal notranslate"><span class="pre">HOME</span></code> o <code class="docutils literal notranslate"><span class="pre">PWD</span></code>. Estas últimas son variables de entorno. Son variables que definen el comportamiento de tu usuario y la terminal, en definitiva, el comportamiento del entorno Linux. Quizá las que debes de conocer de cara al trabajo que realizamos sean <code class="docutils literal notranslate"><span class="pre">PATH</span></code>, <code class="docutils literal notranslate"><span class="pre">LIBRARY_PATH</span></code> y <code class="docutils literal notranslate"><span class="pre">LD_LIBRARY_PATH</span></code>. Estas tres variables afectan a cómo interaccionas con el software y las librerías que vas a instalar para trabajar.</p>
+<section id="path">
+<h2>PATH<a class="headerlink" href="#path" title="Enlace permanente a este encabezado">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">PATH</span></code> almacena, separados por el caracter “:”, la lista de directorios en los que tu usuario buscará ejecutables (comandos). Prueba:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PATH</span>
+</pre></div>
+</div>
+<p>¿Ves el directorio “/bin” en la lista? Tu usuario puede ejecutar <code class="docutils literal notranslate"><span class="pre">ls</span></code> o <code class="docutils literal notranslate"><span class="pre">echo</span></code> porque estos son comandos que encuentras en alguno de los directorios que tu usuario almacena en <code class="docutils literal notranslate"><span class="pre">PATH</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls<span class="w"> </span>/bin
+</pre></div>
+</div>
+</section>
+<section id="library-path-y-ld-library-path">
+<h2>LIBRARY_PATH y LD_LIBRARY_PATH<a class="headerlink" href="#library-path-y-ld-library-path" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Así como <code class="docutils literal notranslate"><span class="pre">PATH</span></code> contiene los sitios donde encontrar ejecutables, <code class="docutils literal notranslate"><span class="pre">LIBRARY_PATH</span></code> contiene la lista de lugares con librerías necesarias para compilar un ejecutable y <code class="docutils literal notranslate"><span class="pre">LD_LIBRARY_PATH</span></code> la lista de lugares con librerías dinámicas a las que cualquier programa o ejecutable puede acudir para realizar funciones concretas.</p>
+</section>
+<section id="mas-variables-de-entorno">
+<h2>Más variables de entorno?<a class="headerlink" href="#mas-variables-de-entorno" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Sin duda hay más variables de entorno, pero no tienes por qué conocerlas todas para ser un usuario avanzado. No es el propósito tampoco de este notebook hacer un repaso riguroso. Puedes encontrar información fácilmente en internet, y acudir a ella cuando se presente la ocasión y lo necesites.</p>
+<p>Lo que sí debes saber es que estas variables pueden ser modificadas a conveniencia. Vamos a ver un ejemplo para que lo comprendas mejor. ¿Recuerdas el script “autoestima”? Lo programamos y declaramos ejecutable en la sección <span class="xref myst">«El script.»</span>. Ahora vamos a colocar una copia de dicho script en alguno de los directorios de tu lista <code class="docutils literal notranslate"><span class="pre">PATH</span></code>. ¿Qué tal en el directorio “/usr/bin” o “/usr/local/bin”?:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp<span class="w"> </span>autoestima<span class="w"> </span>/usr/bin/.
+</pre></div>
+</div>
+<p>No funcionó, ¿verdad? Claro, no cualquier usuario puede alterar el contenido de “/usr/bin”. Necesitas permisos de administración, ¿si los tienes?</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>cp<span class="w"> </span>autoestima<span class="w"> </span>/usr/bin/.
+</pre></div>
+</div>
+<p>Ahora abre una terminal nueva e imagina… estás trabajando con la moral baja y necesitas una inyección de autoestima. ¡Ya puedes teclear con la terminal situada en cualquier directorio “autoestima”!</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>autoestima
+</pre></div>
+</div>
+<p>Borra mejor el script. Tu no lo necesitas…</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>rm<span class="w"> </span>/usr/bin/autoestima
+</pre></div>
+</div>
+<p>Pero para conseguir esto no hace falta que tengas permisos de administración, al fín y al cabo sólo quieres hacer algo que afecta a tu usuario. Y el mal uso de <code class="docutils literal notranslate"><span class="pre">sudo</span></code> puede ser un riesgo que afectará a todos en esa máquina. Vamos crear un directorio tuyo en el que todos los ficheros que ubiques allí serán interpretados por tu usuario como comandos y ejecutables:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>/home/diego/mibin
+</pre></div>
+</div>
+<p>Ahora mueve el script “autoestima” a ese directorio:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv<span class="w"> </span>autoestima<span class="w"> </span>~/mibin/.
+</pre></div>
+</div>
+<p>Sólo queda añadir el path “/home/diego/mibin” a la variable <code class="docutils literal notranslate"><span class="pre">PATH</span></code>.</p>
+<p>Abre el fichero <code class="docutils literal notranslate"><span class="pre">.profile</span></code> o el <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> con tu editor e incluye al final de él algo como:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">### Mis Paths</span>
+
+<span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$HOME</span>/mibin:<span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>
+</pre></div>
+</div>
+<p>Cualquier terminal que abras a partir de ahora tendrá en su lista de lugares en los que encontrar ejecutables el path de tu directorio <code class="docutils literal notranslate"><span class="pre">mibin</span></code>. Abre una terminal nueva y prueba:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span><span class="w"> </span><span class="nv">$PATH</span>
+</pre></div>
+</div>
+<p>Ya apareció ahí tu directorio “mibin”, ¿verdad? Pues ya puedes dejar que la computadora te suba la autoestima cuando quieras:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>autoestima
+</pre></div>
+</div>
+</section>
+</section>
+<section id="ssh-y-la-conexion-con-otras-maquinas-a-class-anchor-id-ssh-a">
+<h1>SSH y la conexión con otras máquinas. <a class="anchor" id="ssh"></a><a class="headerlink" href="#ssh-y-la-conexion-con-otras-maquinas-a-class-anchor-id-ssh-a" title="Enlace permanente a este encabezado">#</a></h1>
+<p>SSH, del inglés <em>Secure Shell</em>, es el protocolo de comunicación encriptado más común para interaccionar con otras computadoras. SSH te permite operar remótamente con otra máquina a través de tu terminal. Para ello el comando <code class="docutils literal notranslate"><span class="pre">ssh</span></code> necesita la IP de la máquina destino y el usuario registrado en esá máquina que usarás para acceder</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>liliana@155.192.168.1
+</pre></div>
+</div>
+<p>El comando anterior hace una llamada a la máquina 155.192.168.1 y le pide acceso como usuario “liliana”. Acto seguido se nos pedirá la contraseña de liliana en esa máquina para despues licitar nuestra terminal con el mismo grado de operabilidad en la máquina destino como si de la local se tratase. De hecho, verás que el prompt cambia para indicar ahora el nombre (“hostname”) de la máquina remota, y el usuario con el que operas:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>liliana@nombre_máquina_remota:~$
+</pre></div>
+</div>
+<p>Ya puedes, en remoto, ejecutar los comandos que necesites en ese máquina. Ahora, para cerrar la conexión y volver a tu máquina local:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">exit</span>
+</pre></div>
+</div>
+<p>Puedes también copiar ficheros desde tu máquina local a la remota, y viceversa. Para ello el protocolo SSH dispone del comando <code class="docutils literal notranslate"><span class="pre">scp</span></code>. De manera similar a cómo opera <code class="docutils literal notranslate"><span class="pre">cp</span></code>, <code class="docutils literal notranslate"><span class="pre">scp</span></code> puede copiar un fichero local a una máquina remota:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>scp<span class="w"> </span>/path/a/fichero/fuente<span class="w"> </span>usuario@ip:/path/de/destino/.
+</pre></div>
+</div>
+<p>O de la máquina remota a la máquina local:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>scp<span class="w"> </span>usuario@ip:/path/a/fichero/fuente<span class="w"> </span>/path/de/destino/.
+</pre></div>
+</div>
+<section id="puedes-operar-con-hostnames-en-lugar-de-ips">
+<h2>Puedes operar con hostnames en lugar de IPs<a class="headerlink" href="#puedes-operar-con-hostnames-en-lugar-de-ips" title="Enlace permanente a este encabezado">#</a></h2>
+<p>Las direcciones IP pueden tener definidas alias en tu máquina. De esta manera no hace falta que las memorices, basta con que las listes en el fichero “/etc/hots”:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>less<span class="w"> </span>/etc/hosts
+</pre></div>
+</div>
+<p>¿Tienes una máquina a la que accedes habitualmente? Supongamos que se llama AllSpark y que su ip es la 999.999.999.999. Edita el fichero “/etc/hosts” con tu editor de textos y añade la siguiente linea:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">999</span>.999.999.999<span class="w"> </span>allspark
+</pre></div>
+</div>
+<p>Ya puedes emplear <code class="docutils literal notranslate"><span class="pre">ssh</span></code> y <code class="docutils literal notranslate"><span class="pre">scp</span></code> sustituyendo la ip de la máquina remota por su hostname. Por ejemplo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>liliana@allspark
+</pre></div>
+</div>
+</section>
+</section>
+<section id="nota-final">
+<h1>Nota final.<a class="headerlink" href="#nota-final" title="Enlace permanente a este encabezado">#</a></h1>
+<p>El contenido de este documento es suficiente para comenzar. Ya sólo queda que a medida que vayas trabajando, poco a poco aprendas aquellos comandos que más usas. Al principio no hay que desesperarse, probablemente necesitarás varias veces volver a buscar qué comando servía para borrar un directorio, o qué comando servía para filtrar la salida de <code class="docutils literal notranslate"><span class="pre">less</span></code>… pero con un poco de paciencia irás familiarizandote con la terminal. Todos los usuarios estamos constantemente aprendiendo cosas nuevas y recordando otras. Pero pront se adquiere un nivel de uso que compensa sobradamente el tiempo invertido. Ahora, lo único importante es que hayas tenido un primer contacto para entener qué te puede ofrecer el uso de Linux.</p>
+<hr class="docutils" />
+</section>
+<section id="dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">
+<h1>Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a><a class="headerlink" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a" title="Enlace permanente a este encabezado">#</a></h1>
+<p>Para centralizar esas dudas, sugerencias o soluciones técnicas sobre el tema de este notebook, haz uso del siguiente canal:</p>
+<p><a class="reference external" href="https://github.com/uibcdf/Academia/issues/9">Foro Técnico: Linux</a></p>
+</section>
+<section id="mas-recursos-utiles-a-class-anchor-id-recursos-a">
+<h1>Más recursos útiles <a class="anchor" id="recursos"></a><a class="headerlink" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a" title="Enlace permanente a este encabezado">#</a></h1>
+<p>Esto era sólo una guia introductoria. No es funcional documentarse o estudiar mucho sin antes comenzar a usar el sistema operativo Linux. Aprenderás de manera más solida si con el uso te van surgiendo necesidades a las que vas dando solución poco a poco. Si la computadora es tu herramienta de trabajo, es tu deber conocerla. Puedes encontrar -o contribuir añadiendo- más información útil en el siguiente listado.</p>
+<section id="documentacion-a-class-anchor-id-documentacion-a">
+<h2>Documentación <a class="anchor" id="documentacion"></a><a class="headerlink" href="#documentacion-a-class-anchor-id-documentacion-a" title="Enlace permanente a este encabezado">#</a></h2>
+<p>https://en.wikipedia.org/wiki/List_of_Linux_distributions<br />
+https://www.linux.com/<br />
+https://www.linux.com/what-is-linux<br />
+https://en.wikipedia.org/wiki/Linux<br />
+https://www.linux.org/<br />
+https://en.wikipedia.org/wiki/Unix_shell<br />
+https://www.tldp.org/LDP/intro-linux/html/index.html<br />
+https://www.linux.com/blog/learn/intro-to-linux/2018/4/linux-filesystem-explained<br />
+https://www.tecmint.com/linux-file-system-explained/</p>
+</section>
+<section id="tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">
+<h2>Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a><a class="headerlink" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a" title="Enlace permanente a este encabezado">#</a></h2>
+<p>http://swcarpentry.github.io/shell-novice-es/<br />
+http://swcarpentry.github.io/shell-novice/</p>
+<br>
+<div style='text-align: right;'> <a href="../Buenas_practicas/Buenas_practicas.md">Ir a la siguiente unidad</a> </div>
+<hr class="docutils" />
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/uibcdf/Academia">UIBCDF-Academia</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/uibcdf/Academia/graphs/contributors">UIBCDF Lab, autores y colaboradores</a> es material protegido bajo una licencia <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Editores de texto.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vi-o-vim">Vi o Vim</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#emacs">Emacs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spacemacs-o-spacevim">Spacemacs o Spacevim</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atom">Atom</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sublime">Sublime</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#los-ficheros-de-configuracion-de-usuario-a-class-anchor-id-configuracion-usuario-a">Los ficheros de configuración de usuario. <a class="anchor" id="configuracion_usuario"></a></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bashrc">~/.bashrc</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bash-aliases">~/.bash_aliases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#profile">~/.profile</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bash-history">~./bash_history</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-ficheros">Otros ficheros</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#las-variables-de-entorno">Las variables de entorno.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#path">PATH</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#library-path-y-ld-library-path">LIBRARY_PATH y LD_LIBRARY_PATH</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-variables-de-entorno">Más variables de entorno?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ssh-y-la-conexion-con-otras-maquinas-a-class-anchor-id-ssh-a">SSH y la conexión con otras máquinas. <a class="anchor" id="ssh"></a></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#puedes-operar-con-hostnames-en-lugar-de-ips">Puedes operar con hostnames en lugar de IPs</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#nota-final">Nota final.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dudas-problemas-tecnicos-y-soluciones-a-class-anchor-id-dudas-a">Dudas, problemas técnicos y soluciones. <a class="anchor" id="dudas"></a></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mas-recursos-utiles-a-class-anchor-id-recursos-a">Más recursos útiles <a class="anchor" id="recursos"></a></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentacion-a-class-anchor-id-documentacion-a">Documentación <a class="anchor" id="documentacion"></a></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tutoriales-webinars-y-cursos-gratuitos-a-class-anchor-id-tutoriales-a">Tutoriales, Webinars y cursos gratuitos <a class="anchor" id="tutoriales"></a></a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por 
+Liliana M. Moreno Vargas & Diego Prada Gracia | <a href= "mailto:uibcdf@gmail.com">Contáctanos</a>.
+<br>
+<a href="https://uibcdf.org">Unidad de Investigación en Biología Computacional y Diseño de Fármacos</a> del <a href=
+"http://himfg.com.mx">Hospital Infantil de México Federico Gómez.</a>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <div>
+        Web creada usando <a href="https://github.com/sphinx-doc/sphinx">Sphinx</a> 5.3.0 con
+        <a href="https://github.com/executablebooks/sphinx-book-theme">Sphinx Book Theme</a> 1.0.1.
+</div>
+
+
+<p xmlns:cc="http://creativecommons.org/ns#" >(2023) Todos los contenidos de este sitio están bajo la
+licencia <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+<!--
+<p xmlns:cc="http://creativecommons.org/ns#" >All contents of this site are licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+--!>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
